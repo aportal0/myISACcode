@@ -1,0 +1,23 @@
+Variable: psl
+Member: 12
+Year: 1989
+Number of CPUs: 4
+Variable: psl
+Member: 12
+Year: 1989
+Number of CPUs: 4
+Variable: psl
+Member: 12
+Year: 1989
+Number of CPUs: 4
+Variable: psl
+Member: 12
+Year: 1989
+Number of CPUs: 4
+Variable: psl
+Member: 12
+Year: 1989
+Number of CPUs: 4
+<Client: 'tcp://127.0.0.1:44889' processes=4 threads=256, memory=8.00 GiB>
+Time:  950.465975522995
+3h files memb 12 year 1989 removed successfully

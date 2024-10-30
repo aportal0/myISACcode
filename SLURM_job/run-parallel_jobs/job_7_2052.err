@@ -1,0 +1,7 @@
+srun: error: unpackmem_ptr: Buffer to be unpacked is too large (4043515136 > 100000000)
+srun: error: unpack error in io_init_msg_unpack
+srun: error: Invalid IO init header version
+
+real	17m25.032s
+user	0m0.010s
+sys	0m0.018s

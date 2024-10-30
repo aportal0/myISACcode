@@ -1,0 +1,68 @@
+2024-10-25 06:26:18,139 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-5c6322cf-16cf-41a0-955f-87bf232701ec')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2024-10-25 06:26:18,139 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-8cec4f72-c18a-49a5-b5f7-ff611aeee36d')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2024-10-25 06:26:18,139 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-6a3c0ab6-d8e7-4ca3-b8c2-5526b1d3e3c3')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2024-10-25 06:26:18,139 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-595d698d-14b7-4dfc-a0a5-c044c43b0530')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2024-10-25 06:26:18,139 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-932398e0-f29c-47b6-a734-a1edbf438365')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2024-10-25 06:26:18,139 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-f1691230-180f-4b5e-83ff-3b7026e413e8')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2024-10-25 06:26:18,139 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-ea49cf11-3536-410f-88fc-47fca685aeff')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2024-10-25 06:26:18,140 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-c87b3a71-284f-4276-b5dd-4445d0f5a637')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2024-10-25 06:26:18,140 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-3eb1d07c-1d96-49c5-80f6-45586d04a3dd')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2024-10-25 06:26:21,316 - distributed.nanny - WARNING - Worker process still alive after 3.199998474121094 seconds, killing
+2024-10-25 06:26:22,115 - tornado.application - ERROR - Exception in callback functools.partial(<bound method IOLoop._discard_future_result of <tornado.platform.asyncio.AsyncIOMainLoop object at 0x7f9c18fd4130>>, <Task finished name='Task-347345' coro=<SpecCluster._correct_state_internal() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/deploy/spec.py:346> exception=TimeoutError()>)
+Traceback (most recent call last):
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/asyncio/tasks.py", line 456, in wait_for
+    return fut.result()
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/tornado/ioloop.py", line 740, in _run_callback
+    ret = callback()
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/tornado/ioloop.py", line 764, in _discard_future_result
+    future.result()
+asyncio.exceptions.TimeoutError
+Traceback (most recent call last):
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/asyncio/tasks.py", line 456, in wait_for
+    return fut.result()
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/portal/script/python/compute_daily-mean_dask.py", line 58, in <module>
+    client.shutdown()
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/client.py", line 1819, in shutdown
+    return self.sync(self._shutdown)
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/utils.py", line 358, in sync
+    return sync(
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/utils.py", line 434, in sync
+    raise error
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/utils.py", line 408, in f
+    result = yield future
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/tornado/gen.py", line 769, in run
+    value = future.result()
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/client.py", line 1802, in _shutdown
+    await self.cluster.close()
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/deploy/spec.py", line 448, in _close
+    await self._correct_state()
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/deploy/spec.py", line 359, in _correct_state_internal
+    await asyncio.gather(*tasks)
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/nanny.py", line 626, in close
+    await self.kill(timeout=timeout, reason=reason)
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/nanny.py", line 403, in kill
+    await self.process.kill(reason=reason, timeout=0.8 * (deadline - time()))
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/nanny.py", line 881, in kill
+    await process.join(max(0, deadline - time()))
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/process.py", line 330, in join
+    await wait_for(asyncio.shield(self._exit_future), timeout)
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/utils.py", line 1940, in wait_for
+    return await asyncio.wait_for(fut, timeout)
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/asyncio/tasks.py", line 458, in wait_for
+    raise exceptions.TimeoutError() from exc
+asyncio.exceptions.TimeoutError
+srun: error: tintin: task 0: Exited with exit code 1
+
+real	17m50.367s
+user	0m0.012s
+sys	0m0.016s

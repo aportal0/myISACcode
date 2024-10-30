@@ -1,0 +1,23 @@
+Variable: psl
+Member: 1
+Year: 1955
+Number of CPUs: 4
+Variable: psl
+Member: 1
+Year: 1955
+Number of CPUs: 4
+Variable: psl
+Member: 1
+Year: 1955
+Number of CPUs: 4
+Variable: psl
+Member: 1
+Year: 1955
+Number of CPUs: 4
+Variable: psl
+Member: 1
+Year: 1955
+Number of CPUs: 4
+<Client: 'tcp://127.0.0.1:37251' processes=4 threads=256, memory=8.00 GiB>
+['/work_big/users/portal/CRCM5-LE/psl/kba/1955/psl_EUR-11_CCCma-CanESM2_historical_r1-r1i1p1_OURANOS-CRCM5_kba_3h_195501.nc', '/work_big/users/portal/CRCM5-LE/psl/kba/1955/psl_EUR-11_CCCma-CanESM2_historical_r1-r1i1p1_OURANOS-CRCM5_kba_3h_195502.nc', '/work_big/users/portal/CRCM5-LE/psl/kba/1955/psl_EUR-11_CCCma-CanESM2_historical_r1-r1i1p1_OURANOS-CRCM5_kba_3h_195503.nc', '/work_big/users/portal/CRCM5-LE/psl/kba/1955/psl_EUR-11_CCCma-CanESM2_historical_r1-r1i1p1_OURANOS-CRCM5_kba_3h_195504.nc', '/work_big/users/portal/CRCM5-LE/psl/kba/1955/psl_EUR-11_CCCma-CanESM2_historical_r1-r1i1p1_OURANOS-CRCM5_kba_3h_195505.nc', '/work_big/users/portal/CRCM5-LE/psl/kba/1955/psl_EUR-11_CCCma-CanESM2_historical_r1-r1i1p1_OURANOS-CRCM5_kba_3h_195506.nc', '/work_big/users/portal/CRCM5-LE/psl/kba/1955/psl_EUR-11_CCCma-CanESM2_historical_r1-r1i1p1_OURANOS-CRCM5_kba_3h_195507.nc', '/work_big/users/portal/CRCM5-LE/psl/kba/1955/psl_EUR-11_CCCma-CanESM2_historical_r1-r1i1p1_OURANOS-CRCM5_kba_3h_195508.nc', '/work_big/users/portal/CRCM5-LE/psl/kba/1955/psl_EUR-11_CCCma-CanESM2_historical_r1-r1i1p1_OURANOS-CRCM5_kba_3h_195509.nc', '/work_big/users/portal/CRCM5-LE/psl/kba/1955/psl_EUR-11_CCCma-CanESM2_historical_r1-r1i1p1_OURANOS-CRCM5_kba_3h_195510.nc', '/work_big/users/portal/CRCM5-LE/psl/kba/1955/psl_EUR-11_CCCma-CanESM2_historical_r1-r1i1p1_OURANOS-CRCM5_kba_3h_195511.nc', '/work_big/users/portal/CRCM5-LE/psl/kba/1955/psl_EUR-11_CCCma-CanESM2_historical_r1-r1i1p1_OURANOS-CRCM5_kba_3h_195512.nc']
+Time:  243.8122730255127

@@ -1,0 +1,7 @@
+slurmstepd-tintin: error:  mpi/pmix_v4: _direct_conn_establish: tintin [0]: pmixp_server.c:1264: Connection failed from 0(tintin)
+slurmstepd-tintin: error:  mpi/pmix_v4: _direct_conn_establish: tintin [0]: pmixp_server.c:1264: Connection failed from 0(tintin)
+slurmstepd-tintin: error:  mpi/pmix_v4: _direct_conn_establish: tintin [0]: pmixp_server.c:1278: Failed to unpack the direct connection message from 2004((null))
+
+real	15m5.956s
+user	0m0.013s
+sys	0m0.015s

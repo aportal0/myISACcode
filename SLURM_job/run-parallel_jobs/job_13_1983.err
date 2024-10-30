@@ -1,0 +1,18 @@
+/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 46605 instead
+  warnings.warn(
+srun: error: io_init_msg_read too small
+srun: error: failed reading io init message
+srun: error: unpackmem_ptr: Buffer to be unpacked is too large (3002234950 > 100000000)
+srun: error: unpack error in io_init_msg_unpack
+srun: error: Invalid IO init header version
+srun: error: unpackmem_ptr: Buffer to be unpacked is too large (218777711 > 100000000)
+srun: error: unpack error in io_init_msg_unpack
+srun: error: Invalid IO init header version
+srun: error: io_init_msg_read too small
+srun: error: failed reading io init message
+
+real	18m32.810s
+user	0m0.004s
+sys	0m0.025s

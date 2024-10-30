@@ -1,0 +1,12 @@
+#!/bin/bash
+#SBATCH --job-name=daily_mean_1450
+#SBATCH --ntasks=1                          # One job (Python script) but multiple threads 
+#SBATCH --cpus-per-task=32                  # Request 32 CPUs
+
+# Activate conda environment
+source /home/${USER}/.bashrc
+source activate myenv
+
+# run python script
+cd /home/portal/script/SLURM_job/
+time srun python3 /home/${USER}/script/python/compute_daily-mean.py >> output_daily-mean_memb14-50.txt
