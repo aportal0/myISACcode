@@ -3,10 +3,11 @@ import functions_slurm as fs
 
 # Input variables
 varname = 'psl'                 # Choice between 'tas', 'psl', 'zg', ...
-year_range = [1983,1983]
-memb_range = [18,18]
+year_range = [1974,1980]
+memb_range = [19,19]
 ncpus_per_job = 4
-nbatch = 1
+nbatch = 8
+mem_per_job = 3000
 username = 'portal'
 
 # Loop over members and years
@@ -16,9 +17,8 @@ for memb in range(memb_range[0], memb_range[1]+1):
         # Define the SLURM job script content
         job_script = f"""#!/bin/bash
 #SBATCH --job-name=dmean_{varname}_{memb}_{year}        # Job name
-#SBATCH --ntasks=1                                      # One job (Python script) but multiple threads 
 #SBATCH --cpus-per-task={ncpus_per_job}                 # Request no. CPUs
-#SBATCH --mem=3000
+#SBATCH --mem={mem_per_job}
 #SBATCH --output=/home/portal/script/SLURM_job/run-parallel_jobs/job_{memb}_{year}.out  # Output file
 #SBATCH --error=/home/portal/script/SLURM_job/run-parallel_jobs/job_{memb}_{year}.err    # Error file
 

@@ -3,8 +3,8 @@ import os
 import functions_preprocessing as fp
 
 # Range members and years
-range_members = [1,1]
-range_years = [1956,2099]
+range_members = [2,50]
+range_years = [1955,2099]
 range_months = [1,12]
 # Variable selection
 var = 'zg'
@@ -19,6 +19,7 @@ def check_all_files_downloaded(list_path_files):
     return expected_files_set.issubset(current_files)
 
 def process_nc_file(path_file):
+    """Extract DESIRED_LEVEL from multiple-level .nc file"""
     # Replace 'zg' with 'zg500' in the output filename
     watch_directory = os.path.dirname(path_file)
     base_filename = os.path.basename(path_file).replace('zg', 'zg500')
@@ -49,7 +50,7 @@ if __name__ == "__main__":
                 for im in range(range_months[1] - range_months[0] + 1) 
             ]
             # Wait until all expected files are downloaded
-            print(f"Waiting for all expected files for member {memb}, year {year} to be downloaded...")
+            print(f"Waiting for files member {memb}, year {year}...")
             while not check_all_files_downloaded(files_3h):
                 time.sleep(100)
             
