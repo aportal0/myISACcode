@@ -4,3 +4,36 @@ Node 3 -> N-Italy, C-Italy, S-Italy (in decreasing order)
 Node 4 -> N-Italy, C-Italy, S-Italy (in decreasing order)
 Node 5 -> N-Italy, C-Italy, S-Italy (in decreasing order)
 Node 6 -> N-Italy
+
+EVENT SELECTION BASED ON VOLUME OF PRECIP ABOVE 99th PCT
+(99th PCT for alert-region, by node)
+
+Node 1, Extr 1 -> 8 October 1996 
+Event is representative of Node 1 circulation regime.
+Ciclone persistente (~ 48 h), venti da E verso la Pianura Padana.
+Evento 7,8,9 Ottobre, soprattutto pianura Bolognesi, 276 mm su 48 ore a Settefonti.
+Servizio TV su https://www.facebook.com/iononrischiobologna/videos/alluvione-07-ottobre-1996/404254274702507/ (Cacciamani all'ARPA)
+Anniversario dell'evento nel 2024 su https://www.ravennatoday.it/cronaca/alluvione-1996-ravennate-foto.html
+
+Node 2, Extr 2 -> 15 November 2014
+Event is representative of Node 2 circulation regime.
+Accumulazioni 24h città di Milano https://www.meteoweb.eu/2014/11/alluvione-lombardia-piogge-eccezionali-ieri-milano-2014-precedenti-dati/352400/
+Alluvione Liguria 14-15 Novembre, 2 morti (Savona, Genova) https://www.meteolanterna.net/approfondimenti/alluvione-liguria-novembre-2014-cronistoria-14-15-nov-parte3-alluvione-genova
+
+Node 3, Extr 1 -> 13 November 1997
+Event is quite representative of Node 3 circulation regime. MSLP minimum shifted towards the Adriatic, Z500 is ok.
+Nessuna informazione dal web.
+
+Node 4, Extr 2 -> 25 January 1992
+Event is representative of Node 4 circulation regime.
+Nessuna informazione.
+
+Node 5, Extr 3 -> 23 September 1993
+Event is representative of Node 5 circulation regime.
+Forti pioggie 23, 24 settmbre 1993 su Liguria e Piemonte. 5 vittime in Val Varenna.
+800 mm a San Carlo di Cese, 480 mm a Genova.
+https://it.wikipedia.org/wiki/Alluvione_di_Genova_del_23_settembre_1993
+
+Node 6, Extr 1 -> 29 October 2018
+Event is quite representative of Node 6 circulation regime. Cyclone shifted to E, propagates from S (Med) rather than from Atlantic.
+Tempesta Vaia.

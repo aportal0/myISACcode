@@ -10,31 +10,42 @@ import time
 
 
 def load_ERA5_data(varname, timestep, lonlat_bounds):
-    """Loads ERA5 data for a given variable, timestep and in lonlat_bounds."""
+    """Loads ERA5 data for a given variable, timestep and in lonlat_bounds.
+    Timestep can be a single datetime object or a list of datetime objects."""
     # Possible varnames: 'msl', 'z500'
     data_dir = '/work_big/users/ghinassi/ERA5/'+varname+'/'
-    file = os.path.join(data_dir, f'ERA5_{varname}_6hr_{timestep.strftime("%Y")}.nc')
+    years_data = np.unique(timestep.strftime("%Y"))
+    files = [os.path.join(data_dir, f'ERA5_{varname}_6hr_{year}.nc') for year in years_data]
+    # Load data
     # select variable and timestep
     if varname == 'z500':
-        data = xr.open_dataset(file)['z'].sel(valid_time=timestep, pressure_level=500) / 9.81
+        datasets = [xr.open_dataset(file)['z'].sel(valid_time=timestep, pressure_level=500) / 9.81 for file in files]
     elif varname == 'msl':
-        data = xr.open_dataset(file)['msl'].sel(time=timestep) * 0.01
+        datasets = [xr.open_dataset(file)['msl'].sel(time=timestep) * 0.01 for file in files]
+    # concatenate datasets along "time"
+    data = xr.concat(datasets, dim="time").squeeze()
     # Define and select lon lat masks
     lon_mask, lat_mask = lonlat_mask(data.longitude.values, data.latitude.values, lonlat_bounds)
-    data = data[lat_mask, lon_mask]
+    mask = lat_mask[:, np.newaxis] & lon_mask
+    data = data.where(mask, np.nan).dropna(dim="latitude", how="all").dropna(dim="longitude", how="all")
     return data
 
 def load_CERRA_data(varname, timestep, lonlat_bounds):
-    """Loads CERRA data for a given variable, timestep and in lonlat_bounds."""
+    """Loads CERRA data for a given variable, timestep and in lonlat_bounds.
+    Timestep can be a single datetime object or a list of datetime objects."""
     # Possible varnames: 'precip'
     data_dir = '/work_big/users/zappa/CERRA-LAND/daily/nc/regular/'
-    file = os.path.join(data_dir, f'precip_{timestep.strftime("%Y")}_italy_reg10.nc')
+    years_data = np.unique(timestep.strftime("%Y"))
+    files = [os.path.join(data_dir, f'precip_{year}_italy_reg10.nc') for year in years_data]
     # select variable and timestep
     if varname == 'precip':
-        data = xr.open_dataset(file)['tp'].sel(time=timestep)
+        datasets = [xr.open_dataset(file)['tp'].sel(time=timestep) for file in files]
+    # concatenate datasets along "time"
+    data = xr.concat(datasets, dim="time").squeeze()
     # Define and select lon lat masks
     lon_mask, lat_mask = lonlat_mask(data.lon.values, data.lat.values, lonlat_bounds)
-    data = data[lat_mask, lon_mask]
+    mask = lat_mask[:, np.newaxis] & lon_mask
+    data = data.where(mask, np.nan).dropna(dim="lat", how="all").dropna(dim="lon", how="all")
     return data
 
 def lonlat_mask(lon, lat, lonlat_bounds):
@@ -46,12 +57,8 @@ def lonlat_mask(lon, lat, lonlat_bounds):
     lat_mask = (lat >= lonlat_bounds[2]) & (lat <= lonlat_bounds[3])
     return lon_mask, lat_mask
 
-def plot_geopotential_and_mslp(ax, timestep, lonlat_bounds):
+def plot_geopotential_and_mslp(ax, timestep, lonlat_bounds, z500, msl):
     """Plots the geopotential height and mean sea level pressure data for a given timestep."""
-    # Load the geopotential height and mean sea level pressure data
-    z500 = load_ERA5_data('z500', timestep, lonlat_bounds)
-    msl = load_ERA5_data('msl', timestep, lonlat_bounds) 
-    print('Load z500, msl')
     
     # Create grid 
     lon = z500.longitude.values
@@ -77,10 +84,8 @@ def plot_geopotential_and_mslp(ax, timestep, lonlat_bounds):
     ax.set_xlabel('Longitude')
     ax.set_ylabel('Latitude')
 
-def plot_precipitation(ax, timestep, lonlat_bounds):
+def plot_precipitation(ax, timestep, lonlat_bounds, precip):
     """Plots the precipitation data for a given timestep."""
-    # Load the precipitation data
-    precip = load_CERRA_data('precip', timestep, lonlat_bounds)
 
     # Create grid 
     lon = precip.lon.values
