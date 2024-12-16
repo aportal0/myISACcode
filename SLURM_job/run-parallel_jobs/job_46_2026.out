@@ -1,0 +1,19 @@
+Variable: psl
+Member: 46
+Year: 2026
+Number of CPUs: 3
+Variable: psl
+Member: 46
+Year: 2026
+Number of CPUs: 3
+Variable: psl
+Member: 46
+Year: 2026
+Number of CPUs: 3
+Variable: psl
+Member: 46
+Year: 2026
+Number of CPUs: 3
+<Client: 'tcp://127.0.0.1:33055' processes=3 threads=258, memory=2.93 GiB>
+Time:  372.0131731033325
+3h files memb 46 year 2026 removed successfully

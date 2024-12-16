@@ -1,0 +1,1232 @@
+r4-r2i1p1
+/home/portal/work_big/CRCM5-LE/psl/kcf/2080/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208001.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.51s 74MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2081/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208101.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.57s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.22s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2082/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208201.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.65s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.21s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2083/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208301.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.46s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.33s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2084/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208401.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.59s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.34s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2085/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208501.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.53s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.26s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2086/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208601.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.51s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.21s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2087/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208701.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.70s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.69s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2088/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208801.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.44s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.27s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2089/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208901.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.51s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.42s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2090/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209001.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.35s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.53s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2091/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209101.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.47s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.41s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2092/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209201.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.91s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.52s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2093/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209301.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.49s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.23s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2094/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209401.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.37s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.54s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2095/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209501.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.42s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.22s 56MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2096/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209601.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.40s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.25s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2097/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209701.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.62s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.27s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2098/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209801.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.45s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.15s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2099/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209901.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.62s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.22s 56MB].
+cdo    divc: Processed 267375 values from 1 variable over 31 timesteps [0.09s 53MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2080/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208002.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2195200 values from 1 variable over 28 timesteps [0.35s 72MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2081/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208102.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2195200 values from 1 variable over 28 timesteps [0.44s 72MB].
+cdo    add: Processed 483000 values from 2 variables over 56 timesteps [0.33s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2082/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208202.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2195200 values from 1 variable over 28 timesteps [0.35s 72MB].
+cdo    add: Processed 483000 values from 2 variables over 56 timesteps [0.18s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2083/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208302.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2195200 values from 1 variable over 28 timesteps [0.38s 72MB].
+cdo    add: Processed 483000 values from 2 variables over 56 timesteps [0.39s 56MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2084/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208402.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2195200 values from 1 variable over 28 timesteps [0.48s 72MB].
+cdo    add: Processed 483000 values from 2 variables over 56 timesteps [0.15s 56MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2085/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208502.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2195200 values from 1 variable over 28 timesteps [0.44s 72MB].
+cdo    add: Processed 483000 values from 2 variables over 56 timesteps [0.21s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2086/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208602.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2195200 values from 1 variable over 28 timesteps [0.40s 72MB].
+cdo    add: Processed 483000 values from 2 variables over 56 timesteps [0.23s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2087/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208702.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2195200 values from 1 variable over 28 timesteps [0.62s 72MB].
+cdo    add: Processed 483000 values from 2 variables over 56 timesteps [0.14s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2088/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208802.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2195200 values from 1 variable over 28 timesteps [0.38s 72MB].
+cdo    add: Processed 483000 values from 2 variables over 56 timesteps [0.13s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2089/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208902.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2195200 values from 1 variable over 28 timesteps [0.42s 72MB].
+cdo    add: Processed 483000 values from 2 variables over 56 timesteps [5.88s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2090/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209002.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2195200 values from 1 variable over 28 timesteps [0.37s 72MB].
+cdo    add: Processed 483000 values from 2 variables over 56 timesteps [0.18s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2091/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209102.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2195200 values from 1 variable over 28 timesteps [0.40s 72MB].
+cdo    add: Processed 483000 values from 2 variables over 56 timesteps [0.22s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2092/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209202.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2195200 values from 1 variable over 28 timesteps [0.35s 72MB].
+cdo    add: Processed 483000 values from 2 variables over 56 timesteps [0.18s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2093/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209302.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2195200 values from 1 variable over 28 timesteps [0.36s 72MB].
+cdo    add: Processed 483000 values from 2 variables over 56 timesteps [0.25s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2094/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209402.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2195200 values from 1 variable over 28 timesteps [0.65s 72MB].
+cdo    add: Processed 483000 values from 2 variables over 56 timesteps [0.59s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2095/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209502.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2195200 values from 1 variable over 28 timesteps [0.40s 72MB].
+cdo    add: Processed 483000 values from 2 variables over 56 timesteps [0.21s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2096/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209602.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2195200 values from 1 variable over 28 timesteps [0.47s 72MB].
+cdo    add: Processed 483000 values from 2 variables over 56 timesteps [0.31s 54MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2097/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209702.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2195200 values from 1 variable over 28 timesteps [0.49s 73MB].
+cdo    add: Processed 483000 values from 2 variables over 56 timesteps [0.51s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2098/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209802.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2195200 values from 1 variable over 28 timesteps [0.37s 72MB].
+cdo    add: Processed 483000 values from 2 variables over 56 timesteps [0.27s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2099/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209902.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2195200 values from 1 variable over 28 timesteps [0.45s 72MB].
+cdo    add: Processed 483000 values from 2 variables over 56 timesteps [0.23s 55MB].
+cdo    divc: Processed 241500 values from 1 variable over 28 timesteps [0.16s 53MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2080/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208003.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.59s 73MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2081/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208103.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.71s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.20s 56MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2082/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208203.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.41s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.18s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2083/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208303.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.59s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.23s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2084/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208403.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.46s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.17s 56MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2085/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208503.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.64s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.23s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2086/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208603.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.49s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.45s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2087/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208703.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.38s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.30s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2088/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208803.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.49s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.52s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2089/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208903.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.36s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.28s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2090/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209003.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.49s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.23s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2091/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209103.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.43s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.38s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2092/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209203.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.63s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.24s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2093/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209303.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.43s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.31s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2094/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209403.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.45s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.38s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2095/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209503.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.63s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.40s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2096/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209603.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.43s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.27s 56MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2097/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209703.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.37s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.27s 56MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2098/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209803.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.37s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.27s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2099/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209903.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.67s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.21s 55MB].
+cdo    divc: Processed 267375 values from 1 variable over 31 timesteps [0.48s 54MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2080/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208004.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.53s 73MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2081/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208104.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.69s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.71s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2082/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208204.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.41s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.26s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2083/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208304.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.48s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.26s 56MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2084/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208404.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.32s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.25s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2085/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208504.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.47s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.33s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2086/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208604.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.50s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.14s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2087/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208704.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.67s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.40s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2088/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208804.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.33s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.25s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2089/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208904.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.33s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.39s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2090/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209004.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.63s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.38s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2091/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209104.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.50s 74MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.28s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2092/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209204.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.39s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.21s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2093/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209304.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.38s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.55s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2094/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209404.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.55s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.26s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2095/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209504.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.63s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.29s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2096/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209604.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.34s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.33s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2097/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209704.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.49s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.25s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2098/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209804.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.87s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.36s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2099/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209904.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.47s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.39s 55MB].
+cdo    divc: Processed 258750 values from 1 variable over 30 timesteps [0.11s 54MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2080/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208005.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.42s 73MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2081/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208105.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.33s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.25s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2082/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208205.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.39s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.25s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2083/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208305.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.49s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.54s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2084/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208405.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.42s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.29s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2085/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208505.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.42s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.23s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2086/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208605.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.63s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.18s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2087/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208705.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.60s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.41s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2088/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208805.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.40s 75MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.44s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2089/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208905.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.58s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.33s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2090/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209005.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.59s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.53s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2091/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209105.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.78s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.22s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2092/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209205.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.43s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.23s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2093/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209305.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.47s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.28s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2094/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209405.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.90s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.55s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2095/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209505.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.53s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.24s 56MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2096/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209605.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.81s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.35s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2097/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209705.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.58s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.46s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2098/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209805.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.63s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.33s 56MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2099/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209905.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.33s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.24s 56MB].
+cdo    divc: Processed 267375 values from 1 variable over 31 timesteps [0.19s 53MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2080/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208006.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.51s 73MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2081/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208106.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.40s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.60s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2082/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208206.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.54s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.41s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2083/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208306.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.49s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.28s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2084/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208406.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.53s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.32s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2085/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208506.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.84s 74MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.59s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2086/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208606.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.49s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.28s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2087/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208706.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.52s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.54s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2088/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208806.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.36s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.31s 56MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2089/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208906.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.53s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.31s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2090/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209006.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.94s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.31s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2091/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209106.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.76s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.83s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2092/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209206.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.57s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.21s 56MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2093/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209306.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.47s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.34s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2094/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209406.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.46s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.24s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2095/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209506.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.74s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.53s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2096/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209606.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.54s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.25s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2097/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209706.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.91s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.19s 53MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2098/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209806.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.51s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.48s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2099/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209906.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.67s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.38s 55MB].
+cdo    divc: Processed 258750 values from 1 variable over 30 timesteps [0.85s 53MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2080/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208007.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.38s 73MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2081/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208107.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.67s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.28s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2082/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208207.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.95s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.30s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2083/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208307.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.74s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.31s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2084/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208407.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.84s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.47s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2085/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208507.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.69s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.32s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2086/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208607.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.76s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.31s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2087/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208707.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.52s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.29s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2088/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208807.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.44s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.29s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2089/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208907.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.39s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.38s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2090/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209007.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.53s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.39s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2091/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209107.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.65s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.25s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2092/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209207.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.79s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.32s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2093/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209307.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.43s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.51s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2094/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209407.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.52s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.47s 56MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2095/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209507.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.58s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.38s 56MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2096/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209607.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.47s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.30s 56MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2097/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209707.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.61s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.37s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2098/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209807.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.61s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.24s 56MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2099/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209907.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.45s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.30s 56MB].
+cdo    divc: Processed 267375 values from 1 variable over 31 timesteps [0.37s 54MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2080/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208008.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.48s 74MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2081/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208108.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.56s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.26s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2082/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208208.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.82s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.32s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2083/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208308.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.69s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.28s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2084/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208408.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.49s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.35s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2085/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208508.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.55s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [5.42s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2086/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208608.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.63s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.32s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2087/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208708.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.63s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.21s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2088/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208808.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.41s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.45s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2089/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208908.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.39s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.52s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2090/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209008.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.80s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.27s 56MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2091/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209108.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.70s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.60s 56MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2092/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209208.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.49s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.30s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2093/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209308.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.57s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.25s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2094/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209408.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.60s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.26s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2095/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209508.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.68s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.20s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2096/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209608.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.64s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.48s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2097/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209708.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.56s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.43s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2098/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209808.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.46s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.30s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2099/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209908.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.90s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.29s 56MB].
+cdo    divc: Processed 267375 values from 1 variable over 31 timesteps [0.19s 53MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2080/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208009.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.40s 73MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2081/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208109.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.41s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.25s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2082/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208209.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.48s 74MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.27s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2083/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208309.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.46s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.30s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2084/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208409.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.66s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.33s 56MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2085/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208509.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.58s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.41s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2086/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208609.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.88s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.50s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2087/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208709.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.62s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.75s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2088/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208809.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.78s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.34s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2089/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208909.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.63s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.36s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2090/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209009.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.78s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.27s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2091/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209109.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.55s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.33s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2092/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209209.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.99s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.55s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2093/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209309.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.48s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.31s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2094/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209409.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.55s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.60s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2095/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209509.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.58s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.72s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2096/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209609.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.54s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.55s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2097/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209709.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.48s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.55s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2098/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209809.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.35s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.20s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2099/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209909.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.48s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.50s 56MB].
+cdo    divc: Processed 258750 values from 1 variable over 30 timesteps [0.53s 54MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2080/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208010.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.70s 73MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2081/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208110.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.51s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.57s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2082/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208210.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.87s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.32s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2083/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208310.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.45s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.34s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2084/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208410.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.31s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.19s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2085/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208510.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.42s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.24s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2086/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208610.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.79s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.27s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2087/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208710.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.96s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.24s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2088/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208810.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.63s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.27s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2089/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208910.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.34s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.49s 56MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2090/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209010.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.46s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.22s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2091/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209110.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.66s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.59s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2092/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209210.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.66s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.61s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2093/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209310.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.41s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.65s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2094/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209410.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.45s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.25s 56MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2095/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209510.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.46s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.31s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2096/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209610.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.60s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.45s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2097/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209710.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.47s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.63s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2098/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209810.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.73s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.24s 56MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2099/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209910.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.53s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.49s 55MB].
+cdo    divc: Processed 267375 values from 1 variable over 31 timesteps [0.19s 53MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2080/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208011.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.50s 73MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2081/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208111.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.54s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.17s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2082/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208211.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.81s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.18s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2083/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208311.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.44s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.29s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2084/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208411.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.56s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.27s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2085/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208511.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.59s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.21s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2086/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208611.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.43s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.27s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2087/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208711.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.50s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.43s 56MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2088/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208811.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.42s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.19s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2089/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208911.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.43s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.30s 56MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2090/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209011.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.38s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.23s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2091/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209111.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.57s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.26s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2092/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209211.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.49s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.27s 56MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2093/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209311.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.40s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.31s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2094/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209411.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.36s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.83s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2095/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209511.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.67s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.24s 56MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2096/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209611.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.66s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.25s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2097/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209711.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.43s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.26s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2098/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209811.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.64s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.46s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2099/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209911.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2352000 values from 1 variable over 30 timesteps [0.53s 73MB].
+cdo    add: Processed 517500 values from 2 variables over 60 timesteps [0.21s 55MB].
+cdo    divc: Processed 258750 values from 1 variable over 30 timesteps [0.21s 53MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2080/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208012.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.54s 74MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2081/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208112.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.90s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.47s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2082/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208212.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.48s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.46s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2083/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208312.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.75s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.37s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2084/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208412.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.56s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.31s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2085/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208512.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.48s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.59s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2086/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208612.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.59s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.40s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2087/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208712.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.78s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.40s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2088/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208812.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.70s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.29s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2089/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_208912.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.61s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.39s 56MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2090/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209012.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.67s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.23s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2091/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209112.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.48s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.23s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2092/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209212.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.39s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.17s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2093/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209312.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.42s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.25s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2094/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209412.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.42s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.24s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2095/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209512.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.53s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.26s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2096/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209612.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.49s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.31s 55MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2097/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209712.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.42s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.55s 56MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2098/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209812.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.41s 74MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.23s 56MB].
+/home/portal/work_big/CRCM5-LE/psl/kcf/2099/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r2i1p1_OURANOS-CRCM5_kcf_daily_209912.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+cdo    remapbil: Processed 2430400 values from 1 variable over 31 timesteps [0.40s 73MB].
+cdo    add: Processed 534750 values from 2 variables over 62 timesteps [0.48s 56MB].
+cdo    divc: Processed 267375 values from 1 variable over 31 timesteps [0.19s 53MB].
+cdo    mergetime: Processed 3148125 values from 12 variables over 365 timesteps [1.57s 69MB].
+cdo(1) selmonth: Process started
+cdo(2) selmonth: Process started
+cdo(1) selmonth: Processed 267375 values from 1 variable over 365 timesteps.
+cdo(2) selmonth: Processed 267375 values from 1 variable over 365 timesteps.
+cdo    cat: Processed 3682875 values from 3 variables over 427 timesteps [1.56s 81MB].
+cdo    runmean: Processed 3682875 values from 1 variable over 427 timesteps [1.79s 84MB].
+31 17 47
+cdo    seltimestep: Processed 267375 values from 1 variable over 48 timesteps [0.68s 54MB].
+28 48 75
+cdo    seltimestep: Processed 241500 values from 1 variable over 76 timesteps [0.30s 54MB].
+31 76 106
+cdo    seltimestep: Processed 267375 values from 1 variable over 107 timesteps [0.21s 53MB].
+30 107 136
+cdo    seltimestep: Processed 258750 values from 1 variable over 137 timesteps [0.50s 53MB].
+31 137 167
+cdo    seltimestep: Processed 267375 values from 1 variable over 168 timesteps [0.29s 54MB].
+30 168 197
+cdo    seltimestep: Processed 258750 values from 1 variable over 198 timesteps [0.21s 54MB].
+31 198 228
+cdo    seltimestep: Processed 267375 values from 1 variable over 229 timesteps [0.26s 54MB].
+31 229 259
+cdo    seltimestep: Processed 267375 values from 1 variable over 260 timesteps [0.17s 54MB].
+30 260 289
+cdo    seltimestep: Processed 258750 values from 1 variable over 290 timesteps [0.26s 54MB].
+31 290 320
+cdo    seltimestep: Processed 267375 values from 1 variable over 321 timesteps [0.29s 54MB].
+30 321 350
+cdo    seltimestep: Processed 258750 values from 1 variable over 351 timesteps [0.27s 54MB].
+31 351 381
+cdo    seltimestep: Processed 267375 values from 1 variable over 382 timesteps [0.29s 54MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.25s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.28s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.44s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.71s 56MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.66s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.49s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.65s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.48s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.36s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.69s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.44s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.38s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.32s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.79s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.63s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.28s 56MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.43s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.36s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.34s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.37s 55MB].
+cdo    sub: Processed 483000 values from 2 variables over 56 timesteps [0.58s 55MB].
+cdo    sub: Processed 483000 values from 2 variables over 56 timesteps [0.45s 55MB].
+cdo    sub: Processed 483000 values from 2 variables over 56 timesteps [0.47s 55MB].
+cdo    sub: Processed 483000 values from 2 variables over 56 timesteps [0.28s 55MB].
+cdo    sub: Processed 483000 values from 2 variables over 56 timesteps [0.62s 55MB].
+cdo    sub: Processed 483000 values from 2 variables over 56 timesteps [0.40s 55MB].
+cdo    sub: Processed 483000 values from 2 variables over 56 timesteps [0.29s 55MB].
+cdo    sub: Processed 483000 values from 2 variables over 56 timesteps [0.56s 55MB].
+cdo    sub: Processed 483000 values from 2 variables over 56 timesteps [0.38s 55MB].
+cdo    sub: Processed 483000 values from 2 variables over 56 timesteps [0.41s 55MB].
+cdo    sub: Processed 483000 values from 2 variables over 56 timesteps [0.31s 55MB].
+cdo    sub: Processed 483000 values from 2 variables over 56 timesteps [0.40s 55MB].
+cdo    sub: Processed 483000 values from 2 variables over 56 timesteps [0.75s 55MB].
+cdo    sub: Processed 483000 values from 2 variables over 56 timesteps [0.34s 55MB].
+cdo    sub: Processed 483000 values from 2 variables over 56 timesteps [0.97s 55MB].
+cdo    sub: Processed 483000 values from 2 variables over 56 timesteps [0.35s 55MB].
+cdo    sub: Processed 483000 values from 2 variables over 56 timesteps [0.30s 55MB].
+cdo    sub: Processed 483000 values from 2 variables over 56 timesteps [0.27s 55MB].
+cdo    sub: Processed 483000 values from 2 variables over 56 timesteps [0.40s 55MB].
+cdo    sub: Processed 483000 values from 2 variables over 56 timesteps [0.30s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.37s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.39s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.62s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.82s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.37s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.92s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.32s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.40s 56MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.39s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.61s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.57s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.33s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.43s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.42s 56MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.57s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.38s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.35s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.39s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.40s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.39s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.41s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.30s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.50s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.40s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.38s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.38s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.50s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.40s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.42s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.36s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.39s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [1.04s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.32s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.41s 56MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.43s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.53s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.45s 56MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.60s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.45s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.74s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.35s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.42s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.32s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.39s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.44s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.39s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.56s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.32s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.86s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.36s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.31s 56MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.34s 56MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.72s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.62s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.34s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.64s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.35s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.52s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.32s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.44s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.49s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.42s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.68s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.42s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.66s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.51s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.38s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.35s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.35s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.32s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.79s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.50s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.37s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.39s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.26s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.64s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.35s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.41s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.38s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.30s 56MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.40s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.89s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.49s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.38s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.46s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.32s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.56s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.38s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.80s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.59s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.33s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.37s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.47s 56MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.51s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.38s 56MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.37s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.34s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.65s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.65s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.33s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.95s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.56s 56MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.64s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.59s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.34s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.57s 56MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.50s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.28s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.62s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.37s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.52s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.47s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.48s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.31s 56MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.42s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.61s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.27s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.41s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.39s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.35s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.37s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.54s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.45s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.41s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.63s 56MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.25s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.86s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.33s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.30s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.59s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.54s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.60s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.42s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.41s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.38s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.37s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.31s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.49s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.36s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.40s 56MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.40s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.35s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.62s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.59s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.53s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.35s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.35s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.67s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.84s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.37s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.57s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.38s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.42s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.53s 54MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.66s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.35s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.35s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.39s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.39s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.26s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.70s 56MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.41s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.52s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.30s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.35s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.57s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.42s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.49s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.53s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.33s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.38s 56MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.42s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.35s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.61s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.28s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.34s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.81s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.41s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.34s 55MB].
+cdo    sub: Processed 517500 values from 2 variables over 60 timesteps [0.39s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.29s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.46s 56MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.35s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.45s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.37s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.40s 56MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.36s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.35s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.28s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.32s 56MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.83s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.39s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.42s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.29s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.34s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.33s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.61s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.37s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.58s 55MB].
+cdo    sub: Processed 534750 values from 2 variables over 62 timesteps [0.45s 55MB].

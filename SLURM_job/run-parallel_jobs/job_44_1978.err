@@ -1,0 +1,6 @@
+/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 37883 instead
+  warnings.warn(
+2024-11-28 09:59:54,781 - distributed.nanny - WARNING - Restarting worker
+slurmstepd-tintin: error: *** JOB 2003832 ON tintin CANCELLED AT 2024-12-01T09:49:47 DUE TO TIME LIMIT ***

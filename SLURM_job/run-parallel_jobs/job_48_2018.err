@@ -1,0 +1,16 @@
+/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 38441 instead
+  warnings.warn(
+HDF5-DIAG: Error detected in HDF5 (1.12.2) thread 1:
+  #000: H5A.c line 1327 in H5Aiterate2(): invalid location identifier
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+  #001: H5VLint.c line 1749 in H5VL_vol_object(): invalid identifier type to function
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+2024-11-29 12:40:00,790 - distributed.nanny - WARNING - Restarting worker
+
+real	8m35.297s
+user	5m23.031s
+sys	2m32.604s

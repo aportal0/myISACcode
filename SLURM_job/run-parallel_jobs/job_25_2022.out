@@ -1,0 +1,23 @@
+Variable: psl
+Member: 25
+Year: 2022
+Number of CPUs: 4
+Variable: psl
+Member: 25
+Year: 2022
+Number of CPUs: 4
+Variable: psl
+Member: 25
+Year: 2022
+Number of CPUs: 4
+Variable: psl
+Member: 25
+Year: 2022
+Number of CPUs: 4
+Variable: psl
+Member: 25
+Year: 2022
+Number of CPUs: 4
+<Client: 'tcp://127.0.0.1:36227' processes=4 threads=256, memory=2.93 GiB>
+Time:  1220.2672057151794
+3h files memb 25 year 2022 removed successfully

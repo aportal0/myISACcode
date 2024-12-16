@@ -1,0 +1,11 @@
+/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 44649 instead
+  warnings.warn(
+2024-11-24 06:04:27,176 - distributed.nanny - WARNING - Restarting worker
+2024-11-24 06:10:58,076 - distributed.scheduler - ERROR - Couldn't gather keys: {'compute_and_save_daily_mean-28290227-8a91-422c-a5b3-bf250c0b1534': 'processing'}
+2024-11-24 06:10:58,077 - distributed.client - WARNING - Couldn't gather 1 keys, rescheduling ('compute_and_save_daily_mean-28290227-8a91-422c-a5b3-bf250c0b1534',)
+
+real	18m56.919s
+user	9m50.284s
+sys	4m8.329s

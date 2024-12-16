@@ -13,7 +13,7 @@ if [ $x == historical ]; then
     ly=1955
 elif  [ $x == rcp85 ]; then
     sy=2006
-    ly=2098
+    ly=2099
 fi
 
 y=$sy
@@ -22,11 +22,11 @@ while [ $y -le $ly ]; do
     echo $ddir
     
     for ff in `ls ${ddir}/${field}*${y}*.nc`; do
-	echo $ff
+	echo $f
 	nustart=`echo $ff | rev | cut -d _ -f 2 | rev` # e.g. 1h/3h
 	ffuz=${ff/.nc/_unzip.nc}
-	ffuzmean=${ffuz/$nustart/daymean}
-	ffmean=${ff/$nustart/daymean}
+	ffuzmean=${ffuz/$nustart/daily}
+	ffmean=${ff/$nustart/daily}
 
 	if [[ ! -f $ffmean  || $force == y ]]; then
 	    start=`date +%s`

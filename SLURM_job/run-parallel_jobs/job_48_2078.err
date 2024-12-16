@@ -1,0 +1,2 @@
+2024-11-29 15:03:58,415 - distributed.nanny - WARNING - Restarting worker
+slurmstepd-tintin: error: *** JOB 2008546 ON tintin CANCELLED AT 2024-12-02T14:57:54 DUE TO TIME LIMIT ***

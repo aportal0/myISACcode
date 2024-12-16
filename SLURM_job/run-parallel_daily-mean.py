@@ -3,10 +3,10 @@ import functions_slurm as fs
 
 # Input variables
 varname = 'psl'                 # Choice between 'tas', 'psl', 'zg', ...
-year_range = [1974,1980]
-memb_range = [19,19]
-ncpus_per_job = 4
-nbatch = 8
+year_range = [1955,2099]
+memb_range = [44,50]
+ncpus_per_job = 3
+nbatch = 4
 mem_per_job = 3000
 username = 'portal'
 
@@ -17,10 +17,13 @@ for memb in range(memb_range[0], memb_range[1]+1):
         # Define the SLURM job script content
         job_script = f"""#!/bin/bash
 #SBATCH --job-name=dmean_{varname}_{memb}_{year}        # Job name
-#SBATCH --cpus-per-task={ncpus_per_job}                 # Request no. CPUs
 #SBATCH --mem={mem_per_job}
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task={ncpus_per_job}
 #SBATCH --output=/home/portal/script/SLURM_job/run-parallel_jobs/job_{memb}_{year}.out  # Output file
 #SBATCH --error=/home/portal/script/SLURM_job/run-parallel_jobs/job_{memb}_{year}.err    # Error file
+#SBATCH --partition=batch
 
 # Activate conda environment
 source /home/${{USER}}/.bashrc

@@ -1,0 +1,43 @@
+/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 44961 instead
+  warnings.warn(
+2024-11-30 00:42:07,504 - distributed.worker - WARNING - Compute Failed
+Key:       compute_and_save_daily_mean-d388c4e0-5ce4-4db2-8872-5effc7c0b0f6
+Function:  execute_task
+args:      ((<function compute_and_save_daily_mean at 0x7fbb377e3c70>, '/work_big/users/portal/CRCM5-LE/psl/kcx/1959/psl_EUR-11_CCCma-CanESM2_historical_r5-r10i1p1_OURANOS-CRCM5_kcx_3h_195907.nc', '/work_big/users/portal/CRCM5-LE/psl/kcx/1959/psl_EUR-11_CCCma-CanESM2_historical_r5-r10i1p1_OURANOS-CRCM5_kcx_daily_195907.nc', 'psl', (<class 'dict'>, [['psl', (<class 'dict'>, [['zlib', 'True'], ['complevel', 5], ['dtype', 'float32']])]])))
+kwargs:    {}
+Exception: "KeyError('psl')"
+
+Traceback (most recent call last):
+  File "/home/portal/script/python/compute_daily-mean_dask.py", line 56, in <module>
+    dask.compute(*dd)
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/dask/base.py", line 661, in compute
+    results = schedule(dsk, keys, **kwargs)
+  File "/home/portal/script/python/functions_preprocessing.py", line 48, in compute_and_save_daily_mean
+    ds_daily = ds[namevar].resample(time='1D').mean()
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/xarray/core/dataset.py", line 1430, in __getitem__
+    return self._construct_dataarray(key)
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/xarray/core/dataset.py", line 1341, in _construct_dataarray
+    _, name, variable = _get_virtual_variable(self._variables, name, self.dims)
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/xarray/core/dataset.py", line 177, in _get_virtual_variable
+    raise KeyError(key)
+KeyError: 'psl'
+2024-11-30 00:42:07,517 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-ba8918f3-ea18-48ce-99ba-9ff009f60f09')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2024-11-30 00:42:07,517 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-8cebef7e-a814-44ab-a947-f86529135993')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2024-11-30 00:42:07,517 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-8829946e-02b5-490b-b40b-4991a765d2fc')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2024-11-30 00:42:07,517 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-37f03cf2-8c57-4916-ab6a-9ef9dbc01104')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2024-11-30 00:42:07,517 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-10c5477e-3aeb-4859-bb31-360e7e8d4383')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2024-11-30 00:42:07,517 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-e952c972-cdb5-4247-bbf3-739a7e5f9ca3')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2024-11-30 00:42:07,517 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-08bf9dd8-44e4-485e-8d84-ce590c1fd878')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2024-11-30 00:42:07,517 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-45c359ed-af7d-4117-a200-b8fc6a7856f5')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2024-11-30 00:42:07,517 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-8600abfc-eef3-4310-a190-3671243b6aee')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2024-11-30 00:42:07,517 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-d141f5d0-1653-4049-8543-d4317d448990')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2024-11-30 00:42:07,517 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-396dd535-f520-4f68-894c-8d0f892e2970')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2024-11-30 00:42:10,716 - distributed.nanny - WARNING - Worker process still alive after 3.199998474121094 seconds, killing
+2024-11-30 00:42:10,716 - distributed.nanny - WARNING - Worker process still alive after 3.1999995422363288 seconds, killing
+2024-11-30 00:42:10,716 - distributed.nanny - WARNING - Worker process still alive after 3.199999389648438 seconds, killing
+
+real	0m6.245s
+user	0m8.900s
+sys	0m16.026s

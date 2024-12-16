@@ -1,0 +1,96 @@
+/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 41959 instead
+  warnings.warn(
+2024-11-28 09:04:07,693 - distributed.worker - WARNING - Compute Failed
+Key:       compute_and_save_daily_mean-71ee3922-ec42-4cca-971c-641b75d767d2
+Function:  execute_task
+args:      ((<function compute_and_save_daily_mean at 0x7f557b3cfc70>, '/work_big/users/portal/CRCM5-LE/psl/kcr/1958/psl_EUR-11_CCCma-CanESM2_historical_r5-r4i1p1_OURANOS-CRCM5_kcr_3h_195803.nc', '/work_big/users/portal/CRCM5-LE/psl/kcr/1958/psl_EUR-11_CCCma-CanESM2_historical_r5-r4i1p1_OURANOS-CRCM5_kcr_daily_195803.nc', 'psl', (<class 'dict'>, [['psl', (<class 'dict'>, [['zlib', 'True'], ['complevel', 5], ['dtype', 'float32']])]])))
+kwargs:    {}
+Exception: "FileNotFoundError(2, 'No such file or directory')"
+
+2024-11-28 09:04:07,693 - distributed.worker - WARNING - Compute Failed
+Key:       compute_and_save_daily_mean-a9707d06-6bfe-4bbc-8dea-26dbd01d5da7
+Function:  execute_task
+args:      ((<function compute_and_save_daily_mean at 0x7f557b3cfc70>, '/work_big/users/portal/CRCM5-LE/psl/kcr/1958/psl_EUR-11_CCCma-CanESM2_historical_r5-r4i1p1_OURANOS-CRCM5_kcr_3h_195806.nc', '/work_big/users/portal/CRCM5-LE/psl/kcr/1958/psl_EUR-11_CCCma-CanESM2_historical_r5-r4i1p1_OURANOS-CRCM5_kcr_daily_195806.nc', 'psl', (<class 'dict'>, [['psl', (<class 'dict'>, [['zlib', 'True'], ['complevel', 5], ['dtype', 'float32']])]])))
+kwargs:    {}
+Exception: "FileNotFoundError(2, 'No such file or directory')"
+
+2024-11-28 09:04:07,694 - distributed.worker - WARNING - Compute Failed
+Key:       compute_and_save_daily_mean-2cb2927d-58be-476d-9752-6f1ca2fa61d2
+Function:  execute_task
+args:      ((<function compute_and_save_daily_mean at 0x7f557b3cfc70>, '/work_big/users/portal/CRCM5-LE/psl/kcr/1958/psl_EUR-11_CCCma-CanESM2_historical_r5-r4i1p1_OURANOS-CRCM5_kcr_3h_195810.nc', '/work_big/users/portal/CRCM5-LE/psl/kcr/1958/psl_EUR-11_CCCma-CanESM2_historical_r5-r4i1p1_OURANOS-CRCM5_kcr_daily_195810.nc', 'psl', (<class 'dict'>, [['psl', (<class 'dict'>, [['zlib', 'True'], ['complevel', 5], ['dtype', 'float32']])]])))
+kwargs:    {}
+Exception: "FileNotFoundError(2, 'No such file or directory')"
+
+2024-11-28 09:04:07,694 - distributed.worker - WARNING - Compute Failed
+Key:       compute_and_save_daily_mean-eaeb1c9a-42ca-4720-8821-ad872e7b7528
+Function:  execute_task
+args:      ((<function compute_and_save_daily_mean at 0x7f557b3cfc70>, '/work_big/users/portal/CRCM5-LE/psl/kcr/1958/psl_EUR-11_CCCma-CanESM2_historical_r5-r4i1p1_OURANOS-CRCM5_kcr_3h_195804.nc', '/work_big/users/portal/CRCM5-LE/psl/kcr/1958/psl_EUR-11_CCCma-CanESM2_historical_r5-r4i1p1_OURANOS-CRCM5_kcr_daily_195804.nc', 'psl', (<class 'dict'>, [['psl', (<class 'dict'>, [['zlib', 'True'], ['complevel', 5], ['dtype', 'float32']])]])))
+kwargs:    {}
+Exception: "FileNotFoundError(2, 'No such file or directory')"
+
+2024-11-28 09:04:07,694 - distributed.worker - WARNING - Compute Failed
+Key:       compute_and_save_daily_mean-87a681f4-3a60-4b5e-9469-6edddd7a5360
+Function:  execute_task
+args:      ((<function compute_and_save_daily_mean at 0x7f823a6d7c70>, '/work_big/users/portal/CRCM5-LE/psl/kcr/1958/psl_EUR-11_CCCma-CanESM2_historical_r5-r4i1p1_OURANOS-CRCM5_kcr_3h_195808.nc', '/work_big/users/portal/CRCM5-LE/psl/kcr/1958/psl_EUR-11_CCCma-CanESM2_historical_r5-r4i1p1_OURANOS-CRCM5_kcr_daily_195808.nc', 'psl', (<class 'dict'>, [['psl', (<class 'dict'>, [['zlib', 'True'], ['complevel', 5], ['dtype', 'float32']])]])))
+kwargs:    {}
+Exception: "FileNotFoundError(2, 'No such file or directory')"
+
+2024-11-28 09:04:07,696 - distributed.worker - WARNING - Compute Failed
+Key:       compute_and_save_daily_mean-f85a47dc-225d-4a93-be5f-d931785e3628
+Function:  execute_task
+args:      ((<function compute_and_save_daily_mean at 0x7f823a6d7c70>, '/work_big/users/portal/CRCM5-LE/psl/kcr/1958/psl_EUR-11_CCCma-CanESM2_historical_r5-r4i1p1_OURANOS-CRCM5_kcr_3h_195805.nc', '/work_big/users/portal/CRCM5-LE/psl/kcr/1958/psl_EUR-11_CCCma-CanESM2_historical_r5-r4i1p1_OURANOS-CRCM5_kcr_daily_195805.nc', 'psl', (<class 'dict'>, [['psl', (<class 'dict'>, [['zlib', 'True'], ['complevel', 5], ['dtype', 'float32']])]])))
+kwargs:    {}
+Exception: "FileNotFoundError(2, 'No such file or directory')"
+
+2024-11-28 09:04:07,696 - distributed.worker - WARNING - Compute Failed
+Key:       compute_and_save_daily_mean-c0c557cc-2bda-4952-a3e1-ff9f722a7104
+Function:  execute_task
+args:      ((<function compute_and_save_daily_mean at 0x7f823a6d7c70>, '/work_big/users/portal/CRCM5-LE/psl/kcr/1958/psl_EUR-11_CCCma-CanESM2_historical_r5-r4i1p1_OURANOS-CRCM5_kcr_3h_195809.nc', '/work_big/users/portal/CRCM5-LE/psl/kcr/1958/psl_EUR-11_CCCma-CanESM2_historical_r5-r4i1p1_OURANOS-CRCM5_kcr_daily_195809.nc', 'psl', (<class 'dict'>, [['psl', (<class 'dict'>, [['zlib', 'True'], ['complevel', 5], ['dtype', 'float32']])]])))
+kwargs:    {}
+Exception: "FileNotFoundError(2, 'No such file or directory')"
+
+2024-11-28 09:04:07,697 - distributed.worker - WARNING - Compute Failed
+Key:       compute_and_save_daily_mean-57f10259-2123-409b-a389-a650b8e523ea
+Function:  execute_task
+args:      ((<function compute_and_save_daily_mean at 0x7f823a6d7c70>, '/work_big/users/portal/CRCM5-LE/psl/kcr/1958/psl_EUR-11_CCCma-CanESM2_historical_r5-r4i1p1_OURANOS-CRCM5_kcr_3h_195801.nc', '/work_big/users/portal/CRCM5-LE/psl/kcr/1958/psl_EUR-11_CCCma-CanESM2_historical_r5-r4i1p1_OURANOS-CRCM5_kcr_daily_195801.nc', 'psl', (<class 'dict'>, [['psl', (<class 'dict'>, [['zlib', 'True'], ['complevel', 5], ['dtype', 'float32']])]])))
+kwargs:    {}
+Exception: "FileNotFoundError(2, 'No such file or directory')"
+
+Traceback (most recent call last):
+  File "/home/portal/script/python/compute_daily-mean_dask.py", line 56, in <module>
+    dask.compute(*dd)
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/dask/base.py", line 661, in compute
+    results = schedule(dsk, keys, **kwargs)
+  File "/home/portal/script/python/functions_preprocessing.py", line 46, in compute_and_save_daily_mean
+    ds = xr.open_dataset(file_in)
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/xarray/backends/api.py", line 539, in open_dataset
+    backend_ds = backend.open_dataset(
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/xarray/backends/netCDF4_.py", line 572, in open_dataset
+    store = NetCDF4DataStore.open(
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/xarray/backends/netCDF4_.py", line 376, in open
+    return cls(manager, group=group, mode=mode, lock=lock, autoclose=autoclose)
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/xarray/backends/netCDF4_.py", line 323, in __init__
+    self.format = self.ds.data_model
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/xarray/backends/netCDF4_.py", line 385, in ds
+    return self._acquire()
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/xarray/backends/netCDF4_.py", line 379, in _acquire
+    with self._manager.acquire_context(needs_lock) as root:
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/xarray/backends/file_manager.py", line 197, in acquire_context
+    file, cached = self._acquire_with_cache_info(needs_lock)
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/xarray/backends/file_manager.py", line 215, in _acquire_with_cache_info
+    file = self._opener(*self._args, **kwargs)
+  File "src/netCDF4/_netCDF4.pyx", line 2463, in netCDF4._netCDF4.Dataset.__init__
+  File "src/netCDF4/_netCDF4.pyx", line 2026, in netCDF4._netCDF4._ensure_nc_success
+FileNotFoundError: [Errno 2] No such file or directory: b'/work_big/users/portal/CRCM5-LE/psl/kcr/1958/psl_EUR-11_CCCma-CanESM2_historical_r5-r4i1p1_OURANOS-CRCM5_kcr_3h_195806.nc'
+2024-11-28 09:04:07,735 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-c5fde265-c7df-4891-a807-c4e689d67f1c')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2024-11-28 09:04:07,735 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-2c0c643d-4543-460a-899d-9a0748873058')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2024-11-28 09:04:07,736 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-8a061671-62bf-447f-99f7-c49381129c3a')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2024-11-28 09:04:07,736 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-63641d75-d6ec-4eb4-9517-8ce6e69b827d')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+
+real	0m2.749s
+user	0m5.112s
+sys	0m8.772s

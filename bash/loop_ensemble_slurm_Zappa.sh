@@ -9,16 +9,17 @@
 #SBATCH --error=hourlyToDaily_%j_err.log 
 #SBATCH --partition=batch
 
-field=pr
+field=zg
 nbatch=5
-expm='rcp85'
+expm='historical'
 iens=1
 ii=1
 
-ensm_list=`ls -d ${field}/k* | cut -d / -f2`
+ddir=/home/portal/work_big/CRCM5-LE
+ensm_list=`ls -d ${ddir}/${field}/k* | cut -d / -f7`
 for ensm in ${ensm_list[@]} ; do
     
-    ./hourlyTodaily.sh $field $ensm $expm &
+    ./hourlyTodaily_Zappa.sh $field $ensm $expm &
 
     ii=$(($ii+1))
     iens=$(($iens+1))
