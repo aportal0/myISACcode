@@ -8,7 +8,10 @@ from cartopy.util import add_cyclic_point
 import cartopy.feature as cfeature
 import matplotlib.colors as mcolors
 import time
+from collections import defaultdict
 
+
+## Functions to load data from ERA5 and CERRA
 
 def load_ERA5_data(varname, freq, timestep, lonlat_bounds, l_anom):
     """Loads ERA5 data for a given variable, timestep and in lonlat_bounds.
@@ -18,7 +21,7 @@ def load_ERA5_data(varname, freq, timestep, lonlat_bounds, l_anom):
     if freq == 'daily':
         timestep = (timestep.normalize() + pd.Timedelta(hours=9)).isoformat()
     # Possible varnames: 'mslp', 'z500'
-    data_dir = '/work_big/users/portal/ERA5/'+varname+'/'
+    data_dir = '/work_big/users/clima/portal/ERA5/'+varname+'/'
     if l_anom:
         files = [os.path.join(data_dir, f'ERA5_{varname}_NH_{freq}_{year}_anom.nc') for year in years_data]
     else:
@@ -44,7 +47,7 @@ def load_ERA5_clim(varname, doy, lonlat_bounds, l_smoothing):
     """Loads ERA5 climatology 1985-2019 for a given variable and day-of-year (doy) in lonlat_bounds.
     l_smoothing = True for 31-day smoothing time window."""
     # Possible varnames: 'msl'
-    data_dir = '/work_big/users/portal/ERA5/'+varname+'/climatology/'
+    data_dir = '/work_big/users/clima/portal/ERA5/'+varname+'/climatology/'
     if l_smoothing:
         file = os.path.join(data_dir, f'ERA5_{varname}_NH_daily_clim_2004-2023_sm31d.nc')
     else:
@@ -81,11 +84,78 @@ def load_CERRA_data(varname, timestep, lonlat_bounds):
     data = data.where(mask, np.nan).dropna(dim="lat", how="all").dropna(dim="lon", how="all")
     return data
 
+
+## Function to open member datasets from CRCM5-LE
+
+def create_member_file_dict(paths_files, list_membs):
+    """
+    Create a dictionary mapping members to their respective file paths.
+
+    Parameters:
+    - paths_files: List of file paths.
+    - list_membs: List of member names.
+
+    Returns:
+    - A defaultdict where keys are member names and values are lists of file paths.
+    """
+    memb_files = defaultdict(list)
+    for path in paths_files:
+        for memb in list_membs:
+            if memb in path:
+                memb_files[memb].append(path)
+                break  # Assuming one member per file path
+    return memb_files
+
+def open_member_datasets(memb_files_dict, combine, expand_member_dim):
+    """
+    Open datasets for each member and optionally add 'member' as a dimension.
+
+    Parameters:
+    ----------
+    memb_files_dict : dict
+        Dictionary mapping each member (str) to a list of file paths.
+    combine : str
+        Combine method for xr.open_mfdataset (default: 'by_coords').
+    expand_member_dim : bool
+        Whether to add 'member' as a new dimension using expand_dims.
+    
+    Returns:
+    -------
+    list of xarray.Dataset
+        List of datasets, one for each member with member dimension added.
+    """
+    list_ds = []
+    for memb, files in memb_files_dict.items():
+        print(f"Opening files for member: {memb}")
+        ds = xr.open_mfdataset(files, combine=combine)
+        if expand_member_dim:
+            ds = ds.expand_dims(member=[memb])
+        list_ds.append(ds)
+    return list_ds
+
+
+## Function to create lon-lat mask (event-wise)
+
+def box_event_PrMax_alertregions(no_node, no_event):
+    """
+    Lon-lat box of event selected based on above99 prec over alert regions.
+    box_event = [lon_min, lon_max, lat_min, lat_max]
+    """
+    if no_node == 6 and no_event == 1:
+        box_event = [3, 22, 35, 50]
+    elif no_node == 1 and no_event == 1:
+        box_event = [-5, 20, 31, 50]
+    return box_event
+
+
 def lonlat_mask(lon, lat, lonlat_bounds):
     """Returns the mask for the lonlat_bounds."""
     lon_mask = (lon >= lonlat_bounds[0]) & (lon <= lonlat_bounds[1])
     lat_mask = (lat >= lonlat_bounds[2]) & (lat <= lonlat_bounds[3])
     return lon_mask, lat_mask
+
+
+## Functions to plot data
 
 def plot_geopotential_and_mslp(ax, timestep, lonlat_bounds, z500, msl):
     """Plots the geopotential height and mean sea level pressure data for a given timestep."""
@@ -114,6 +184,7 @@ def plot_geopotential_and_mslp(ax, timestep, lonlat_bounds, z500, msl):
     ax.set_xlabel('Longitude')
     ax.set_ylabel('Latitude')
 
+
 def plot_precipitation(ax, timestep, lonlat_bounds, precip):
     """Plots the precipitation data for a given timestep."""
 
@@ -141,13 +212,44 @@ def plot_precipitation(ax, timestep, lonlat_bounds, precip):
     # Title and labels
     ax.set_title(f"Timestep: {timestep}")
 
-def box_event_PrMax_alertregions(no_node, no_event):
-    """
-    Lon-lat box of event selected based on above99 prec over alert regions.
-    box_event = [lon_min, lon_max, lat_min, lat_max]
-    """
-    if no_node == 6 and no_event == 1:
-        box_event = [3, 22, 35, 50]
-    elif no_node == 1 and no_event == 1:
-        box_event = [-5, 20, 30, 50]
-    return box_event
+
+def plot_anom_event(varname, lon, lat, anom_event, clim):
+    """Plots the anomaly and DOY climatology for a given event (mslp or z500)."""
+
+    # Create a plot with Cartopy
+    fig, ax = plt.subplots(
+        figsize=(12, 8),
+        subplot_kw={"projection": ccrs.PlateCarree()}
+    )
+
+    # Set intervals and levels
+    if varname == 'z500':
+        cbar_int = 50
+        levels_clim = np.arange(5000, 6000, 25)
+    elif varname == 'mslp':
+        cbar_int = 2
+        levels_clim = np.arange(950, 1050, 1)
+    # Calculate the min and max values around zero for centering
+    vmin = np.nanmin(anom_event)
+    vmax = np.nanmax(anom_event)
+    cbar_center = max(abs(vmin), abs(vmax)) // cbar_int * cbar_int + cbar_int
+    cbar_levels = np.arange(-cbar_center, cbar_center+cbar_int, cbar_int)
+
+    # Plot data
+    cf = ax.contourf(lon, lat, anom_event, transform=ccrs.PlateCarree(), cmap="RdBu_r", levels= cbar_levels)
+    contours = ax.contour(lon, lat, clim, transform=ccrs.PlateCarree(), levels=levels_clim, colors="black", linewidths=0.7)
+    ax.clabel(contours, inline=True, fontsize=8, fmt="%.0f")
+
+    # Add coastlines
+    ax.coastlines(linewidth=1.5)
+    # Add gridlines
+    gl = ax.gridlines(draw_labels=True, linestyle="--", color="gray", alpha=0.5)
+    gl.top_labels = False
+    gl.right_labels = False
+    # Add colorbar
+    if varname == 'z500':
+        cbar_label = "$\Delta$Z500 (m)"
+    elif varname == 'mslp':
+        cbar_label = "$\Delta$mslp (hPa)"
+    cbar = fig.colorbar(cf, ax=ax, shrink=0.6, label=cbar_label)
+    return fig, ax

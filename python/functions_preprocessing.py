@@ -110,6 +110,7 @@ def path_folder_CRCM5(namevar, memb, year):
     return path_folder
 
 
+
 def remove_list2_if_list1_exists(list1, list2):
     # Check if all files in list1 exist and return logical value
     if all(os.path.isfile(file) for file in list1):
