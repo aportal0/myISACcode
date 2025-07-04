@@ -14,6 +14,10 @@ var = sys.argv[1]
 memb = int(sys.argv[2])
 year = int(sys.argv[3])
 n_cpu = int(sys.argv[4])
+if var=='z500':
+    varname = 'z'
+else:
+    varname = var
 
 print('Variable:',var)
 print('Member:',memb)
