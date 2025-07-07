@@ -9,6 +9,7 @@ import cartopy.feature as cfeature
 import matplotlib.colors as mcolors
 import time
 from collections import defaultdict
+import xesmf as xe
 
 
 ## Functions to load data from ERA5 and CERRA
@@ -21,7 +22,7 @@ def load_ERA5_data(varname, freq, timestep, lonlat_bounds, l_anom):
     if freq == 'daily':
         timestep = (timestep.normalize() + pd.Timedelta(hours=9)).isoformat()
     # Possible varnames: 'mslp', 'z500'
-    data_dir = '/work_big/users/clima/portal/ERA5/'+varname+'/'
+    data_dir = '/media/alice/Extreme SSD1/folders/data_CNR/ERA5/'+varname+'/'
     if l_anom:
         files = [os.path.join(data_dir, f'ERA5_{varname}_NH_{freq}_{year}_anom.nc') for year in years_data]
     else:
@@ -47,7 +48,7 @@ def load_ERA5_clim(varname, doy, lonlat_bounds, l_smoothing):
     """Loads ERA5 climatology 1985-2019 for a given variable and day-of-year (doy) in lonlat_bounds.
     l_smoothing = True for 31-day smoothing time window."""
     # Possible varnames: 'msl'
-    data_dir = '/work_big/users/clima/portal/ERA5/'+varname+'/climatology/'
+    data_dir = '/media/alice/Extreme SSD1/folders/data_CNR/ERA5/'+varname+'/climatology/'
     if l_smoothing:
         file = os.path.join(data_dir, f'ERA5_{varname}_NH_daily_clim_2004-2023_sm31d.nc')
     else:
@@ -155,6 +156,32 @@ def lonlat_mask(lon, lat, lonlat_bounds):
     return lon_mask, lat_mask
 
 
+## Function to regrid data using xESMF
+
+def regrid_with_xesmf(field_event, box_event, resolution=0.5):
+    # Determine input lat/lon names
+    lat_name = 'lat' if 'lat' in field_event.dims else 'latitude'
+    lon_name = 'lon' if 'lon' in field_event.dims else 'longitude'
+
+    # Define the new grid
+    new_lat = np.arange(box_event[2], box_event[3] + resolution, resolution)
+    new_lon = np.arange(box_event[0], box_event[1] + resolution, resolution)
+    target_grid = xr.Dataset({
+        'lat': (['lat'], new_lat),
+        'lon': (['lon'], new_lon),
+    })
+
+    # Prepare the regridder
+    regridder = xe.Regridder(field_event, target_grid, method='bilinear', periodic=False, reuse_weights=False)
+
+    # Regrid and preserve name/attrs
+    regridded = regridder(field_event)
+    regridded.name = field_event.name  # preserve variable name
+    regridded.attrs = field_event.attrs  # optionally keep metadata
+
+    return regridded
+
+
 ## Functions to plot data
 
 def plot_geopotential_and_mslp(ax, timestep, lonlat_bounds, z500, msl):
@@ -248,8 +275,8 @@ def plot_anom_event(varname, lon, lat, anom_event, clim):
     gl.right_labels = False
     # Add colorbar
     if varname == 'z500':
-        cbar_label = "$\Delta$Z500 (m)"
+        cbar_label = "$\\Delta$Z500 (m)"
     elif varname == 'mslp':
-        cbar_label = "$\Delta$mslp (hPa)"
+        cbar_label = "$\\Delta$mslp (hPa)"
     cbar = fig.colorbar(cf, ax=ax, shrink=0.6, label=cbar_label)
     return fig, ax
