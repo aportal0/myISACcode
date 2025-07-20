@@ -24,7 +24,6 @@ import functions_analogues_LUCAFAMOSS as fan
 
 
 # --- Directories ---
-
 # # tintin
 # CERRA_dir = '/work_big/users/clima/portal/CERRA-Land/'
 # ERA5_dir = '/work_big/users/clima/portal/ERA5/'
@@ -39,7 +38,6 @@ fig_dir = './figures/'
 
 
 # --- Event and LE analogue definition ---
-
 # Event
 lselect = 'alert-regions'  # 'Italy' or 'wide-region' or 'alert-regions'
 no_node = 1
@@ -60,13 +58,15 @@ no_membs = 2
 list_year_ranges = [[1955, 1974], [2004, 2023], [2030, 2049], [2080, 2099]] # past [1955-1974], present [2004-2023], near-future [2030-2049], far future [2080-2099]
 no_epochs = len(list_year_ranges)
 
+# Difference between epochs
+diff_indices = [[0,1],[0,2],[0,3],[1,2],[1,3],[2,3]]  # Define the indices of epochs to compare
+
 # List of members
 list_membs = [name for name in os.listdir(CRCM5_dir + varname) if os.path.isdir(os.path.join(CRCM5_dir + varname, name))]
 list_membs = sorted(list_membs)[:no_membs]  # Select the first 'no_membs' members
 
 
 # --- Upload analogue dates and distances for each year range---
-
 # Create a list of no_epochs dictionaries with member names as keys and their corresponding times and distances as values
 ensemble_data = []
 for i, year_range in enumerate(list_year_ranges):
@@ -90,18 +90,20 @@ no_analogues_LE = len(ensemble_data[0][list_membs[0]]['times'])  # Number of ana
 
 
 # --- Load LE analogue data for all epochs ---
-
 # Anomalies and climatology
 # List file paths
 list_ds_anom = []  # Initialize an empty list to store file paths
 list_ds_clim = [] # Initialize an empty list to store climatology file paths
 analogue_numbers = np.arange(1, no_analogues_LE + 1)  # Create an array of analogue numbers from 1 to n_analogues_LE
 for i, year_range in enumerate(list_year_ranges):
+
     # List file paths for current epoch
     anom_files_epoch, clim_files_epoch = fanPM.get_anomaly_climatology_paths_CRCM5(CRCM5_dir, varname, list_membs, year_range)
+    
     # Lists of datasets for current epoch
     anom_sel = fanPM.open_member_datasets(anom_files_epoch, combine='by_coords', expand_member_dim=True)
     clim_sel = fanPM.open_member_datasets(clim_files_epoch, combine='by_coords', expand_member_dim=True)
+    
     # Select analogue days for current epoch by member
     anom_analogues = []
     clim_analogues = []
@@ -117,6 +119,7 @@ for i, year_range in enumerate(list_year_ranges):
         clim_memb = [clim_sel[im].sel(time=clim_sel[im].time[doys_clim == doy]) for doy in doys_analogues]
         clim_memb = xr.concat(clim_memb, dim="time").assign_coords(time=analogue_numbers)
         clim_analogues.append(clim_memb)
+    
     # Concatenate the anomaly and climatology datasets for the current epoch
     ds_anom_analogues = xr.concat(anom_analogues, dim='member')[varname] * 0.01
     ds_anom_analogues = ds_anom_analogues.rename({"time": "analogue"})
@@ -145,7 +148,6 @@ for i, year_range in enumerate(list_year_ranges):
 
 # --- Compute LE analogue differences ---
 # Compute differences between LE analogues from different epochs
-diff_indices = [[0,1],[0,2],[0,3],[1,2],[1,3],[2,3]]  # Define the indices of epochs to compare
 list_ds_diff = []  # Initialize an empty list to store the differences
 for i, (epoch1, epoch2) in enumerate(diff_indices):
     # Compute the difference between the two epochs
@@ -164,55 +166,5 @@ if not os.path.exists(output_dir):
     os.makedirs(output_dir) 
 # Save each difference dataset to a NetCDF file
 for i, ds_diff in enumerate(list_ds_diff):  
-    output_file = f"{output_dir}LE-analogue-difference_{varname}_node{no_node}-extreme{no_event}-alertregions_{int(qtl_LE*100)}pct_{ds_diff.attrs['epoch2']}-{ds_diff.attrs['epoch1']}_CRCM5-LE_{no_membs}membs.nc"
+    output_file = f"{output_dir}LE-analogue-difference_{varname}_node{no_node}-extreme{no_event}-alertregions_{int(qtl_LE*100)}pct_diff{ds_diff.attrs['epoch2']}_{ds_diff.attrs['epoch1']}_CRCM5_{no_membs}membs.nc"
     ds_diff.to_netcdf(output_file)
-
-
-# # --- Plot LE analogue differences ---
-# # Create subplots with Cartopy projection
-# fig, axes = plt.subplots(
-#     nrows=2, ncols=3, figsize=(18, 12),
-#     subplot_kw={'projection': ccrs.PlateCarree()},
-#     constrained_layout=True
-# )
-# axes = axes.flatten()
-# 
-# # Colormap and normalization
-# # Define discrete color levels (e.g., 5 bins from -10 to 10)
-# bounds = np.arange(-5.5,6,1)  # Bin edges
-# norm = mcolors.BoundaryNorm(boundaries=bounds, ncolors=len(bounds) - 1)
-# 
-# # Define a discrete colormap (must match number of bins)
-# cmap = plt.get_cmap('RdBu_r', len(bounds) - 1)  # E.g., 6 discrete colors
-# 
-# # Plot each dataset
-# for i, ds_diff in enumerate(list_ds_diff):
-#     ax = axes[i]
-# 
-#     # Plot assuming ds_diff is 2D (lat, lon)
-#     im = ds_diff.plot.imshow(
-#         ax=ax,
-#         cmap=cmap,
-#         norm=norm,
-#         add_colorbar=False,
-#         transform=ccrs.PlateCarree()
-#     )
-# 
-#     # Add map features
-#     ax.coastlines()
-#     ax.set_title(f"Difference {ds_diff.attrs['epoch2']} - {ds_diff.attrs['epoch1']}")
-#     ax.set_xlabel('Longitude')
-#     ax.set_ylabel('Latitude')
-# 
-#     # Add colorbar
-#     cbar = plt.colorbar(im, ax=ax, orientation='vertical', fraction=0.02, pad=0.04)
-#     cbar.set_label('Difference (hPa)', rotation=270, labelpad=20)
-# 
-# # Figure title
-# fig.suptitle(f"LE Analogue Differences for {varname}", fontsize=16)
-# 
-# # Show plot
-# plt.show()
-# 
-# 
-# 
