@@ -1,12 +1,12 @@
 #!/bin/sh
 
 # Parameters for job
-field=psl
+field=zg     # slp, zg, tas
 start_y=2080
 end_y=2099
 
 # Parameter and function for limiting # running jobs
-MAX_RUNNING_JOBS=5
+MAX_RUNNING_JOBS=10
 get_running_jobs_count() {
 	# Replace `username` with your actual username if necessary
 	squeue -u portal --noheader | grep -c ' R '

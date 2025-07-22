@@ -1,9 +1,10 @@
 #!/bin/bash
 
-varname=$1
+var=$1
 ensname=$2
 year_start=$3
 year_end=$4
+if [ "$var" = "zg" ]; then varname="zg500"; else varname="$var"; fi
 
 #SBATCH -J ${ensname}_clim
 #SBATCH --time=12:00:00
@@ -14,7 +15,7 @@ year_end=$4
 
 # Parameters
 no_years=$(( ${year_end} - ${year_start} + 1 )) 
-wdir="/home/portal/work_big/CRCM5-LE/${varname}/${ensname}/"
+wdir="/home/portal/work_big/CRCM5-LE/${var}/${ensname}/"
 scriptdir="/home/portal/script/bash/"
 window_rmean=31
 
