@@ -1,0 +1,86 @@
+r1-r1i1p1
+/home/portal/work_big/CRCM5-LE/tas/kba/2030/tas_EUR-11_CCCma-CanESM2_rcp85_r1-r1i1p1_OURANOS-CRCM5_kba_daily_203001.nc
+ncks: ERROR attempt to write 0-dimensional input variable rotated_pole to 1-dimensional space in output file
+HINT: When using -A (append) option, all appended variables must be the same rank in the input file as in the output file. The ncwa operator is useful at ridding variables of extraneous (size = 1) dimensions. See how at http://nco.sf.net/nco.html#ncwa
+If you wish to completely replace the existing output file definition and values of the variable rotated_pole by those in the input file, then first remove rotated_pole from the output file using, e.g., ncks -x -v rotated_pole. See more on subsetting at http://nco.sf.net/nco.html#sbs
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/tas/kba/2031/tas_EUR-11_CCCma-CanESM2_rcp85_r1-r1i1p1_OURANOS-CRCM5_kba_daily_203101.nc
+ncks: ERROR attempt to write 0-dimensional input variable rotated_pole to 1-dimensional space in output file
+HINT: When using -A (append) option, all appended variables must be the same rank in the input file as in the output file. The ncwa operator is useful at ridding variables of extraneous (size = 1) dimensions. See how at http://nco.sf.net/nco.html#ncwa
+If you wish to completely replace the existing output file definition and values of the variable rotated_pole by those in the input file, then first remove rotated_pole from the output file using, e.g., ncks -x -v rotated_pole. See more on subsetting at http://nco.sf.net/nco.html#sbs
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/tas/kba/2032/tas_EUR-11_CCCma-CanESM2_rcp85_r1-r1i1p1_OURANOS-CRCM5_kba_daily_203201.nc
+ncks: ERROR attempt to write 0-dimensional input variable rotated_pole to 1-dimensional space in output file
+HINT: When using -A (append) option, all appended variables must be the same rank in the input file as in the output file. The ncwa operator is useful at ridding variables of extraneous (size = 1) dimensions. See how at http://nco.sf.net/nco.html#ncwa
+If you wish to completely replace the existing output file definition and values of the variable rotated_pole by those in the input file, then first remove rotated_pole from the output file using, e.g., ncks -x -v rotated_pole. See more on subsetting at http://nco.sf.net/nco.html#sbs
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/tas/kba/2033/tas_EUR-11_CCCma-CanESM2_rcp85_r1-r1i1p1_OURANOS-CRCM5_kba_daily_203301.nc
+ncks: ERROR attempt to write 0-dimensional input variable rotated_pole to 1-dimensional space in output file
+HINT: When using -A (append) option, all appended variables must be the same rank in the input file as in the output file. The ncwa operator is useful at ridding variables of extraneous (size = 1) dimensions. See how at http://nco.sf.net/nco.html#ncwa
+If you wish to completely replace the existing output file definition and values of the variable rotated_pole by those in the input file, then first remove rotated_pole from the output file using, e.g., ncks -x -v rotated_pole. See more on subsetting at http://nco.sf.net/nco.html#sbs
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/tas/kba/2034/tas_EUR-11_CCCma-CanESM2_rcp85_r1-r1i1p1_OURANOS-CRCM5_kba_daily_203401.nc
+ncks: ERROR attempt to write 0-dimensional input variable rotated_pole to 1-dimensional space in output file
+HINT: When using -A (append) option, all appended variables must be the same rank in the input file as in the output file. The ncwa operator is useful at ridding variables of extraneous (size = 1) dimensions. See how at http://nco.sf.net/nco.html#ncwa
+If you wish to completely replace the existing output file definition and values of the variable rotated_pole by those in the input file, then first remove rotated_pole from the output file using, e.g., ncks -x -v rotated_pole. See more on subsetting at http://nco.sf.net/nco.html#sbs
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/tas/kba/2035/tas_EUR-11_CCCma-CanESM2_rcp85_r1-r1i1p1_OURANOS-CRCM5_kba_daily_203501.nc
+ncks: ERROR attempt to write 0-dimensional input variable rotated_pole to 1-dimensional space in output file
+HINT: When using -A (append) option, all appended variables must be the same rank in the input file as in the output file. The ncwa operator is useful at ridding variables of extraneous (size = 1) dimensions. See how at http://nco.sf.net/nco.html#ncwa
+If you wish to completely replace the existing output file definition and values of the variable rotated_pole by those in the input file, then first remove rotated_pole from the output file using, e.g., ncks -x -v rotated_pole. See more on subsetting at http://nco.sf.net/nco.html#sbs
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/tas/kba/2036/tas_EUR-11_CCCma-CanESM2_rcp85_r1-r1i1p1_OURANOS-CRCM5_kba_daily_203601.nc
+ncks: ERROR attempt to write 0-dimensional input variable rotated_pole to 1-dimensional space in output file
+HINT: When using -A (append) option, all appended variables must be the same rank in the input file as in the output file. The ncwa operator is useful at ridding variables of extraneous (size = 1) dimensions. See how at http://nco.sf.net/nco.html#ncwa
+If you wish to completely replace the existing output file definition and values of the variable rotated_pole by those in the input file, then first remove rotated_pole from the output file using, e.g., ncks -x -v rotated_pole. See more on subsetting at http://nco.sf.net/nco.html#sbs
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/tas/kba/2037/tas_EUR-11_CCCma-CanESM2_rcp85_r1-r1i1p1_OURANOS-CRCM5_kba_daily_203701.nc
+ncks: ERROR attempt to write 0-dimensional input variable rotated_pole to 1-dimensional space in output file
+HINT: When using -A (append) option, all appended variables must be the same rank in the input file as in the output file. The ncwa operator is useful at ridding variables of extraneous (size = 1) dimensions. See how at http://nco.sf.net/nco.html#ncwa
+If you wish to completely replace the existing output file definition and values of the variable rotated_pole by those in the input file, then first remove rotated_pole from the output file using, e.g., ncks -x -v rotated_pole. See more on subsetting at http://nco.sf.net/nco.html#sbs
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/tas/kba/2038/tas_EUR-11_CCCma-CanESM2_rcp85_r1-r1i1p1_OURANOS-CRCM5_kba_daily_203801.nc
+ncks: ERROR attempt to write 0-dimensional input variable rotated_pole to 1-dimensional space in output file
+HINT: When using -A (append) option, all appended variables must be the same rank in the input file as in the output file. The ncwa operator is useful at ridding variables of extraneous (size = 1) dimensions. See how at http://nco.sf.net/nco.html#ncwa
+If you wish to completely replace the existing output file definition and values of the variable rotated_pole by those in the input file, then first remove rotated_pole from the output file using, e.g., ncks -x -v rotated_pole. See more on subsetting at http://nco.sf.net/nco.html#sbs
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/tas/kba/2039/tas_EUR-11_CCCma-CanESM2_rcp85_r1-r1i1p1_OURANOS-CRCM5_kba_daily_203901.nc
+ncks: ERROR attempt to write 0-dimensional input variable rotated_pole to 1-dimensional space in output file
+HINT: When using -A (append) option, all appended variables must be the same rank in the input file as in the output file. The ncwa operator is useful at ridding variables of extraneous (size = 1) dimensions. See how at http://nco.sf.net/nco.html#ncwa
+If you wish to completely replace the existing output file definition and values of the variable rotated_pole by those in the input file, then first remove rotated_pole from the output file using, e.g., ncks -x -v rotated_pole. See more on subsetting at http://nco.sf.net/nco.html#sbs
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/tas/kba/2040/tas_EUR-11_CCCma-CanESM2_rcp85_r1-r1i1p1_OURANOS-CRCM5_kba_daily_204001.nc
+ncks: ERROR attempt to write 0-dimensional input variable rotated_pole to 1-dimensional space in output file
+HINT: When using -A (append) option, all appended variables must be the same rank in the input file as in the output file. The ncwa operator is useful at ridding variables of extraneous (size = 1) dimensions. See how at http://nco.sf.net/nco.html#ncwa
+If you wish to completely replace the existing output file definition and values of the variable rotated_pole by those in the input file, then first remove rotated_pole from the output file using, e.g., ncks -x -v rotated_pole. See more on subsetting at http://nco.sf.net/nco.html#sbs
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/tas/kba/2041/tas_EUR-11_CCCma-CanESM2_rcp85_r1-r1i1p1_OURANOS-CRCM5_kba_daily_204101.nc
+ncks: ERROR attempt to write 0-dimensional input variable rotated_pole to 1-dimensional space in output file
+HINT: When using -A (append) option, all appended variables must be the same rank in the input file as in the output file. The ncwa operator is useful at ridding variables of extraneous (size = 1) dimensions. See how at http://nco.sf.net/nco.html#ncwa
+If you wish to completely replace the existing output file definition and values of the variable rotated_pole by those in the input file, then first remove rotated_pole from the output file using, e.g., ncks -x -v rotated_pole. See more on subsetting at http://nco.sf.net/nco.html#sbs
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/tas/kba/2042/tas_EUR-11_CCCma-CanESM2_rcp85_r1-r1i1p1_OURANOS-CRCM5_kba_daily_204201.nc
+ncks: ERROR attempt to write 0-dimensional input variable rotated_pole to 1-dimensional space in output file
+HINT: When using -A (append) option, all appended variables must be the same rank in the input file as in the output file. The ncwa operator is useful at ridding variables of extraneous (size = 1) dimensions. See how at http://nco.sf.net/nco.html#ncwa
+If you wish to completely replace the existing output file definition and values of the variable rotated_pole by those in the input file, then first remove rotated_pole from the output file using, e.g., ncks -x -v rotated_pole. See more on subsetting at http://nco.sf.net/nco.html#sbs
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/tas/kba/2043/tas_EUR-11_CCCma-CanESM2_rcp85_r1-r1i1p1_OURANOS-CRCM5_kba_daily_204301.nc
+ncks: ERROR attempt to write 0-dimensional input variable rotated_pole to 1-dimensional space in output file
+HINT: When using -A (append) option, all appended variables must be the same rank in the input file as in the output file. The ncwa operator is useful at ridding variables of extraneous (size = 1) dimensions. See how at http://nco.sf.net/nco.html#ncwa
+If you wish to completely replace the existing output file definition and values of the variable rotated_pole by those in the input file, then first remove rotated_pole from the output file using, e.g., ncks -x -v rotated_pole. See more on subsetting at http://nco.sf.net/nco.html#sbs
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/tas/kba/2044/tas_EUR-11_CCCma-CanESM2_rcp85_r1-r1i1p1_OURANOS-CRCM5_kba_daily_204401.nc
+ncks: ERROR attempt to write 0-dimensional input variable rotated_pole to 1-dimensional space in output file
+HINT: When using -A (append) option, all appended variables must be the same rank in the input file as in the output file. The ncwa operator is useful at ridding variables of extraneous (size = 1) dimensions. See how at http://nco.sf.net/nco.html#ncwa
+If you wish to completely replace the existing output file definition and values of the variable rotated_pole by those in the input file, then first remove rotated_pole from the output file using, e.g., ncks -x -v rotated_pole. See more on subsetting at http://nco.sf.net/nco.html#sbs
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/tas/kba/2045/tas_EUR-11_CCCma-CanESM2_rcp85_r1-r1i1p1_OURANOS-CRCM5_kba_daily_204501.nc
+ncks: ERROR attempt to write 0-dimensional input variable rotated_pole to 1-dimensional space in output file
+HINT: When using -A (append) option, all appended variables must be the same rank in the input file as in the output file. The ncwa operator is useful at ridding variables of extraneous (size = 1) dimensions. See how at http://nco.sf.net/nco.html#ncwa
+If you wish to completely replace the existing output file definition and values of the variable rotated_pole by those in the input file, then first remove rotated_pole from the output file using, e.g., ncks -x -v rotated_pole. See more on subsetting at http://nco.sf.net/nco.html#sbs
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/tas/kba/2046/tas_EUR-11_CCCma-CanESM2_rcp85_r1-r1i1p1_OURANOS-CRCM5_kba_daily_204601.nc
+ncks: ERROR attempt to write 0-dimensional input variable rotated_pole to 1-dimensional space in output file
+HINT: When using -A (append) option, all appended variables must be the same rank in the input file as in the output file. The ncwa operator is useful at ridding variables of extraneous (size = 1) dimensions. See how at http://nco.sf.net/nco.html#ncwa
+If you wish to completely replace the existing output file definition and values of the variable rotated_pole by those in the input file, then first remove rotated_pole from the output file using, e.g., ncks -x -v rotated_pole. See more on subsetting at http://nco.sf.net/nco.html#sbs
+slurmstepd-tintin: error: *** JOB 2777786 ON tintin CANCELLED AT 2025-07-24T17:04:50 ***

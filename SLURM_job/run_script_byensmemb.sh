@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Parameters for job
-field=zg     # slp, zg, tas
+field=tas     # slp, zg, tas
 start_y=2080
 end_y=2099
 
