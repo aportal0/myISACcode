@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import cartopy.crs as ccrs
 from cartopy.util import add_cyclic_point
 import cartopy.feature as cfeature
+from scipy.stats import ks_2samp
 import matplotlib.colors as mcolors
 import time
 from collections import defaultdict
@@ -104,7 +105,7 @@ def get_anomaly_climatology_paths_CRCM5(CRCM5_dir, varname, list_membs, year_ran
     paths_files = []
     paths_files_clim = []
     years_sel = list(range(year_range[0], year_range[1] + 1))
-    prefix_files = f"{varname}-anom"
+    prefix_files = f"{varname}-anom" if varname != "zg" else f"{varname}500-anom"
     suffix_files_clim = f"clim{year_range[0]}-{year_range[1]}_sm31d_05res.nc"
 
     # Build list of anomaly directories
@@ -240,6 +241,12 @@ def regrid_with_xesmf(field_event, box_event, resolution=0.5):
 
     return regridded
 
+
+## Function for Kolmogorov-Smirnov test
+
+def ks_stat_and_pval(x, y):
+    result = ks_2samp(x, y)
+    return np.array([result.statistic, result.pvalue])
 
 ## Functions to plot data
 
