@@ -51,14 +51,14 @@ no_event = 1
 box_event = fanPM.box_event_PrMax_alertregions(no_node,no_event)
 
 # Variable
-varname = 'zg' # Variable to compute the difference between analogues, e.g. 'zg' for geopotential height
+varname = 'psl' # Variable to compute the difference between analogues, e.g. 'zg' for geopotential height
 var_analogues = 'psl'  # Variable used to find the analogues, e.g. 'psl' for sea level pressure
 
 # Quantile and analogue spacing
 qtl_LE = 0.99
 
 # Number of ensemble members
-no_membs = 2 
+no_membs = 1 
 
 # Epochs
 list_year_ranges = [[1955, 1974], [2004, 2023], [2030, 2049], [2080, 2099]] # past [1955-1974], present [2004-2023], near-future [2030-2049], far future [2080-2099]
