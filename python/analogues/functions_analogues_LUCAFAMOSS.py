@@ -85,7 +85,7 @@ def timefilter_analogues(analogue_indices, logdist, time_sel, time_spacing):
         selected_indices (np.ndarray): Indices of selected analogue times in time_sel
     """
 
-    # Select best analogues with ≥7-day spacing among themselves
+    # Select best analogues with >=7-day spacing among themselves
     sorted_indices = analogue_indices[np.argsort(-logdist[analogue_indices])]  # sort by descending logdist (best analogue first)
 
     selected_indices = []

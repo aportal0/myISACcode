@@ -23,7 +23,7 @@ def load_ERA5_data(varname, freq, timestep, lonlat_bounds, l_anom):
     if freq == 'daily':
         timestep = (timestep.normalize() + pd.Timedelta(hours=9)).isoformat()
     # Possible varnames: 'mslp', 'z500'
-    data_dir = '/media/alice/Extreme SSD1/folders/data_CNR/ERA5/'+varname+'/'
+    data_dir = '/work_big/users/clima/portal/ERA5/'+varname+'/'
     if l_anom:
         files = [os.path.join(data_dir, f'ERA5_{varname}_NH_{freq}_{year}_anom.nc') for year in years_data]
     else:
@@ -49,13 +49,13 @@ def load_ERA5_clim(varname, doy, lonlat_bounds, l_smoothing):
     """Loads ERA5 climatology 1985-2019 for a given variable and day-of-year (doy) in lonlat_bounds.
     l_smoothing = True for 31-day smoothing time window."""
     # Possible varnames: 'msl'
-    data_dir = '/media/alice/Extreme SSD1/folders/data_CNR/ERA5/'+varname+'/climatology/'
+    data_dir = '/work_big/users/clima/portal/ERA5/'+varname+'/climatology/'
     if l_smoothing:
         file = os.path.join(data_dir, f'ERA5_{varname}_NH_daily_clim_2004-2023_sm31d.nc')
     else:
         file = os.path.join(data_dir, f'ERA5_{varname}_NH_daily_clim_2004-2023.nc')
     # Load data
-    # select variable and timestep
+    # select variable and timestepg
     if varname == 'z500':
         data = xr.open_dataset(file)['z'].sel(dayofyear=doy, plev=50000) / 9.81
         str_lon, str_lat = ('lon', 'lat')
@@ -72,7 +72,7 @@ def load_CERRA_data(varname, timestep, lonlat_bounds):
     """Loads CERRA data for a given variable, timestep and in lonlat_bounds.
     Timestep can be a single datetime object or a list of datetime objects."""
     # Possible varnames: 'precip'
-    data_dir = '/work_big/users/zappa/CERRA-LAND/daily/nc/regular/'
+    data_dir = '/work_big/users/clima/zappa/CERRA-LAND/daily/nc/regular/'
     years_data = np.unique(timestep.strftime("%Y"))
     files = [os.path.join(data_dir, f'precip_{year}_italy_reg10.nc') for year in years_data]
     # select variable and timestep

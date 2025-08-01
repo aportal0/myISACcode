@@ -1,0 +1,805 @@
+r4-r5i1p1
+/home/portal/work_big/CRCM5-LE/psl/kci/2030/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203001.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2031/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203101.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2032/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203201.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2033/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203301.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2034/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203401.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2035/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203501.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2036/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203601.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2037/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203701.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2038/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203801.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2039/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203901.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2040/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204001.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2041/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204101.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2042/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204201.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2043/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204301.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2044/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204401.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2045/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204501.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2046/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204601.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2047/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204701.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2048/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204801.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2049/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204901.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2030/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203002.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2031/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203102.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2032/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203202.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2033/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203302.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2034/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203402.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2035/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203502.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2036/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203602.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2037/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203702.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2038/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203802.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2039/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203902.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2040/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204002.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2041/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204102.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2042/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204202.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2043/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204302.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2044/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204402.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2045/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204502.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2046/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204602.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2047/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204702.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2048/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204802.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2049/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204902.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2030/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203003.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2031/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203103.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2032/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203203.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2033/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203303.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2034/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203403.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2035/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203503.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2036/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203603.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2037/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203703.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2038/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203803.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2039/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203903.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2040/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204003.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2041/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204103.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2042/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204203.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2043/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204303.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2044/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204403.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2045/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204503.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2046/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204603.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2047/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204703.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2048/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204803.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2049/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204903.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2030/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203004.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2031/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203104.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2032/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203204.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2033/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203304.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2034/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203404.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2035/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203504.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2036/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203604.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2037/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203704.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2038/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203804.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2039/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203904.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2040/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204004.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2041/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204104.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2042/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204204.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2043/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204304.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2044/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204404.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2045/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204504.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2046/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204604.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2047/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204704.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2048/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204804.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2049/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204904.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2030/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203005.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2031/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203105.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2032/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203205.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2033/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203305.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2034/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203405.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2035/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203505.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2036/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203605.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2037/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203705.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2038/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203805.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2039/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203905.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2040/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204005.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2041/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204105.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2042/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204205.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2043/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204305.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2044/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204405.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2045/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204505.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2046/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204605.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2047/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204705.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2048/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204805.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2049/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204905.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2030/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203006.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2031/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203106.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2032/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203206.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2033/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203306.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2034/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203406.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2035/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203506.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2036/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203606.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2037/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203706.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2038/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203806.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2039/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203906.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2040/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204006.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2041/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204106.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2042/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204206.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2043/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204306.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2044/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204406.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2045/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204506.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2046/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204606.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2047/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204706.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2048/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204806.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2049/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204906.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2030/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203007.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2031/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203107.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2032/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203207.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2033/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203307.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2034/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203407.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2035/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203507.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2036/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203607.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2037/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203707.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2038/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203807.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2039/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203907.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2040/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204007.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2041/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204107.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2042/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204207.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2043/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204307.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2044/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204407.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2045/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204507.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2046/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204607.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2047/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204707.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2048/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204807.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2049/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204907.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2030/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203008.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2031/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203108.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2032/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203208.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2033/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203308.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2034/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203408.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2035/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203508.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2036/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203608.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2037/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203708.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2038/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203808.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2039/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203908.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2040/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204008.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2041/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204108.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2042/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204208.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2043/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204308.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2044/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204408.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2045/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204508.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2046/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204608.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2047/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204708.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2048/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204808.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2049/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204908.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2030/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203009.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2031/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203109.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2032/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203209.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2033/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203309.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2034/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203409.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2035/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203509.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2036/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203609.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2037/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203709.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2038/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203809.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2039/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203909.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2040/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204009.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2041/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204109.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2042/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204209.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2043/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204309.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2044/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204409.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2045/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204509.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2046/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204609.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2047/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204709.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2048/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204809.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2049/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204909.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2030/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203010.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2031/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203110.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2032/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203210.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2033/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203310.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2034/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203410.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2035/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203510.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2036/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203610.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2037/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203710.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2038/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203810.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2039/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203910.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2040/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204010.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2041/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204110.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2042/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204210.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2043/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204310.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2044/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204410.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2045/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204510.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2046/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204610.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2047/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204710.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2048/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204810.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2049/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204910.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2030/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203011.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2031/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203111.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2032/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203211.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2033/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203311.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2034/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203411.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2035/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203511.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2036/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203611.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2037/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203711.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2038/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203811.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2039/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203911.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2040/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204011.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2041/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204111.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2042/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204211.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2043/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204311.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2044/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204411.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2045/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204511.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2046/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204611.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2047/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204711.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2048/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204811.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2049/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204911.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2030/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203012.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2031/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203112.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2032/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203212.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2033/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203312.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2034/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203412.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2035/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203512.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2036/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203612.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2037/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203712.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2038/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203812.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2039/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_203912.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2040/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204012.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2041/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204112.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2042/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204212.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2043/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204312.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2044/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204412.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2045/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204512.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2046/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204612.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2047/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204712.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2048/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204812.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+/home/portal/work_big/CRCM5-LE/psl/kci/2049/psl_EUR-11_CCCma-CanESM2_rcp85_r4-r5i1p1_OURANOS-CRCM5_kci_daily_204912.nc
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 1:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 1:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 1:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 1:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 1:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 1:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 1:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 1:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 1:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 1:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 1:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 1:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 2:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 2:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 2:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 2:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 2:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 2:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 2:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 2:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 2:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 2:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 2:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 2:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+31 17 47
+28 48 75
+31 76 106
+30 107 136
+31 137 167
+30 168 197
+31 198 228
+31 229 259
+30 260 289
+31 290 320
+30 321 350
+31 351 381

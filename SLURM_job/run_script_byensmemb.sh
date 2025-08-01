@@ -1,9 +1,9 @@
 #!/bin/sh
 
 # Parameters for job
-field=tas     # slp, zg, tas
-start_y=2080
-end_y=2099
+field=psl     # psl, zg, tas
+start_y=2030
+end_y=2049
 
 # Parameter and function for limiting # running jobs
 MAX_RUNNING_JOBS=10

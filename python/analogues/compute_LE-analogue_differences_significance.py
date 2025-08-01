@@ -17,8 +17,8 @@ import matplotlib.colors as mcolors
 
 # --- Custom Functions ---
 # sys.path.append('/home/portal/script/python/precip_Cristina/')                    # tintin
-sys.path.append('/home/alice/Desktop/work/git/myISACcode/python/precip_Cristina')   # alice
-sys.path.append('/home/alice/Desktop/work/git/myISACcode/python')                   # alice
+sys.path.append('/home/portal/script/python/precip_Cristina')   # alice
+sys.path.append('/home/portal/script/python')                   # alice
 import functions_analogues_PrMax as fanPM
 import functions_analogues_LUCAFAMOSS as fan
 
@@ -35,9 +35,9 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 # fig_dir = '/home/portal/figures/case-studies_byNode/'
 
 # alice
-CERRA_dir = '/media/alice/Extreme SSD1/folders/data_CNR/CERRA-Land/'
-ERA5_dir = '/media/alice/Extreme SSD1/folders/data_CNR/ERA5/'
-CRCM5_dir = '/media/alice/Extreme SSD1/folders/data_CNR/CRCM5-LE/'
+CERRA_dir = '/work_big/users/clima/portal/CERRA-Land/'
+ERA5_dir = '/work_big/users/clima/portal/ERA5/'
+CRCM5_dir = '/work_big/users/clima/portal/CRCM5-LE/'
 fig_dir = './figures/'
 output_dir = './analogue_data/analogue_differences/'  # Directory to save the output files
 
@@ -51,21 +51,21 @@ no_event = 1
 box_event = fanPM.box_event_PrMax_alertregions(no_node,no_event)
 
 # Variable
-varname = 'psl' # Variable to compute the difference between analogues, e.g. 'zg' for geopotential height
+varname = 'zg' # Variable to compute the difference between analogues, e.g. 'zg' for geopotential height
 var_analogues = 'psl'  # Variable used to find the analogues, e.g. 'psl' for sea level pressure
 
 # Quantile and analogue spacing
 qtl_LE = 0.99
 
 # Number of ensemble members
-no_membs = 1 
+no_membs = 10
 
 # Epochs
-list_year_ranges = [[1955, 1974], [2004, 2023], [2030, 2049], [2080, 2099]] # past [1955-1974], present [2004-2023], near-future [2030-2049], far future [2080-2099]
+list_year_ranges = [[1955, 1974], [2004, 2023], [2080, 2099]] # past [1955-1974], present [2004-2023], near-future [2030-2049], far future [2080-2099]
 no_epochs = len(list_year_ranges)
 
 # Difference between epochs
-diff_indices = [[0,1],[0,2],[0,3],[1,2],[1,3],[2,3]]  # Define the indices of epochs to compare
+diff_indices = [[0,1],[0,2],[1,2]]  # Define the indices of epochs to compare
 
 # List of members
 list_membs = [name for name in os.listdir(CRCM5_dir + varname) if os.path.isdir(os.path.join(CRCM5_dir + varname, name))]

@@ -14,7 +14,7 @@ import calendar
 
 # --- Custom Functions ---
 # sys.path.append('/home/portal/script/python/precip_Cristina/')                    # tintin
-sys.path.append('/home/alice/Desktop/work/git/myISACcode/python/precip_Cristina')   # alice
+sys.path.append('/home/portal/script/python/precip_Cristina')   # alice
 import functions_analogues_PrMax as fanPM
 import functions_analogues_LUCAFAMOSS as fan
 
@@ -28,9 +28,9 @@ import functions_analogues_LUCAFAMOSS as fan
 # fig_dir = '/home/portal/figures/case-studies_byNode/'
 
 # alice
-CERRA_dir = '/media/alice/Extreme SSD1/folders/data_CNR/CERRA-Land/'
-ERA5_dir = '/media/alice/Extreme SSD1/folders/data_CNR/ERA5/'
-CRCM5_dir = '/media/alice/Extreme SSD1/folders/data_CNR/CRCM5-LE/'
+CERRA_dir = '/work_big/users/clima/portal/CERRA-Land/'
+ERA5_dir = '/work_big/users/clima/portal/ERA5/'
+CRCM5_dir = '/work_big/users/clima/portal/CRCM5-LE/'
 fig_dir = './figures/'
 
 
@@ -65,10 +65,10 @@ qtl_LE = 0.99
 analogue_spacing_memb = 7 # days
 
 # Number of ensemble members
-no_membs = 2 
+no_membs = 10
 
 # Time
-year_range = [1955, 1974] # past [1955-1974], present [2004-2023], near-future [2030-2049], far future [2080-2099]
+year_range = [2080, 2099] # past [1955-1974], present [2004-2023], near-future [2030-2049], far future [2080-2099]
 years_sel = np.arange(year_range[0], year_range[1]+1)
 
 # Months for analogue selection
