@@ -1,0 +1,88 @@
+nohup: ignoring input
+member kba running jobs 0 MAX_jobs 10
+Submitting job kba
+Submitted batch job 2823974
+member kbb running jobs 1 MAX_jobs 10
+Submitting job kbb
+Submitted batch job 2823975
+member kbc running jobs 2 MAX_jobs 10
+Submitting job kbc
+Submitted batch job 2823976
+member kbd running jobs 3 MAX_jobs 10
+Submitting job kbd
+Submitted batch job 2823977
+member kbe running jobs 4 MAX_jobs 10
+Submitting job kbe
+Submitted batch job 2823978
+member kbf running jobs 5 MAX_jobs 10
+Submitting job kbf
+Submitted batch job 2823979
+member kbg running jobs 6 MAX_jobs 10
+Submitting job kbg
+Submitted batch job 2823980
+member kbh running jobs 7 MAX_jobs 10
+Submitting job kbh
+Submitted batch job 2823983
+member kbi running jobs 8 MAX_jobs 10
+Submitting job kbi
+Submitted batch job 2823984
+member kbj running jobs 9 MAX_jobs 10
+Submitting job kbj
+Submitted batch job 2823985
+member kbk running jobs 10 MAX_jobs 10
+Waiting until running jobs less than MAX_jobs (5)
+member kbk running jobs 10 MAX_jobs 10
+Waiting until running jobs less than MAX_jobs (5)
+member kbk running jobs 10 MAX_jobs 10
+Waiting until running jobs less than MAX_jobs (5)
+member kbk running jobs 10 MAX_jobs 10
+Waiting until running jobs less than MAX_jobs (5)
+member kbk running jobs 10 MAX_jobs 10
+Waiting until running jobs less than MAX_jobs (5)
+member kbk running jobs 10 MAX_jobs 10
+Waiting until running jobs less than MAX_jobs (5)
+member kbk running jobs 9 MAX_jobs 10
+Submitting job kbk
+Submitted batch job 2824006
+member kbl running jobs 10 MAX_jobs 10
+Waiting until running jobs less than MAX_jobs (5)
+member kbl running jobs 10 MAX_jobs 10
+Waiting until running jobs less than MAX_jobs (5)
+member kbl running jobs 10 MAX_jobs 10
+Waiting until running jobs less than MAX_jobs (5)
+member kbl running jobs 10 MAX_jobs 10
+Waiting until running jobs less than MAX_jobs (5)
+member kbl running jobs 10 MAX_jobs 10
+Waiting until running jobs less than MAX_jobs (5)
+member kbl running jobs 10 MAX_jobs 10
+Waiting until running jobs less than MAX_jobs (5)
+member kbl running jobs 10 MAX_jobs 10
+Waiting until running jobs less than MAX_jobs (5)
+member kbl running jobs 10 MAX_jobs 10
+Waiting until running jobs less than MAX_jobs (5)
+member kbl running jobs 10 MAX_jobs 10
+Waiting until running jobs less than MAX_jobs (5)
+member kbl running jobs 10 MAX_jobs 10
+Waiting until running jobs less than MAX_jobs (5)
+member kbl running jobs 10 MAX_jobs 10
+Waiting until running jobs less than MAX_jobs (5)
+member kbl running jobs 10 MAX_jobs 10
+Waiting until running jobs less than MAX_jobs (5)
+member kbl running jobs 10 MAX_jobs 10
+Waiting until running jobs less than MAX_jobs (5)
+member kbl running jobs 10 MAX_jobs 10
+Waiting until running jobs less than MAX_jobs (5)
+member kbl running jobs 10 MAX_jobs 10
+Waiting until running jobs less than MAX_jobs (5)
+member kbl running jobs 10 MAX_jobs 10
+Waiting until running jobs less than MAX_jobs (5)
+member kbl running jobs 10 MAX_jobs 10
+Waiting until running jobs less than MAX_jobs (5)
+member kbl running jobs 10 MAX_jobs 10
+Waiting until running jobs less than MAX_jobs (5)
+member kbl running jobs 10 MAX_jobs 10
+Waiting until running jobs less than MAX_jobs (5)
+member kbl running jobs 10 MAX_jobs 10
+Waiting until running jobs less than MAX_jobs (5)
+member kbl running jobs 10 MAX_jobs 10
+Waiting until running jobs less than MAX_jobs (5)
