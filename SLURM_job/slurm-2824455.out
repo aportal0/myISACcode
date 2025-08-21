@@ -1,0 +1,15 @@
+r5-r7i1p1
+cp: cannot stat '/mnt/naszappa/CRCM5-LE/CanESM2_driven/pr/daily/pr_daysum_historical_195501-200512_kcu.nc': No such file or directory
+Warning (cdf_check_variables): Unsupported data type (char/string), skipped variable rotated_pole!
+Warning (cdfInqContents): No data arrays found!
+cdo    remapbil: Open failed on >/home/portal/work_big/CRCM5-LE/pr/pr_daysum_historical_195501-200512_kcu.nc<
+                 Unsupported file structure
+rm: cannot remove '/home/portal/work_big/CRCM5-LE/pr/pr_daysum_historical_195501-200512_kcv.nc.pid149181.ncks.tmp': No such file or directory
+rm: cannot remove '/home/portal/work_big/CRCM5-LE/pr/pr_daysum_historical_195501-200512_kcx.nc.pid149192.ncks.tmp': No such file or directory
+cp: cannot stat '/mnt/naszappa/CRCM5-LE/CanESM2_driven/pr/daily/pr_daysum_rcp85_200601-209812_kcu.nc': No such file or directory
+nco_err_exit(): ERROR Short NCO-generated message (usually name of function that triggered error): nco__open()
+nco_err_exit(): ERROR Error code is 2. Translation into English with nc_strerror(2) is "No such file or directory"
+ERROR: nco__open() unable to open file "/home/portal/work_big/CRCM5-LE/pr/pr_daysum_rcp85_200601-209812_kcu.nc.pid149806.ncks.tmp"
+nco_err_exit(): ERROR NCO will now exit with system call exit(EXIT_FAILURE)
+cdo    remapbil: Bilinear weights from curvilinear (280x280) to lonlat (125x69) grid
+rm: cannot remove '/home/portal/work_big/CRCM5-LE/pr/*tmp': No such file or directory

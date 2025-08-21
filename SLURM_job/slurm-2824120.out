@@ -1,4 +1,4 @@
-r1-r9i1p1
+r2-r10i1p1
 nco_err_exit(): ERROR Short NCO-generated message (usually name of function that triggered error): nco_put_var1()
 nco_err_exit(): ERROR Error code is -56. Translation into English with nc_strerror(-56) is "NetCDF: Attempt to convert between text & numbers"
 ncks: WARNING nco_cpy_var_dfn_trv() reports variable "rotated_pole" output type = NC_INT does not equal input type = NC_CHAR. This is legal yet usually ill-advised when appending variables (i.e., with -A). Writing values into slots created for a different type is begging for trouble (e.g., data corruption, truncation, gingivitis).
