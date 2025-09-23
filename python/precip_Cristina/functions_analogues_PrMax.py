@@ -90,6 +90,25 @@ def load_CERRA_italy_data(varname, timestep, lonlat_bounds):
     return data
 
 
+def load_CERRA_precip(timestep, lonlat_bounds):
+    """Loads CERRA data for a given variable, timestep and in lonlat_bounds.
+    Timestep can be a single datetime object or a list of datetime objects."""
+    # Possible varnames: 'precip'
+    # data_dir = '/mnt/naszappa/CERRA/daily/nc/regular/'
+    data_dir = '/media/alice/Crucial X9/portal/data_CNR/CERRA/precip'
+    years_data = np.unique(timestep.strftime("%Y"))
+    files = [os.path.join(data_dir, f'precip_daily_{year}_remapbil-to-05res.nc') for year in years_data]
+    # select variable and timestep
+    datasets = [xr.open_dataset(file)['tp'].sel(time=timestep, method="nearest") for file in files]
+    # concatenate datasets along "time"
+    data = xr.concat(datasets, dim="time").squeeze()
+    # Define and select lon lat masks
+    lon_mask, lat_mask = lonlat_mask(data.lon.values, data.lat.values, lonlat_bounds)
+    mask = lat_mask[:, np.newaxis] & lon_mask
+    data = data.where(mask, np.nan).dropna(dim="lat", how="all").dropna(dim="lon", how="all")
+    return data
+
+
 ## Functions to open member datasets from CRCM5-LE
 
 def get_anomaly_climatology_paths_CRCM5(CRCM5_dir, varname, list_membs, year_range):
@@ -451,7 +470,16 @@ def regrid_with_xesmf(field_event, box_event, resolution=0.5):
 ## Function for Kolmogorov-Smirnov test
 
 def ks_stat_and_pval(x, y):
-    result = ks_2samp(x, y)
+    """Perform the Kolmogorov-Smirnov test and return the statistic and p-value."""
+    # Remove NaNs from both arrays
+    x_clean = x[~np.isnan(x)]
+    y_clean = y[~np.isnan(y)]
+    
+    # Edge case: if either array is empty after removing NaNs
+    if len(x_clean) == 0 or len(y_clean) == 0:
+        return np.array([np.nan, np.nan])
+    
+    result = ks_2samp(x_clean, y_clean)
     return np.array([result.statistic, result.pvalue])
 
 ## Functions to plot data
