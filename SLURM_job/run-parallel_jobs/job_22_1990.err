@@ -1,4 +1,57 @@
+/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 39565 instead
+  warnings.warn(
+2025-09-23 18:59:40,373 - distributed.worker - WARNING - Compute Failed
+Key:       compute_and_save_daily_mean-3dd05d8e-061a-4047-acd1-abff2e67b518
+Function:  execute_task
+args:      ((<function compute_and_save_daily_mean at 0x7ff7a35bfc70>, '/work_big/users/clima/portal/CRCM5-LE/psl/kbv/1990/psl_EUR-11_CCCma-CanESM2_historical_r3-r2i1p1_OURANOS-CRCM5_kbv_3h_199006.nc', '/work_big/users/clima/portal/CRCM5-LE/psl/kbv/1990/psl_EUR-11_CCCma-CanESM2_historical_r3-r2i1p1_OURANOS-CRCM5_kbv_daily_199006.nc', 'psl', (<class 'dict'>, [['psl', (<class 'dict'>, [['zlib', 'True'], ['complevel', 5], ['dtype', 'float32']])]])))
+kwargs:    {}
+Exception: "OSError(-51, 'NetCDF: Unknown file format')"
 
-real	18m44.969s
-user	9m36.893s
-sys	3m33.807s
+Traceback (most recent call last):
+  File "/home/portal/script/python/compute_daily-mean_dask.py", line 56, in <module>
+    dask.compute(*dd)
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/dask/base.py", line 661, in compute
+    results = schedule(dsk, keys, **kwargs)
+  File "/home/portal/script/python/functions_preprocessing.py", line 46, in compute_and_save_daily_mean
+    ds = xr.open_dataset(file_in)
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/xarray/backends/api.py", line 539, in open_dataset
+    backend_ds = backend.open_dataset(
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/xarray/backends/netCDF4_.py", line 572, in open_dataset
+    store = NetCDF4DataStore.open(
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/xarray/backends/netCDF4_.py", line 376, in open
+    return cls(manager, group=group, mode=mode, lock=lock, autoclose=autoclose)
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/xarray/backends/netCDF4_.py", line 323, in __init__
+    self.format = self.ds.data_model
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/xarray/backends/netCDF4_.py", line 385, in ds
+    return self._acquire()
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/xarray/backends/netCDF4_.py", line 379, in _acquire
+    with self._manager.acquire_context(needs_lock) as root:
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/contextlib.py", line 135, in __enter__
+    return next(self.gen)
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/xarray/backends/file_manager.py", line 197, in acquire_context
+    file, cached = self._acquire_with_cache_info(needs_lock)
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/xarray/backends/file_manager.py", line 215, in _acquire_with_cache_info
+    file = self._opener(*self._args, **kwargs)
+  File "src/netCDF4/_netCDF4.pyx", line 2463, in netCDF4._netCDF4.Dataset.__init__
+  File "src/netCDF4/_netCDF4.pyx", line 2026, in netCDF4._netCDF4._ensure_nc_success
+OSError: [Errno -51] NetCDF: Unknown file format: b'/work_big/users/clima/portal/CRCM5-LE/psl/kbv/1990/psl_EUR-11_CCCma-CanESM2_historical_r3-r2i1p1_OURANOS-CRCM5_kbv_3h_199006.nc'
+2025-09-23 18:59:40,392 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-93a3abc7-d473-4c74-840b-d9b260c2572d')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2025-09-23 18:59:40,392 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-a359702e-58a4-4466-908a-5979beb36afc')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2025-09-23 18:59:40,392 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-d31d18e7-fe97-437e-b83c-7cfc92206531')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2025-09-23 18:59:40,393 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-095105e6-ac1b-43dd-b866-2ce8fec5497b')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2025-09-23 18:59:40,393 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-75bf3804-537a-4fc0-9635-54093927236c')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2025-09-23 18:59:40,393 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-ca9756c3-ede6-4f16-9ce1-e24f92645920')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2025-09-23 18:59:40,393 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-73e42324-c1df-4cd3-8a5e-e0d1da4d9f89')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2025-09-23 18:59:40,393 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-bc5d1e55-5fbd-4bee-98d1-9cb544e4a72f')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2025-09-23 18:59:40,393 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-6591ba5a-4b55-4f9f-a80b-b22752fa9e9e')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2025-09-23 18:59:40,393 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-df10ea4e-1d29-4fcf-a49c-da46b57f7ff5')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2025-09-23 18:59:40,393 - distributed.worker.state_machine - WARNING - Async instruction for <Task cancelled name="execute('compute_and_save_daily_mean-87dbe091-8039-453f-8856-5a3016cb2ce6')" coro=<Worker.execute() done, defined at /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/worker_state_machine.py:3615>> ended with CancelledError
+2025-09-23 18:59:43,590 - distributed.nanny - WARNING - Worker process still alive after 3.1999986267089846 seconds, killing
+2025-09-23 18:59:43,590 - distributed.nanny - WARNING - Worker process still alive after 3.1999986267089846 seconds, killing
+2025-09-23 18:59:43,590 - distributed.nanny - WARNING - Worker process still alive after 3.1999992370605472 seconds, killing
+
+real	0m5.907s
+user	0m9.453s
+sys	0m18.477s

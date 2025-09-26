@@ -60,7 +60,7 @@ def path_file_CRCM5(namevar, memb, year, month, time_res):
     month (int): month.
     """
     # Model data directory 
-    data_dir = '/work_big/users/portal/CRCM5-LE/'
+    data_dir = '/work_big/users/clima/portal/CRCM5-LE/'
     # Run type
     if year >= 2006:
         run_type = 'rcp85'

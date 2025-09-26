@@ -1,4 +1,11 @@
+/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
+Perhaps you already have a cluster running?
+Hosting the HTTP server on port 38233 instead
+  warnings.warn(
+Future exception was never retrieved
+future: <Future finished exception=TimeoutError('Timeout')>
+asyncio.exceptions.TimeoutError: Timeout
 
-real	16m0.580s
-user	0m0.009s
-sys	0m0.016s
+real	5m39.155s
+user	3m28.366s
+sys	6m16.726s

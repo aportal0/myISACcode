@@ -25,7 +25,8 @@ def load_ERA5_data(varname, freq, timestep, lonlat_bounds, l_anom):
     if freq == 'daily':
         timestep = (timestep.normalize() + pd.Timedelta(hours=9)).isoformat()
     # Possible varnames: 'mslp', 'z500'
-    data_dir = '/media/alice/Crucial X9/portal/data_CNR/ERA5/'+varname+'/'
+    # data_dir = '/media/alice/Crucial X9/portal/data_CNR/ERA5/'+varname+'/'
+    data_dir = '/work_big/users/clima/portal/ERA5/'+varname+'/'
     if l_anom:
         files = [os.path.join(data_dir, f'ERA5_{varname}_NH_{freq}_{year}_anom.nc') for year in years_data]
     else:
@@ -94,8 +95,8 @@ def load_CERRA_precip(timestep, lonlat_bounds):
     """Loads CERRA data for a given variable, timestep and in lonlat_bounds.
     Timestep can be a single datetime object or a list of datetime objects."""
     # Possible varnames: 'precip'
-    # data_dir = '/mnt/naszappa/CERRA/daily/nc/regular/'
-    data_dir = '/media/alice/Crucial X9/portal/data_CNR/CERRA/precip'
+    data_dir = '/work_big/users/clima/portal/CERRA/precip/'
+    # data_dir = '/media/alice/Crucial X9/portal/data_CNR/CERRA/precip'
     years_data = np.unique(timestep.strftime("%Y"))
     files = [os.path.join(data_dir, f'precip_daily_{year}_remapbil-to-05res.nc') for year in years_data]
     # select variable and timestep

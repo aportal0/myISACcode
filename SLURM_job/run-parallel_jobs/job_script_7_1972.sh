@@ -1,9 +1,12 @@
 #!/bin/bash
-#SBATCH --job-name=dmean_psl_7_1972   # Job name
-#SBATCH --ntasks=1                                      # One job (Python script) but multiple threads 
-#SBATCH --cpus-per-task=4                 # Request no. CPUs
+#SBATCH --job-name=dmean_psl_7_1972        # Job name
+#SBATCH --mem=3000
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=3
 #SBATCH --output=/home/portal/script/SLURM_job/run-parallel_jobs/job_7_1972.out  # Output file
 #SBATCH --error=/home/portal/script/SLURM_job/run-parallel_jobs/job_7_1972.err    # Error file
+#SBATCH --partition=batch
 
 # Activate conda environment
 source /home/${USER}/.bashrc
@@ -11,5 +14,5 @@ source activate myenv
 
 # run python script
 cd /home/portal/script/SLURM_job/
-time srun python3 /home/${USER}/script/python/compute_daily-mean_mpc.py psl 7 1972 4 ## FASTEST OPTION
-# time srun python3 /home/${USER}/script/python/compute_daily-mean_dask.py psl 7 1972 4
+# time python3 /home/${USER}/script/python/compute_daily-mean_mpc.py psl 7 1972 3 ## FASTEST OPTION
+time python3 /home/${USER}/script/python/compute_daily-mean_dask.py psl 7 1972 3

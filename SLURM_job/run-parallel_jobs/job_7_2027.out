@@ -1,6 +1,19 @@
 Variable: psl
 Member: 7
 Year: 2027
-Number of CPUs: 4
-Time saving 1045.6838796138763
+Number of CPUs: 3
+Variable: psl
+Member: 7
+Year: 2027
+Number of CPUs: 3
+Variable: psl
+Member: 7
+Year: 2027
+Number of CPUs: 3
+Variable: psl
+Member: 7
+Year: 2027
+Number of CPUs: 3
+<Client: 'tcp://127.0.0.1:38595' processes=3 threads=258, memory=2.93 GiB>
+Time:  338.60090136528015
 3h files memb 7 year 2027 removed successfully

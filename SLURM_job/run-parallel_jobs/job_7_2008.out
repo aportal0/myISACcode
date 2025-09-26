@@ -1,6 +1,19 @@
 Variable: psl
 Member: 7
 Year: 2008
-Number of CPUs: 4
-Time saving 974.2058136463165
+Number of CPUs: 3
+Variable: psl
+Member: 7
+Year: 2008
+Number of CPUs: 3
+Variable: psl
+Member: 7
+Year: 2008
+Number of CPUs: 3
+Variable: psl
+Member: 7
+Year: 2008
+Number of CPUs: 3
+<Client: 'tcp://127.0.0.1:41439' processes=3 threads=258, memory=2.93 GiB>
+Time:  327.71690368652344
 3h files memb 7 year 2008 removed successfully

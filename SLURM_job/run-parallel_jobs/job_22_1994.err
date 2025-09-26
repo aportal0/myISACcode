@@ -1,8 +1,8 @@
 /home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
 Perhaps you already have a cluster running?
-Hosting the HTTP server on port 34977 instead
+Hosting the HTTP server on port 39143 instead
   warnings.warn(
 
-real	18m29.928s
-user	9m31.030s
-sys	3m44.470s
+real	4m10.497s
+user	2m55.766s
+sys	4m12.785s

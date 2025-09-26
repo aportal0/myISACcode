@@ -3,10 +3,10 @@ import functions_slurm as fs
 
 # Input variables
 varname = 'psl'                 # Choice between 'tas', 'psl', 'zg', ...
-year_range = [1955,2099]
-memb_range = [44,50]
+year_range = [2093,2093]
+memb_range = [22,22]
 ncpus_per_job = 3
-nbatch = 4
+nbatch = 10
 mem_per_job = 3000
 username = 'portal'
 

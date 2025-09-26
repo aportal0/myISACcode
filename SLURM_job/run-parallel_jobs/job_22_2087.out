@@ -1,23 +1,19 @@
 Variable: psl
 Member: 22
 Year: 2087
-Number of CPUs: 4
+Number of CPUs: 3
 Variable: psl
 Member: 22
 Year: 2087
-Number of CPUs: 4
+Number of CPUs: 3
 Variable: psl
 Member: 22
 Year: 2087
-Number of CPUs: 4
+Number of CPUs: 3
 Variable: psl
 Member: 22
 Year: 2087
-Number of CPUs: 4
-Variable: psl
-Member: 22
-Year: 2087
-Number of CPUs: 4
-<Client: 'tcp://127.0.0.1:41791' processes=4 threads=256, memory=2.93 GiB>
-Time:  1174.596646308899
+Number of CPUs: 3
+<Client: 'tcp://127.0.0.1:41101' processes=3 threads=258, memory=2.93 GiB>
+Time:  393.01994800567627
 3h files memb 22 year 2087 removed successfully

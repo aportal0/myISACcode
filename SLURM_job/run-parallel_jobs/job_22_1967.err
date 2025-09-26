@@ -1,8 +1,14 @@
-/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/distributed/node.py:182: UserWarning: Port 8787 is already in use.
-Perhaps you already have a cluster running?
-Hosting the HTTP server on port 41485 instead
-  warnings.warn(
+Exception ignored in: <function CachingFileManager.__del__ at 0x7fb527941630>
+Traceback (most recent call last):
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/xarray/backends/file_manager.py", line 248, in __del__
+    self.close(needs_lock=False)
+  File "/home/portal/anaconda3/envs/myenv/lib/python3.10/site-packages/xarray/backends/file_manager.py", line 232, in close
+    file.close()
+  File "src/netCDF4/_netCDF4.pyx", line 2624, in netCDF4._netCDF4.Dataset.close
+  File "src/netCDF4/_netCDF4.pyx", line 2587, in netCDF4._netCDF4.Dataset._close
+  File "src/netCDF4/_netCDF4.pyx", line 2028, in netCDF4._netCDF4._ensure_nc_success
+RuntimeError: NetCDF: Not a valid ID
 
-real	18m32.678s
-user	9m18.918s
-sys	3m24.257s
+real	4m18.547s
+user	2m56.925s
+sys	4m34.314s
