@@ -17,7 +17,7 @@ from datetime import datetime
 
 ## Functions to load data from ERA5 and CERRA
 
-def load_ERA5_data(varname, freq, timestep, lonlat_bounds, l_anom):
+def load_ERA5_data(varname, freq, timestep, lonlat_bounds, l_anom, data_dir):
     """Loads ERA5 data for a given variable, timestep and in lonlat_bounds.
     Timestep can be a single datetime object or a list of datetime objects."""
     # Time variables
@@ -26,7 +26,7 @@ def load_ERA5_data(varname, freq, timestep, lonlat_bounds, l_anom):
         timestep = (timestep.normalize() + pd.Timedelta(hours=9)).isoformat()
     # Possible varnames: 'mslp', 'z500'
     # data_dir = '/media/alice/Crucial X9/portal/data_CNR/ERA5/'+varname+'/'
-    data_dir = '/work_big/users/clima/portal/ERA5/'+varname+'/'
+    # data_dir = '/work_big/users/clima/portal/ERA5/'+varname+'/'
     if l_anom:
         files = [os.path.join(data_dir, f'ERA5_{varname}_NH_{freq}_{year}_anom.nc') for year in years_data]
     else:
@@ -48,12 +48,12 @@ def load_ERA5_data(varname, freq, timestep, lonlat_bounds, l_anom):
     return data
 
 
-def load_ERA5_clim(varname, doy, lonlat_bounds, l_smoothing):
+def load_ERA5_clim(varname, doy, lonlat_bounds, l_smoothing, data_dir):
     """Loads ERA5 climatology 1985-2019 for a given variable and day-of-year (doy) in lonlat_bounds.
     l_smoothing = True for 31-day smoothing time window."""
     # Possible varnames: 'msl'
     # data_dir = '/work_big/users/clima/portal/ERA5/'+varname+'/climatology/'
-    data_dir = '/media/alice/Crucial X9/portal/data_CNR/ERA5/'+varname+'/climatology/'
+    # data_dir = '/media/alice/Crucial X9/portal/data_CNR/ERA5/'+varname+'/climatology/'
     if l_smoothing:
         file = os.path.join(data_dir, f'ERA5_{varname}_NH_daily_clim_2004-2023_sm31d.nc')
     else:
@@ -91,12 +91,12 @@ def load_CERRA_italy_data(varname, timestep, lonlat_bounds):
     return data
 
 
-def load_CERRA_precip(timestep, lonlat_bounds):
+def load_CERRA_precip(timestep, lonlat_bounds, data_dir):
     """Loads CERRA data for a given variable, timestep and in lonlat_bounds.
     Timestep can be a single datetime object or a list of datetime objects."""
     # Possible varnames: 'precip'
-    data_dir = '/work_big/users/clima/portal/CERRA/precip/'
-    # data_dir = '/media/alice/Crucial X9/portal/data_CNR/CERRA/precip'
+    # data_dir = '/work_big/users/clima/portal/CERRA/precip/'
+    # data_dir = '/media/alice/Crucial X9/portal/data_CNR/CERRA/precip/'
     years_data = np.unique(timestep.strftime("%Y"))
     files = [os.path.join(data_dir, f'precip_daily_{year}_remapbil-to-05res.nc') for year in years_data]
     # select variable and timestep
