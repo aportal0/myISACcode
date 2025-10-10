@@ -56,7 +56,7 @@ elif event_origin == 'CRCM5-LE':
 box_event = fanPM.box_event_PrMax_alertregions(no_node,no_event)
 
 # Variable
-varname = 'psl' # Variable to compute the difference between analogues, e.g. 'zg' for geopotential height
+varname = 'tas' # Variable to compute the difference between analogues, e.g. 'zg' for geopotential height
 var_analogues = 'psl'  # Variable used to find the analogues, e.g. 'psl' for sea level pressure
 if varname=='psl':
     var_factor = 0.01  # Factor to convert the variable to the correct units (e.g., psl from Pa to hPa)
