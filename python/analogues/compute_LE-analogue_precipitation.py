@@ -65,7 +65,7 @@ var_analogues = 'psl'  # Variable used to find the analogues, e.g. 'psl' for sea
 qtl_LE = 0.99
 
 # Number of ensemble members
-no_membs = 5
+no_membs = 49
 
 # Epochs
 list_year_ranges = [[1955, 1974], [2004, 2023], [2080, 2099]] # past [1955-1974], present [2004-2023], near-future [2030-2049], far future [2080-2099]
@@ -112,13 +112,6 @@ for i, year_range in enumerate(list_year_ranges):
     # List file paths for current epoch
     list_times = [data['times'] for data in ensemble_data[i].values()]
     pr_files = fanPM.get_precipitation_paths_CRCM5_bymonth(CRCM5_dir, list_membs, list_times)
-    
-    ##### MISSING 2099 DATA HANDLING #####
-    pr_files = {
-        memb: [f for f in files if os.path.isfile(f)]
-        for memb, files in pr_files.items()
-        }  # precip missing for 2099
-    ##### MISSING 2099 DATA HANDLING #####
 
     # Lists of datasets for current epoch
     pr_sel = fanPM.open_member_datasets(pr_files, combine='by_coords', expand_member_dim=True)
@@ -169,16 +162,6 @@ for i, (epoch1, epoch2) in enumerate(diff_indices):
     # Get the datasets for the two epochs
     ds_epoch1 = list_ds_pr[epoch1].isel(member=members)
     ds_epoch2 = list_ds_pr[epoch2].isel(member=members)
-    
-    ##### MISSING 2099 DATA HANDLING #####
-    # Ensure the datasets have the same shape
-    len1 = ds_epoch1.sizes["analogue"]
-    len2 = ds_epoch2.sizes["analogue"]
-    # Make them equal by cutting the longest
-    if len2 < len1:
-        print(f"Epoch {list_year_ranges[epoch2]} has fewer analogues than epoch {list_year_ranges[epoch1]}. Truncating epoch {list_year_ranges[epoch1]} to match.")
-        ds_epoch1 = ds_epoch1.isel(analogue=slice(0, len2))
-    ##### MISSING 2099 DATA HANDLING #####
     
     ds1_flat = ds_epoch1.stack(analogue_all=('member', 'analogue')).chunk({'analogue_all': -1})
     ds2_flat = ds_epoch2.stack(analogue_all=('member', 'analogue')).chunk({'analogue_all': -1})

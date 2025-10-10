@@ -58,12 +58,16 @@ box_event = fanPM.box_event_PrMax_alertregions(no_node,no_event)
 # Variable
 varname = 'psl' # Variable to compute the difference between analogues, e.g. 'zg' for geopotential height
 var_analogues = 'psl'  # Variable used to find the analogues, e.g. 'psl' for sea level pressure
+if varname=='psl':
+    var_factor = 0.01  # Factor to convert the variable to the correct units (e.g., psl from Pa to hPa)
+else:
+    var_factor = 1
 
 # Quantile and analogue spacing
 qtl_LE = 0.99
 
 # Number of ensemble members
-no_membs = 5
+no_membs = 49
 
 # Epochs
 list_year_ranges = [[1955, 1974], [2004, 2023], [2080, 2099]] # past [1955-1974], present [2004-2023], near-future [2030-2049], far future [2080-2099]
@@ -133,9 +137,9 @@ for i, year_range in enumerate(list_year_ranges):
         clim_analogues.append(clim_memb)
     
     # Concatenate the anomaly and climatology datasets for the current epoch
-    ds_anom_analogues = xr.concat(anom_analogues, dim='member')[varname] * 0.01
+    ds_anom_analogues = xr.concat(anom_analogues, dim='member')[varname] * var_factor
     ds_anom_analogues = ds_anom_analogues.rename({"time": "analogue"})
-    ds_clim_analogues = xr.concat(clim_analogues, dim='member')[varname] * 0.01
+    ds_clim_analogues = xr.concat(clim_analogues, dim='member')[varname] * var_factor
     ds_clim_analogues = ds_clim_analogues.rename({"time": "analogue"})
     
     # Select event box

@@ -29,9 +29,9 @@ import functions_analogues_LUCAFAMOSS as fan
 # CRCM5_dir = '/work_big/users/clima/portal/CRCM5-LE/'
 
 # alice
-CERRA_dir = '/media/alice/Crucial X9/portal/data_CNR/CERRA-Land/'
-ERA5_dir = '/media/alice/Crucial X9/portal/data_CNR/ERA5/'
-CRCM5_dir = '/media/alice/Crucial X9/portal/data_CNR/CRCM5-LE/'
+CERRA_dir = "/media/alice/Crucial X9/portal/data_CNR/CERRA/"
+ERA5_dir = "/media/alice/Crucial X9/portal/data_CNR/ERA5/"
+CRCM5_dir = "/media/alice/Crucial X9/portal/data_CNR/CRCM5-LE/"
 
 # --- Parameters LE analogue search ---
 
@@ -43,12 +43,13 @@ qtl_LE = 0.99
 analogue_spacing_memb = 7 # days
 
 # Number of ensemble members
-start_memb = 0
-no_membs = 10 # 32 members available in the LE
+start_memb = 48
+end_memb = 48 # 50 members available in the LE
+no_membs = end_memb - start_memb + 1
 
 # Time
-year_range = [2080, 2099] # past [1955-1974], present [2004-2023], near-future [2030-2049], far future [2080-2099]
-years_sel = np.arange(year_range[0], year_range[1]+1)
+list_year_range = [[1955, 1974], [2004, 2023], [2080, 2099]] # past [1955-1974], present [2004-2023], near-future [2030-2049], far future [2080-2099]
+list_years_sel = [np.arange(year_range[0], year_range[1]+1) for year_range in list_year_range]
 
 
 # --- Event Definition ---
@@ -57,11 +58,11 @@ years_sel = np.arange(year_range[0], year_range[1]+1)
 lselect = 'alertregions'  # 'Italy' or 'wide-region' or 'alert-regions'
 no_node = 1
 no_event = 1
-event_origin = 'ERA5'  # 'ERA5' or 'CRCM5-LE'
+event_origin = 'CRCM5-LE'  # 'ERA5' or 'CRCM5-LE'
 if event_origin == 'ERA5':
     str_event = f'node{no_node}-extreme{no_event}-{lselect}'
     # Upload ERA5 info
-    df_events = pd.read_excel(CERRA_dir+'events_cum_on_above99_alert_regions.xlsx', sheet_name=no_node-1)
+    df_events = pd.read_excel(CERRA_dir+'events_cum_on_above99_alertregions_CERRA.xlsx', sheet_name=no_node-1)
     time_event = df_events['Time'].iloc[no_event-1] + pd.Timedelta('12h')
     doy_event =  time_event.timetuple().tm_yday
 elif event_origin == 'CRCM5-LE':
@@ -95,7 +96,7 @@ if event_origin == 'ERA5':
 elif event_origin == 'CRCM5-LE':
     # From model
     BAM_files, _ = fanPM.get_anomaly_climatology_paths_CRCM5(CRCM5_dir, varname, [member_event], [time_event.year, time_event.year])
-    _, BAM_files_clim = fanPM.get_anomaly_climatology_paths_CRCM5(CRCM5_dir, varname, [member_event], year_range)
+    _, BAM_files_clim = fanPM.get_anomaly_climatology_paths_CRCM5(CRCM5_dir, varname, [member_event], [2004,2023])
     # Make list of datasets and add 'member' coordinate
     list_ds = fanPM.open_member_datasets(BAM_files, combine='by_coords', expand_member_dim=True)
     list_ds_clim = fanPM.open_member_datasets(BAM_files_clim, combine='by_coords', expand_member_dim=True)
@@ -120,142 +121,148 @@ elif event_origin == 'CRCM5-LE':
 print("Event data loaded...")
 
 
-# --- File paths LE ---
+# --- Load CRCM5-LE data and search for analogues ---
 
 # List of members
 list_membs = [name for name in os.listdir(CRCM5_dir + 'psl') if os.path.isdir(os.path.join(CRCM5_dir + 'psl', name))]
-list_membs = sorted(list_membs)[:no_membs]  # Select the first 'no_membs' members
+list_membs = sorted(list_membs)[start_memb-1:end_memb]  # Select a subset of members
 
 # Anomalies
-# List file paths
-dirs_files = [CRCM5_dir + varname + '/' + membs + '/'+ str(year) + '/res05/' for year in years_sel for membs in list_membs]
-prefix_files = varname + '-anom'
-# Loop through each item in the main folder
-paths_files = []
-for dir in dirs_files:
-    # Loop through files in the subdirectory
-    for file in os.listdir(dir):
-        file_path = os.path.join(dir, file)  # Full file path
-        if os.path.isfile(file_path):  # Check if it is a file
-            paths_files.append(file_path) if file.startswith(prefix_files) else None
-# Create a dictionary: member -> list of files
-memb_files = fanPM.create_member_file_dict(paths_files, list_membs)
+for year_range, years_sel in zip(list_year_range, list_years_sel):
+    print(f"Processing year range: {year_range[0]}-{year_range[1]}")
 
-# Climatology
-# List file paths
-dirs_files_clim = [CRCM5_dir + varname + '/' + membs + '/clim/' for membs in list_membs]
-suffix_files_clim = 'clim'+str(year_range[0])+'-'+str(year_range[1])+'_sm31d_05res.nc'
-# Loop through each item in the main folder
-paths_files_clim = []
-for dir in dirs_files_clim:
-    # Loop through files in the subdirectory
-    for file in os.listdir(dir):
-        file_path = os.path.join(dir, file)  # Full file path
-        if os.path.isfile(file_path):  # Check if it is a file
-            paths_files_clim.append(file_path) if file.endswith(suffix_files_clim) else None
-# Create a dictionary: member -> list of files
-memb_files_clim = fanPM.create_member_file_dict(paths_files_clim, list_membs)
-# Sort paths for each member (by filename or full path)
-for memb in memb_files_clim:
-    memb_files_clim[memb].sort()
+    # --- File paths LE ---
 
+    # Anomalies
+    # List file paths
+    dirs_files = [CRCM5_dir + varname + '/' + membs + '/'+ str(year) + '/res05/' for year in years_sel for membs in list_membs]
+    prefix_files = varname + '-anom'
+    # Loop through each item in the main folder
+    paths_files = []
+    for dir in dirs_files:
+        # Loop through files in the subdirectory
+        for file in os.listdir(dir):
+            file_path = os.path.join(dir, file)  # Full file path
+            if os.path.isfile(file_path):  # Check if it is a file
+                paths_files.append(file_path) if file.startswith(prefix_files) else None
+    # Create a dictionary: member -> list of files
+    memb_files = fanPM.create_member_file_dict(paths_files, list_membs)
 
-# --- Load LE data ---
-
-# Make list of datasets and add 'member' coordinate
-list_ds = fanPM.open_member_datasets(memb_files, combine='by_coords', expand_member_dim=True)
-list_ds_clim = fanPM.open_member_datasets(memb_files_clim, combine='by_coords', expand_member_dim=True)
-# Concatenate and scale
-dmslp_tmp_LE = xr.concat(list_ds, dim='member')[varname] * 0.01
-mslp_tmp_clim_LE = xr.concat(list_ds_clim, dim='member')[varname] * 0.01
-
-
-# --- Prepare data for analogue search ---
-
-# Select time range
-dmslp_tmp_LE = dmslp_tmp_LE.sel(time=dmslp_tmp_LE.time.dt.month.isin(months_sel))
-dmslp_tmp_LE = dmslp_tmp_LE.sel(time=dmslp_tmp_LE.time.dt.year.isin(years_sel))
-mslp_tmp_clim_LE = mslp_tmp_clim_LE.sel(time=mslp_tmp_clim_LE.time.dt.month.isin(months_sel))
-
-# Select event box
-lon_mask_LE, lat_mask_LE = fanPM.lonlat_mask(dmslp_tmp_LE.lon.values, dmslp_tmp_LE.lat.values, box_event)
-mask_LE = lat_mask_LE[:, np.newaxis] & lon_mask_LE
-mask_xr_LE = xr.DataArray(
-    mask_LE,
-    dims=["lat", "lon"],
-    coords={"lat": dmslp_tmp_LE.lat.values, "lon": dmslp_tmp_LE.lon.values},
-)
-dmslp_sel_LE = dmslp_tmp_LE.where(mask_xr_LE, drop=True)
-mslp_sel_clim_LE = mslp_tmp_clim_LE.where(mask_xr_LE, drop=True)
-
-# Fix number of analogues per member based on the quantile
-n_analogues_LE = int(np.round(len(dmslp_sel_LE.time) * (1-qtl_LE)))
-
-
-# --- Compute Euclidean distance ---
-
-# Compute distance to the event
-dist_LE = []  # Initialize an empty list to store distances for each member
-for memb in list_membs:
-    # Compute euclidean distance from the event to the selected mslp data for each member
-    dist_memb = fan.function_distance(dmslp_event, dmslp_sel_LE.sel(member=memb), nan_version=True)
-    dist_LE.append(dist_memb)
-
-
-# --- Search for analogues ---
-
-# Initialize lists to store analogue data
-indices_filtered_analogues_LE = []  # Initialize an empty list to store filtered indices for each member
-times_filtered_analogues_LE = []  # Initialize an empty list to store filtered analogue times for each member
-dist_filtered_analogues_LE = []  # Initialize an empty list to store filtered distances for each member
-# Time values
-all_times_LE = dmslp_sel_LE.time.values
-
-# Find analogue indices for each member
-for ii, memb in enumerate(list_membs):
-    print('Processing member:', memb)
-
-    # First search of n_analogues
-    factor_0sel = 2
-    qtl_0sel = 1 - ((1 - qtl_LE) * factor_0sel)  # First selection of the quantile, for extracting n_analogues
-    l_0sel = True  # Flag for selection of analogues
+    # Climatology
+    # List file paths
+    dirs_files_clim = [CRCM5_dir + varname + '/' + membs + '/clim/' for membs in list_membs]
+    suffix_files_clim = 'clim'+str(year_range[0])+'-'+str(year_range[1])+'_sm31d_05res.nc'
+    # Loop through each item in the main folder
+    paths_files_clim = []
+    for dir in dirs_files_clim:
+        # Loop through files in the subdirectory
+        for file in os.listdir(dir):
+            file_path = os.path.join(dir, file)  # Full file path
+            if os.path.isfile(file_path):  # Check if it is a file
+                paths_files_clim.append(file_path) if file.endswith(suffix_files_clim) else None
+    # Create a dictionary: member -> list of files
+    memb_files_clim = fanPM.create_member_file_dict(paths_files_clim, list_membs)
+    # Sort paths for each member (by filename or full path)
+    for memb in memb_files_clim:
+        memb_files_clim[memb].sort()
     
-    while l_0sel:
-        # Compute log-transformed distance
-        logdist_memb = np.log(1 / dist_LE[ii])
-        # Threshold at given quantile
-        thresh_0sel = np.percentile(logdist_memb, qtl_0sel * 100, axis=0)
-        mask_analogues_memb = (logdist_memb >= thresh_0sel)
+    
+    # --- Load LE data ---
+    
+    # Make list of datasets and add 'member' coordinate
+    list_ds = fanPM.open_member_datasets(memb_files, combine='by_coords', expand_member_dim=True)
+    list_ds_clim = fanPM.open_member_datasets(memb_files_clim, combine='by_coords', expand_member_dim=True)
+    # Concatenate and scale
+    dmslp_tmp_LE = xr.concat(list_ds, dim='member')[varname] * 0.01
+    mslp_tmp_clim_LE = xr.concat(list_ds_clim, dim='member', coords='minimal', compat='override')[varname] * 0.01
+    
+    
+    # --- Prepare data for analogue search ---
+    
+    # Select time range
+    dmslp_tmp_LE = dmslp_tmp_LE.sel(time=dmslp_tmp_LE.time.dt.month.isin(months_sel))
+    dmslp_tmp_LE = dmslp_tmp_LE.sel(time=dmslp_tmp_LE.time.dt.year.isin(years_sel))
+    mslp_tmp_clim_LE = mslp_tmp_clim_LE.sel(time=mslp_tmp_clim_LE.time.dt.month.isin(months_sel))
+    
+    # Select event box
+    lon_mask_LE, lat_mask_LE = fanPM.lonlat_mask(dmslp_tmp_LE.lon.values, dmslp_tmp_LE.lat.values, box_event)
+    mask_LE = lat_mask_LE[:, np.newaxis] & lon_mask_LE
+    mask_xr_LE = xr.DataArray(
+        mask_LE,
+        dims=["lat", "lon"],
+        coords={"lat": dmslp_tmp_LE.lat.values, "lon": dmslp_tmp_LE.lon.values},
+    )
+    dmslp_sel_LE = dmslp_tmp_LE.where(mask_xr_LE, drop=True)
+    mslp_sel_clim_LE = mslp_tmp_clim_LE.where(mask_xr_LE, drop=True)
+    
+    # Fix number of analogues per member based on the quantile
+    n_analogues_LE = int(np.round(len(dmslp_sel_LE.time) * (1-qtl_LE)))
+    
+    
+    # --- Compute Euclidean distance ---
+    
+    # Compute distance to the event
+    dist_LE = []  # Initialize an empty list to store distances for each member
+    for memb in list_membs:
+        # Compute euclidean distance from the event to the selected mslp data for each member
+        dist_memb = fan.function_distance(dmslp_event, dmslp_sel_LE.sel(member=memb), nan_version=True)
+        dist_LE.append(dist_memb)
+    
+    
+    # --- Search for analogues ---
+    
+    # Initialize lists to store analogue data
+    indices_filtered_analogues_LE = []  # Initialize an empty list to store filtered indices for each member
+    times_filtered_analogues_LE = []  # Initialize an empty list to store filtered analogue times for each member
+    dist_filtered_analogues_LE = []  # Initialize an empty list to store filtered distances for each member
+    # Time values
+    all_times_LE = dmslp_sel_LE.time.values
+    
+    # Find analogue indices for each member
+    for ii, memb in enumerate(list_membs):
+        print('Processing member:', memb)
+    
+        # First search of n_analogues
+        factor_0sel = 2
+        qtl_0sel = 1 - ((1 - qtl_LE) * factor_0sel)  # First selection of the quantile, for extracting n_analogues
+        l_0sel = True  # Flag for selection of analogues
         
-        if event_origin == 'CRCM5-LE' and memb == member_event:
-            # Exclude analogue times within ±7 days of their associated event
-            time_diff = np.abs((all_times_LE - time_event).astype('timedelta64[D]').astype(int))
-            mask_analogues_memb &= np.array(time_diff) >= analogue_spacing_memb  # update mask to exclude times too close to the event
-        
-        indices_analogues_memb = np.where(mask_analogues_memb)[0]  # indices of all valid analogue times
-        
-        # Filter analogues based on the mask and logdist, ensuring they are spaced correctly (analogue_spacing days apart)
-        indices_filtered_analogues_memb = fan.timefilter_analogues(indices_analogues_memb, logdist_memb, all_times_LE, analogue_spacing_memb)
-
-        if len(indices_filtered_analogues_memb) >= n_analogues_LE:
-            indices_filtered_analogues_memb = indices_filtered_analogues_memb[:n_analogues_LE]
-            l_0sel = False
-            print("Selection completed using pool data from quantile", qtl_0sel)
-        else:
-            factor_0sel +=1
-            qtl_0sel = 1 - ((1 - qtl_LE) * factor_0sel)
+        while l_0sel:
+            # Compute log-transformed distance
+            logdist_memb = np.log(1 / dist_LE[ii])
+            # Threshold at given quantile
+            thresh_0sel = np.percentile(logdist_memb, qtl_0sel * 100, axis=0)
+            mask_analogues_memb = (logdist_memb >= thresh_0sel)
             
-    # Save data in lists
-    indices_filtered_analogues_LE.append(indices_filtered_analogues_memb)
-    times_filtered_analogues_LE.append(all_times_LE[indices_filtered_analogues_memb])
-    dist_filtered_analogues_LE.append(dist_LE[ii][indices_filtered_analogues_memb])
-
-# --- Save analogue data ---
-
-# Save the indices of the filtered analogues to a npz file
-for im, memb in enumerate(list_membs):
-    # Create the file path for each member
-    npz_file_path = f'./analogue_data/times_distances_analogues-{varname}_{str_event}_{int(qtl_LE*100)}pct_{year_range[0]}-{year_range[1]}_CRCM5-LE_memb-{memb}.npz'
-    np.savez(npz_file_path, 
-             times=times_filtered_analogues_LE[im], 
-             distances=dist_filtered_analogues_LE[im])
+            if event_origin == 'CRCM5-LE' and memb == member_event:
+                # Exclude analogue times within ±7 days of their associated event
+                time_diff = np.abs((all_times_LE - time_event).astype('timedelta64[D]').astype(int))
+                mask_analogues_memb &= np.array(time_diff) >= analogue_spacing_memb  # update mask to exclude times too close to the event
+            
+            indices_analogues_memb = np.where(mask_analogues_memb)[0]  # indices of all valid analogue times
+            
+            # Filter analogues based on the mask and logdist, ensuring they are spaced correctly (analogue_spacing days apart)
+            indices_filtered_analogues_memb = fan.timefilter_analogues(indices_analogues_memb, logdist_memb, all_times_LE, analogue_spacing_memb)
+    
+            if len(indices_filtered_analogues_memb) >= n_analogues_LE:
+                indices_filtered_analogues_memb = indices_filtered_analogues_memb[:n_analogues_LE]
+                l_0sel = False
+                print("Selection completed using pool data from quantile", qtl_0sel)
+            else:
+                factor_0sel +=1
+                qtl_0sel = 1 - ((1 - qtl_LE) * factor_0sel)
+                
+        # Save data in lists
+        indices_filtered_analogues_LE.append(indices_filtered_analogues_memb)
+        times_filtered_analogues_LE.append(all_times_LE[indices_filtered_analogues_memb])
+        dist_filtered_analogues_LE.append(dist_LE[ii][indices_filtered_analogues_memb])
+    
+    # --- Save analogue data ---
+    
+    # Save the indices of the filtered analogues to a npz file
+    for im, memb in enumerate(list_membs):
+        # Create the file path for each member
+        npz_file_path = f'./analogue_data/times_distances_analogues-{varname}_{str_event}_{int(qtl_LE*100)}pct_{year_range[0]}-{year_range[1]}_CRCM5-LE_memb-{memb}.npz'
+        np.savez(npz_file_path, 
+                 times=times_filtered_analogues_LE[im], 
+                 distances=dist_filtered_analogues_LE[im])
