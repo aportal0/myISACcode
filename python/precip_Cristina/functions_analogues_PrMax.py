@@ -402,6 +402,48 @@ def get_year_range(year):
     return year_range
 
 
+def concat_members_noleap(list_ds, varname):
+    """
+    Concatenate a list of datasets along 'member' dimension,
+    handling missing timesteps and duplicates, keeping a 365-day no-leap calendar.
+    
+    Parameters:
+        list_ds : list of xarray.Dataset
+        varname : str, name of the variable to extract after concatenation
+    
+    Returns:
+        xarray.DataArray: concatenated variable along 'member'
+    """
+    
+    # 1. Clean each dataset: remove duplicates & convert to DatetimeNoLeap
+    list_ds_clean = []
+    for ds in list_ds:
+        ds = ds.copy()
+        # Convert to DatetimeNoLeap if needed
+        if not isinstance(ds.time.values[0], cftime.DatetimeNoLeap):
+            ds['time'] = xr.DataArray(
+                [cftime.DatetimeNoLeap(t.year, t.month, t.day) for t in ds.time.values],
+                dims='time'
+            )
+        # Remove duplicates
+        _, index = np.unique(ds.time.values, return_index=True)
+        ds = ds.isel(time=index)
+        # Sort by time
+        ds = ds.sortby('time')
+        list_ds_clean.append(ds)
+    
+    # 2. Compute the union of all times
+    all_times = np.unique(np.concatenate([ds.time.values for ds in list_ds_clean]))
+    
+    # 3. Reindex each dataset to the full time axis
+    list_ds_aligned = [ds.reindex(time=all_times) for ds in list_ds_clean]
+    
+    # 4. Concatenate along 'member'
+    result = xr.concat(list_ds_aligned, dim='member')[varname] * 0.01
+    
+    return result
+
+
 ## Function to create lon-lat mask (event-wise)
 
 def box_event_PrMax_alertregions(no_node, no_event):
@@ -409,10 +451,12 @@ def box_event_PrMax_alertregions(no_node, no_event):
     Lon-lat box of event selected based on above99 prec over alert regions.
     box_event = [lon_min, lon_max, lat_min, lat_max]
     """
-    if no_node == 6 and no_event == 1:
-        box_event = [3, 22, 35, 50]
-    elif no_node == 1 and no_event == 1:
+    if no_node == 1 and no_event == 1:
         box_event = [-5, 20, 31, 50]
+    elif no_node == 6 and no_event == 1:
+        box_event = [3, 22, 35, 50]
+    elif no_node == 6 and no_event == 19:
+        box_event = [2, 20, 33, 48]
     return box_event
 
 
@@ -438,6 +482,9 @@ def get_best_model_analogue_info(no_node, no_event, var_analogues):
     if no_node==1 and no_event==1:
         if var_analogues == 'psl':
             dict_best_analogue = {'member': 'kbw', 'distance': 125.24177, 'date': '2019-11-25'}
+    elif no_node==6 and no_event==19:
+        if var_analogues == 'psl':
+            dict_best_analogue = {'member': 'kcb', 'distance': 52.37375, 'date': '2006-11-24'}
     
     return dict_best_analogue
 
