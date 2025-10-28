@@ -46,8 +46,8 @@ output_dir = './analogue_data/analogue_differences/'  # Directory to save the ou
 # --- Event and LE analogue definition ---
 # Event
 lselect = 'alertregions'  # 'Italy' or 'wide-region' or 'alert-regions'
-no_node = 1
-no_event = 1
+no_node = 6
+no_event = 19
 event_origin = 'CRCM5-LE'  # 'ERA5' or 'CRCM5-LE'
 if event_origin == 'ERA5':
     str_event = f'node{no_node}-extreme{no_event}-{lselect}'  # 'Italy' or 'wide-region' or 'alert-regions'
@@ -151,11 +151,10 @@ for i, year_range in enumerate(list_year_ranges):
 # print(f"Climatology dataset for epoch {list_year_ranges[0]}: {list_ds_clim[0]}")
 
 
-# --- Kolmogorov-Smirnov test for significance and difference between epochs ---
+# --- Kolmogorov-Smirnov test for significance ---
 
-# Perform the Kolmogorov-Smirnov test and compute difference for each pair of epochs
+# Perform the Kolmogorov-Smirnov test for each pair of epochs
 list_ks_stats = []  # Initialize an empty list to store the KS statistics
-list_ds_diff = []  # Initialize an empty list to store the differences
 for i, (epoch1, epoch2) in enumerate(diff_indices):
     print(f"Computing KS test for epoch {epoch1} vs epoch {epoch2}")
     members = np.arange(0, no_membs)  # Select all members for the KS test
@@ -179,16 +178,24 @@ for i, (epoch1, epoch2) in enumerate(diff_indices):
         output_dtypes=[float],
     )
     ks_statistics = ks_statistics.assign_coords(output=["diff_statistic", "pvalue"])
-
-    # Compute difference between the two epochs
-    ds_diff = ds2_flat.mean(dim='analogue_all') - ds1_flat.mean(dim='analogue_all')
-    ds_diff.attrs['epoch1'] = f"{list_year_ranges[epoch1][0]}-{list_year_ranges[epoch1][1]}"
-    ds_diff.attrs['epoch2'] = f"{list_year_ranges[epoch2][0]}-{list_year_ranges[epoch2][1]}"
-
     # Add the datasets to the lists
     list_ks_stats.append(ks_statistics)
+
+
+# --- Compute LE analogue differences ---
+# Compute differences between LE analogues from different epochs
+list_ds_diff = []  # Initialize an empty list to store the differences
+for i, (epoch1, epoch2) in enumerate(diff_indices):
+    # Compute the difference between the two epochs
+    ds_epoch1_mean = (list_ds_pr[epoch1]).mean(dim=('member','analogue'))
+    ds_epoch2_mean = (list_ds_pr[epoch2]).mean(dim=('member','analogue'))
+    ds_diff = ds_epoch2_mean - ds_epoch1_mean
+    # Add epoch information to the dataset
+    ds_diff.attrs['epoch1'] = f"{list_year_ranges[epoch1][0]}-{list_year_ranges[epoch1][1]}"
+    ds_diff.attrs['epoch2'] = f"{list_year_ranges[epoch2][0]}-{list_year_ranges[epoch2][1]}"
+    # Add the dataset to the lists
     list_ds_diff.append(ds_diff)
-    
+
 
 # --- Save to NetCDF files ---
 if not os.path.exists(output_dir):
@@ -210,6 +217,8 @@ for i in range(len(list_ds_diff)):
     if not os.path.exists(stat_file):
         ks_stats.to_netcdf(stat_file)
         print(f"Saved KS statistics dataset to {stat_file}")
+del list_ds_diff
+del list_ks_stats
 
 # Save absolute value by epoch to NetCDF files
 for i, year_range in enumerate(list_year_ranges):
@@ -218,7 +227,10 @@ for i, year_range in enumerate(list_year_ranges):
     suffix_file = f"{varname}_{str_event}_{int(qtl_LE*100)}pct_{year_range[0]}-{year_range[1]}_CRCM5_{no_membs}membs.nc"
 
     # Compute mean precipitation in mask
-    mask = xr.open_dataset(f'./analogue_data/BAM_data/{varname}-mask_BAM-{var_analogues}_node{no_node}_extreme{no_event}-{lselect}_OND_2004-2023_CRCM5-LE_30membs.nc')
+    if event_origin == 'ERA5':
+        mask = xr.open_dataset(f'./analogue_data/event_data/{varname}-mask_{str_event}_CERRA.nc')
+    elif event_origin == 'CRCM5-LE':
+        mask = xr.open_dataset(f'./analogue_data/BAM_data/{varname}-mask_BAM-{var_analogues}_{str_event}_OND_2004-2023_CRCM5-LE_49membs.nc')
     pr_masked = pr_epoch.where(mask['pr_mask']==1)  # Apply mask to the precipitation data
     # weights = cos(lat)
     weights = np.cos(np.deg2rad(pr_epoch['lat']))

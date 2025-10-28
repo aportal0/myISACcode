@@ -67,11 +67,11 @@ if event_origin == 'ERA5':
 elif event_origin == 'CRCM5-LE':
     str_event = f'BAM-node{no_node}-extreme{no_event}-{lselect}'
     # Upload BAM info
-    BAM_dict = fanPM.get_best_model_analogue_info(no_node, no_event, varname)
-    time_event = datetime.strptime(BAM_dict['date'], "%Y-%m-%d")
+    BAM_dict, BAM_index = fanPM.get_best_model_analogue_info(no_node, no_event, varname)
+    time_event = datetime.strptime(BAM_dict['date'][BAM_index], "%Y-%m-%d")
     time_event = cftime.DatetimeNoLeap(time_event.year, time_event.month, time_event.day, hour=0, minute=0, second=0)
     doy_event = time_event.timetuple().tm_yday
-    member_event = BAM_dict['member']
+    member_event = BAM_dict['member'][BAM_index]
 
 # Define lon-lat box of event
 box_event = fanPM.box_event_PrMax_alertregions(no_node,no_event)

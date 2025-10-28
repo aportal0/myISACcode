@@ -457,6 +457,8 @@ def box_event_PrMax_alertregions(no_node, no_event):
         box_event = [3, 22, 35, 50]
     elif no_node == 6 and no_event == 19:
         box_event = [2, 20, 33, 48]
+    elif no_node == 5 and no_event == 4:
+        box_event = [2, 20, 33, 48]
     return box_event
 
 
@@ -481,12 +483,20 @@ def get_best_model_analogue_info(no_node, no_event, var_analogues):
     """
     if no_node==1 and no_event==1:
         if var_analogues == 'psl':
-            dict_best_analogue = {'member': 'kbw', 'distance': 125.24177, 'date': '2019-11-25'}
+            dict_best_analogue = {'member': ['kbw', 'kbs', 'kbz', 'kbd', 'kbh', 'kcj', 'kbh', 'kbq', 'kbx', 'kct'], 
+                                  'distance': [np.float32(125.24177), np.float32(133.1757), np.float32(133.52994), np.float32(137.0711), np.float32(137.27646), np.float32(139.16655), np.float32(139.36273), np.float32(144.08841), np.float32(147.16447), np.float32(147.47273)],
+                                  'date': ['2019-11-25', '2012-11-14', '2006-11-11', '2015-11-07', '2007-10-20', '2015-10-15', '2012-11-19', '2018-11-21', '2022-11-27', '2017-11-12'],
+                                  'pos_analogue': [0,0,0,0,0,0,1,0,0,0]}
+            index_best_analogue = 0  # position of the best analogue in the list
     elif no_node==6 and no_event==19:
         if var_analogues == 'psl':
-            dict_best_analogue = {'member': 'kcb', 'distance': 52.37375, 'date': '2006-11-24'}
+            dict_best_analogue = {'member': ['kcb', 'kbn', 'kcd', 'kby', 'kbm', 'kbh', 'kbg', 'kbe', 'kbx', 'kbf'], 
+                                  'distance': [np.float32(52.37375), np.float32(52.754066), np.float32(55.0041), np.float32(56.167362), np.float32(56.437897), np.float32(57.320843), np.float32(57.566547), np.float32(57.841354), np.float32(60.127438), np.float32(60.790497)], 
+                                  'date': ['2006-11-24', '2012-09-26', '2021-11-22', '2014-10-26', '2015-10-28', '2019-11-09', '2005-10-31', '2007-11-11', '2016-10-07', '2017-09-24'],
+                                  'pos_analogue': [0,0,0,0,0,0,0,0,0,0]}
+            index_best_analogue = 1 # position of the best analogue in the list
     
-    return dict_best_analogue
+    return dict_best_analogue, index_best_analogue
 
 
 ## Function to regrid data using xESMF
@@ -560,64 +570,115 @@ def plot_geopotential_and_mslp(ax, timestep, lonlat_bounds, z500, msl):
     ax.set_ylabel('Latitude')
 
 
-def plot_precipitation(ax, timestep, lonlat_bounds, precip, precip_levels):
+def _apply_common_map_style(ax, lonlat_bounds=None, title=None):
+    """Applies consistent coastlines, borders, gridlines, extent, and title."""
+    ax.coastlines(linewidth=1.2)
+    # ax.add_feature(cfeature.BORDERS, linewidth=0.8)
+    if lonlat_bounds is not None:
+        ax.set_extent(lonlat_bounds, crs=ccrs.PlateCarree())
+
+    gl = ax.gridlines(
+        draw_labels=True, linestyle="--", color="gray", alpha=0.5, linewidth=0.7
+    )
+    gl.top_labels = False
+    gl.right_labels = False
+
+    if title:
+        ax.set_title(title, fontsize=12, weight="bold")
+
+    return ax
+
+
+def plot_precipitation(ax, lonlat_bounds, precip, precip_levels, title):
     """Plots the precipitation data for a given timestep."""
 
-    # Create grid 
     lon = precip.lon.values
     lat = precip.lat.values
-    # Add cyclic point
     precip, lon1 = add_cyclic_point(precip, coord=lon)
 
-    # Plot the data
-    ax.coastlines()
-    ax.add_feature(cfeature.BORDERS)
-    ax.set_extent(lonlat_bounds, crs=ccrs.PlateCarree())
-    gl = ax.gridlines(draw_labels=True)
-    gl.right_labels = False
-    gl.top_labels = False
-    # Parameters for colormap
-    cmap = plt.get_cmap("YlGnBu")
-    norm = mcolors.BoundaryNorm(boundaries=precip_levels, ncolors=cmap.N, extend='max')
-    # Precipitation
-    mesh = ax.pcolormesh(lon1, lat, precip, transform=ccrs.PlateCarree(), cmap=cmap, norm=norm)
-    cbar = plt.colorbar(mesh, ax=ax, orientation='vertical', pad=0.05, boundaries=precip_levels, ticks=precip_levels, extend='max')
-    cbar.set_label('24h precipitation [mm]')
-    # Title and labels
-    ax.set_title(f"Timestep: {timestep}")
+    # Apply uniform style
+    _apply_common_map_style(ax, lonlat_bounds, title)
+
+    # Colormap settings
+    if np.any(precip_levels<0):
+        cmap = plt.get_cmap("Spectral")  
+        cbar_ext = 'both'
+    else:
+        cmap = plt.get_cmap("YlGnBu")
+        cbar_ext = "max"
+    norm = mcolors.BoundaryNorm(boundaries=precip_levels, ncolors=cmap.N, extend=cbar_ext)
+
+    # Plot precipitation
+    mesh = ax.pcolormesh(
+        lon1, lat, precip, transform=ccrs.PlateCarree(), cmap=cmap, norm=norm
+    )
+
+    # Colorbar
+    cbar = plt.colorbar(
+        mesh,
+        ax=ax,
+        orientation="vertical",
+        pad=0.05,
+        boundaries=precip_levels,
+        extend=cbar_ext,
+        shrink=0.8,
+    )
+    cbar.set_label("24h precipitation [mm]", fontsize=10)
 
 
-def plot_anom_event(ax, varname, lon, lat, anom_event, clim):
+def plot_anom_event(ax, varname, lon, lat, anom_event, clim, title, levels=None):
     """Plots the anomaly and DOY climatology for a given event (mslp or z500)."""
 
-    # Set intervals and levels
-    if varname == 'z500':
+    # Set variable-specific intervals
+    if varname == "z500":
         cbar_int = 50
         levels_clim = np.arange(5000, 6000, 25)
-    elif varname == 'mslp':
+        cbar_label = "$\\Delta$Z500 (m)"
+        cmap_anom = 'RdBu_r'
+    elif varname == "mslp":
         cbar_int = 2
         levels_clim = np.arange(950, 1050, 1)
-    # Calculate the min and max values around zero for centering
-    vmin = np.nanmin(anom_event)
-    vmax = np.nanmax(anom_event)
-    cbar_center = max(abs(vmin), abs(vmax)) // cbar_int * cbar_int + cbar_int
-    cbar_levels = np.arange(-cbar_center, cbar_center+cbar_int, cbar_int)
+        cbar_label = "$\\Delta$mslp (hPa)"
+        cmap_anom = 'RdBu_r'
+    elif varname == "tas":
+        cbar_int = 0.5
+        levels_clim = np.arange(270, 320, 3)
+        cbar_label = "$\\Delta$tas (K)"
+        cmap_anom = 'RdBu_r'
 
-    # Plot data
-    cf = ax.contourf(lon, lat, anom_event, transform=ccrs.PlateCarree(), cmap="RdBu_r", levels= cbar_levels)
-    contours = ax.contour(lon, lat, clim, transform=ccrs.PlateCarree(), levels=levels_clim, colors="black", linewidths=0.7)
+    # Symmetric colorbar range
+    if levels is not None:
+        cbar_levels = levels
+    else:
+        vmin, vmax = np.nanmin(anom_event), np.nanmax(anom_event)
+        cbar_center = max(abs(vmin), abs(vmax)) // cbar_int * cbar_int + cbar_int
+        cbar_levels = np.arange(-cbar_center, cbar_center + cbar_int, cbar_int)
+        
+    # Apply uniform style
+    _apply_common_map_style(ax, title=title)
+
+    # Filled anomalies
+    cf = ax.contourf(
+        lon,
+        lat,
+        anom_event,
+        transform=ccrs.PlateCarree(),
+        cmap=cmap_anom,
+        levels=cbar_levels,
+        extend="both",
+    )
+    # Climatology contours
+    contours = ax.contour(
+        lon,
+        lat,
+        clim,
+        transform=ccrs.PlateCarree(),
+        levels=levels_clim,
+        colors="black",
+        linewidths=0.8,
+    )
     ax.clabel(contours, inline=True, fontsize=8, fmt="%.0f")
 
-    # Add coastlines
-    ax.coastlines(linewidth=1.5)
-    # Add gridlines
-    gl = ax.gridlines(draw_labels=True, linestyle="--", color="gray", alpha=0.5)
-    gl.top_labels = False
-    gl.right_labels = False
-    # Add colorbar
-    if varname == 'z500':
-        cbar_label = "$\\Delta$Z500 (m)"
-    elif varname == 'mslp':
-        cbar_label = "$\\Delta$mslp (hPa)"
-    plt.colorbar(cf, ax=ax, shrink=0.6, label=cbar_label)
+    # Colorbar
+    plt.colorbar(cf, ax=ax, shrink=0.8, label=cbar_label)
     return ax

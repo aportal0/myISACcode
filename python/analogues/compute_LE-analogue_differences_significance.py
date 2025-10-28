@@ -67,7 +67,7 @@ else:
 qtl_LE = 0.99
 
 # Number of ensemble members
-no_membs = 49
+no_membs = 1
 
 # Epochs
 list_year_ranges = [[1955, 1974], [2004, 2023], [2080, 2099]] # past [1955-1974], present [2004-2023], near-future [2030-2049], far future [2080-2099]
