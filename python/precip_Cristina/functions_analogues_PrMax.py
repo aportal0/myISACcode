@@ -13,7 +13,8 @@ from collections import defaultdict
 import xesmf as xe
 import cftime
 from datetime import datetime
-
+from shapely.geometry import Point
+from shapely.ops import unary_union
 
 ## Functions to load data from ERA5 and CERRA
 
@@ -444,7 +445,7 @@ def concat_members_noleap(list_ds, varname):
     return result
 
 
-## Function to create lon-lat mask (event-wise)
+## Function to create lon-lat mask (event-wise) and land mask
 
 def box_event_PrMax_alertregions(no_node, no_event):
     """
@@ -458,7 +459,9 @@ def box_event_PrMax_alertregions(no_node, no_event):
     elif no_node == 6 and no_event == 19:
         box_event = [2, 20, 33, 48]
     elif no_node == 5 and no_event == 4:
-        box_event = [2, 20, 33, 48]
+        box_event = [5, 22, 32, 46]
+    elif no_node == 3 and no_event == 3:
+        box_event = [0, 15, 35, 48]
     return box_event
 
 
@@ -467,6 +470,28 @@ def lonlat_mask(lon, lat, lonlat_bounds):
     lon_mask = (lon >= lonlat_bounds[0]) & (lon <= lonlat_bounds[1])
     lat_mask = (lat >= lonlat_bounds[2]) & (lat <= lonlat_bounds[3])
     return lon_mask, lat_mask
+
+
+def create_land_mask(lons, lats):
+    """Create a land mask from lons and lats."""
+    # Define lon/lat grid
+    lon2d, lat2d = np.meshgrid(lons, lats)
+    
+    # Create Cartopy land polygons
+    land_10m = cfeature.NaturalEarthFeature('physical', 'land', '10m')
+    
+    # Combine all land geometries into one (for faster checking)
+    land_geom = unary_union(list(land_10m.geometries()))
+    
+    # Build land mask
+    land_mask = np.zeros_like(lon2d, dtype=bool)
+    for i in range(lon2d.shape[0]):
+        for j in range(lon2d.shape[1]):
+            point = Point(lon2d[i, j], lat2d[i, j])
+            land_mask[i, j] = land_geom.contains(point)
+    
+    return xr.DataArray(land_mask, coords=[('lat', lats), ('lon', lons)])
+
 
 ## Function to retrieve best model analogue info 
 def get_best_model_analogue_info(no_node, no_event, var_analogues):
@@ -484,18 +509,34 @@ def get_best_model_analogue_info(no_node, no_event, var_analogues):
     if no_node==1 and no_event==1:
         if var_analogues == 'psl':
             dict_best_analogue = {'member': ['kbw', 'kbs', 'kbz', 'kbd', 'kbh', 'kcj', 'kbh', 'kbq', 'kbx', 'kct'], 
-                                  'distance': [np.float32(125.24177), np.float32(133.1757), np.float32(133.52994), np.float32(137.0711), np.float32(137.27646), np.float32(139.16655), np.float32(139.36273), np.float32(144.08841), np.float32(147.16447), np.float32(147.47273)],
+                                  'distance': [125.24177, 133.1757, 133.52994, 137.0711, 137.27646, 139.16655, 139.36273, 144.08841, 147.16447, 147.47273],
                                   'date': ['2019-11-25', '2012-11-14', '2006-11-11', '2015-11-07', '2007-10-20', '2015-10-15', '2012-11-19', '2018-11-21', '2022-11-27', '2017-11-12'],
-                                  'pos_analogue': [0,0,0,0,0,0,1,0,0,0]}
+                                  'pos_analogue': [0,0,0,0,0,0,1,0,0,0],
+                                  'precip_in_event_20mm_mask': [26.14330323002103, 16.61483674959191, 15.7213547579038, 24.014450585251367, 17.59608333027811, 18.827661680311774, 19.34756427657392, 19.27157132291034, 18.282617358719772, 14.64679098802519],
+                                  'precip_in_BAM_20mm_mask': [46.86927, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan]
+                                  }
             index_best_analogue = 0  # position of the best analogue in the list
     elif no_node==6 and no_event==19:
         if var_analogues == 'psl':
             dict_best_analogue = {'member': ['kcb', 'kbn', 'kcd', 'kby', 'kbm', 'kbh', 'kbg', 'kbe', 'kbx', 'kbf'], 
-                                  'distance': [np.float32(52.37375), np.float32(52.754066), np.float32(55.0041), np.float32(56.167362), np.float32(56.437897), np.float32(57.320843), np.float32(57.566547), np.float32(57.841354), np.float32(60.127438), np.float32(60.790497)], 
+                                  'distance': [52.37375, 52.754066, 55.0041, 56.167362, 56.437897, 57.320843, 57.566547, 57.841354, 60.127438, 60.790497], 
                                   'date': ['2006-11-24', '2012-09-26', '2021-11-22', '2014-10-26', '2015-10-28', '2019-11-09', '2005-10-31', '2007-11-11', '2016-10-07', '2017-09-24'],
-                                  'pos_analogue': [0,0,0,0,0,0,0,0,0,0]}
+                                  'pos_analogue': [0,0,0,0,0,0,0,0,0,0],
+                                  'precip_in_event_20mm_mask': [8.139047731305991, 28.80761104401095, 14.659330174746403, 11.755178774309568, 26.559614073205566, 9.573844608292344, 7.516039454810047, 15.264119801933147, 19.5942187300353, 18.960937767569543],
+                                  'precip_in_BAM_20mm_mask': [np.nan, 44.14423, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan]
+                                  }
             index_best_analogue = 1 # position of the best analogue in the list
-    
+    elif no_node==5 and no_event==4:
+        if var_analogues == 'psl':
+            dict_best_analogue = {'member': ['kcq', 'kbc', 'kbk', 'kbt', 'kcl', 'kcb', 'kbt', 'kbr', 'kch', 'kcu'], 
+                                  'distance': [35.52466, 36.500256, 36.92341, 38.011948, 38.084503, 39.737274, 40.684097, 41.020493, 43.50178, 43.83078], 
+                                  'date': ['2008-11-22', '2013-11-26', '2012-10-04', '2011-10-05', '2015-10-10', '2008-11-10', '2012-10-24', '2019-10-03', '2011-11-19', '2011-11-03'],
+                                  'pos_analogue': [0,0,0,0,0,0,1,0,0,0],
+                                  'precip_in_event_20mm_mask': [9.506987013363918, 14.38818342368258, 12.507403527125229, 9.8596171106184, 14.301817643134282, 25.655008881393297, 9.8596171106184, 18.03797232639275, 18.79172844588444, 8.792758162971216],
+                                  'precip_in_BAM_20mm_mask': [np.nan, np.nan, 49.72846, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan]
+                                  }
+            index_best_analogue = 2 # position of the best analogue in the list
+
     return dict_best_analogue, index_best_analogue
 
 

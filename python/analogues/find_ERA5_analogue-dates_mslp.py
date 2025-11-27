@@ -53,8 +53,8 @@ years_sel = np.arange(year_range[0], year_range[1]+1)
 
 # Event
 lselect = 'alertregions'  # 'Italy' or 'wide-region' or 'alert-regions'
-no_node = 6
-no_event = 19
+no_node = 3
+no_event = 3
 str_event = f'node{no_node}-extreme{no_event}-{lselect}'
 # Upload ERA5 info
 df_events = pd.read_excel(CERRA_dir+'events_cum_on_above99_alertregions_CERRA.xlsx', sheet_name=no_node-1)
@@ -111,8 +111,9 @@ n_analogues = int(np.round(len(dmslp_sel.time) * (1-qtl)))
 
 # --- Search for analogues ---
 
-# All times and required time spacing
+# All times and event time
 all_times = dmslp_sel.time.values
+event_time = dmslp_event.time.values
 
 # First search of n_analogues
 factor_0sel = 2
@@ -127,7 +128,7 @@ while l_0sel:
     mask_analogues = logdist >= thresh_0sel
     
     # Exclude analogue times within ±7 days of their associated event
-    time_diff = np.abs((all_times - time_event).astype('timedelta64[D]').astype(int))
+    time_diff = np.abs((all_times - event_time).astype('timedelta64[D]').astype(int))
     mask_analogues &= np.array(time_diff) >= analogue_spacing  # update mask to exclude times too close to the event
     indices_analogues = np.where(mask_analogues)[0]  # indices of all valid analogue times
     

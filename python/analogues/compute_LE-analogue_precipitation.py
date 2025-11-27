@@ -15,6 +15,8 @@ import cartopy.crs as ccrs
 import cartopy.feature as cfeature
 import matplotlib.colors as mcolors
 from datetime import timedelta
+import gc
+import glob
 
 # --- Custom Functions ---
 # sys.path.append('/home/portal/script/python/precip_Cristina/')                    # tintin
@@ -41,13 +43,20 @@ ERA5_dir = '/media/alice/Crucial X9/portal/data_CNR/ERA5/'
 CRCM5_dir = '/media/alice/Crucial X9/portal/data_CNR/CRCM5-LE/'
 fig_dir = '/home/alice/Desktop/CNR/ENCIRCLE/materiale_alice/figures/analogues/'
 output_dir = './analogue_data/analogue_differences/'  # Directory to save the output files
+output_mask_dir = './analogue_data/pr_in_mask/'  # Directory to save the regional mean files
 
+if not os.path.exists(output_dir):
+    os.makedirs(output_dir) 
+
+if not os.path.exists(output_mask_dir):
+    os.makedirs(output_mask_dir)
 
 # --- Event and LE analogue definition ---
 # Event
 lselect = 'alertregions'  # 'Italy' or 'wide-region' or 'alert-regions'
 no_node = 6
 no_event = 19
+
 event_origin = 'CRCM5-LE'  # 'ERA5' or 'CRCM5-LE'
 if event_origin == 'ERA5':
     str_event = f'node{no_node}-extreme{no_event}-{lselect}'  # 'Italy' or 'wide-region' or 'alert-regions'
@@ -102,11 +111,15 @@ no_analogues_LE = len(ensemble_data[0][list_membs[0]]['times'])  # Number of ana
 # print(f"Ensemble data for epoch {list_year_ranges[0]}: {ensemble_data[0]}")
 
 
-# --- Load LE analogue data for all epochs ---
+# --- Load LE analogue data for all epochs and save mean per epoch ---
 # Anomalies and climatology
 # List file paths
 list_ds_pr = []  # Initialize an empty list to store data sets for each epoch
 analogue_numbers = np.arange(1, no_analogues_LE+1)  # Create an array of analogue numbers
+# Precompute the mask only once (from first epoch)
+mask_xr = None
+mask_pr = None
+
 for i, year_range in enumerate(list_year_ranges):
 
     # List file paths for current epoch
@@ -115,136 +128,124 @@ for i, year_range in enumerate(list_year_ranges):
 
     # Lists of datasets for current epoch
     pr_sel = fanPM.open_member_datasets(pr_files, combine='by_coords', expand_member_dim=True)
+    
     # Select analogue days for current epoch by member
     pr_analogues = []
     for im, memb in enumerate(list_membs):
         # Select the times and doys of the analogues for the current member
         times_analogues = ensemble_data[i][memb]['times'] + timedelta(hours=12)
+        missing_times = [t for t in times_analogues if t not in pr_sel[im].time.values]
+        if len(missing_times) > 0:
+            print(f"Warning: {len(missing_times)} analogue times not found in pr_sel[{im}].time and will be removed:")
+            for t in missing_times:
+                print(f"  - {t}")
+            # Remove missing times from times_analogues
+            times_analogues = [t for t in times_analogues if t not in missing_times]
         # Select the anomaly and climatology datasets for the current member
-        pr_memb = pr_sel[im].sel(time=pr_sel[im].time.isin(times_analogues))
+        pr_memb = pr_sel[im].sel(time=times_analogues)
         # Assign analogue numbers to the time coordinate    
         no_analogues = len(pr_memb.time)  # Number of analogues for the current member
         analogue_numbers = np.arange(1, no_analogues+1)  # Create an array of analogue numbers for the current member
-        pr_memb = pr_memb.assign_coords(time=analogue_numbers)
+        pr_memb = pr_memb.assign_coords(time=analogue_numbers).rename({'time': 'analogue'})
+
+        # Select event box
+        if mask_xr is None:  # For the first epoch, select the box from the event
+            lon_mask, lat_mask = fanPM.lonlat_mask(pr_memb.lon.values, pr_memb.lat.values, box_event)
+            mask = lat_mask[:, np.newaxis] & lon_mask
+            mask_xr = xr.DataArray(
+                mask,
+                dims=["lat", "lon"],
+                coords={"lat": pr_memb.lat.values, "lon": pr_memb.lon.values},
+            )
+        pr_memb = pr_memb.where(mask_xr, drop=True).chunk({'analogue': -1, 'member': 1, 'lat': -1, 'lon': -1})
+        
+        # Append to list
         pr_analogues.append(pr_memb)
+
+        # Compute and save regional mean precipitation in mask
+        if mask_pr is None:
+            if event_origin == 'ERA5':
+                pr_mask = xr.open_dataset(f'./analogue_data/event_data/{varname}-mask_{str_event}_CERRA.nc')
+            elif event_origin == 'CRCM5-LE':
+                pattern = f'./analogue_data/BAM_data/{varname}-mask_BAM-{var_analogues}_{str_event}_*_2004-2023_CRCM5-LE_49membs.nc'
+                mask_files = glob.glob(pattern)
+                pr_mask = xr.open_dataset(mask_files[0])  # Assuming there's only one matching file   
+            # weights = cos(lat)
+            weights = np.cos(np.deg2rad(pr_mask['lat']))
+            weights = weights.broadcast_like(pr_mask)   # expand to lat/lon grid
+        pr_masked = pr_memb.where(pr_mask['pr_mask']==1)  # Apply mask to the precipitation data
+        # now do a weighted mean over the region
+        pr_memb_regional_mean = pr_masked.weighted(weights).mean(dim=("lat","lon")).squeeze()
+        # Save regional mean to NetCDF file
+        suffix_file = f"{varname}_{str_event}_{int(qtl_LE*100)}pct_{year_range[0]}-{year_range[1]}_CRCM5_{memb}.nc"
+        pr_regional_file = f"{output_mask_dir}analogues-{var_analogues}_mask-mean-{suffix_file}"
+        if os.path.exists(pr_regional_file):
+            print(f"Regional mean of epoch {i} already exists: {pr_regional_file}")
+        else:
+            pr_memb_regional_mean[varname].to_netcdf(pr_regional_file)
+            print(f"Saved regional mean of epoch {i}, member {memb}")
+
     
     # Concatenate the datasets for the current epoch
-    ds_pr_analogues = xr.concat(pr_analogues, dim='member')[varname]
-    ds_pr_analogues = ds_pr_analogues.rename({"time": "analogue"})
-
-    # Select event box
-    if i == 0:  # For the first epoch, select the box from the event
-        lon_mask, lat_mask = fanPM.lonlat_mask(ds_pr_analogues.lon.values, ds_pr_analogues.lat.values, box_event)
-        mask = lat_mask[:, np.newaxis] & lon_mask
-        mask_xr = xr.DataArray(
-            mask,
-            dims=["lat", "lon"],
-            coords={"lat": ds_pr_analogues.lat.values, "lon": ds_pr_analogues.lon.values},
-        )
-    ds_pr_analogues = ds_pr_analogues.where(mask_xr, drop=True)
-
+    ds_pr_analogues = xr.concat(pr_analogues, dim='member')[varname].chunk({'analogue': -1, 'member': -1, 'lat': 5, 'lon': 5})
     # Save in list by epoch
-    list_ds_pr.append(ds_pr_analogues)
-        
-# # Print dataset for the first epoch
-# print(f"Anomaly dataset for epoch {list_year_ranges[0]}: {list_ds_anom[0]}")
-# print(f"Climatology dataset for epoch {list_year_ranges[0]}: {list_ds_clim[0]}")
+    list_ds_pr.append(ds_pr_analogues) 
 
-
-# --- Kolmogorov-Smirnov test for significance ---
-
-# Perform the Kolmogorov-Smirnov test for each pair of epochs
-list_ks_stats = []  # Initialize an empty list to store the KS statistics
-for i, (epoch1, epoch2) in enumerate(diff_indices):
-    print(f"Computing KS test for epoch {epoch1} vs epoch {epoch2}")
-    members = np.arange(0, no_membs)  # Select all members for the KS test
-    # Get the datasets for the two epochs
-    ds_epoch1 = list_ds_pr[epoch1].isel(member=members)
-    ds_epoch2 = list_ds_pr[epoch2].isel(member=members)
-    
-    ds1_flat = ds_epoch1.stack(analogue_all=('member', 'analogue')).chunk({'analogue_all': -1})
-    ds2_flat = ds_epoch2.stack(analogue_all=('member', 'analogue')).chunk({'analogue_all': -1})
-
-    # Perform the Kolmogorov-Smirnov test for each grid point
-    ks_statistics = xr.apply_ufunc(
-        fanPM.ks_stat_and_pval,
-        ds1_flat,
-        ds2_flat,
-        input_core_dims=[['analogue_all'], ['analogue_all']],
-        output_core_dims=[['output']],
-        output_sizes={"output": 2},
-        vectorize=True,
-        dask='parallelized',
-        output_dtypes=[float],
-    )
-    ks_statistics = ks_statistics.assign_coords(output=["diff_statistic", "pvalue"])
-    # Add the datasets to the lists
-    list_ks_stats.append(ks_statistics)
-
-
-# --- Compute LE analogue differences ---
-# Compute differences between LE analogues from different epochs
-list_ds_diff = []  # Initialize an empty list to store the differences
-for i, (epoch1, epoch2) in enumerate(diff_indices):
-    # Compute the difference between the two epochs
-    ds_epoch1_mean = (list_ds_pr[epoch1]).mean(dim=('member','analogue'))
-    ds_epoch2_mean = (list_ds_pr[epoch2]).mean(dim=('member','analogue'))
-    ds_diff = ds_epoch2_mean - ds_epoch1_mean
-    # Add epoch information to the dataset
-    ds_diff.attrs['epoch1'] = f"{list_year_ranges[epoch1][0]}-{list_year_ranges[epoch1][1]}"
-    ds_diff.attrs['epoch2'] = f"{list_year_ranges[epoch2][0]}-{list_year_ranges[epoch2][1]}"
-    # Add the dataset to the lists
-    list_ds_diff.append(ds_diff)
-
-
-# --- Save to NetCDF files ---
-if not os.path.exists(output_dir):
-    os.makedirs(output_dir) 
-
-# Save each difference and KS-stat dataset to a NetCDF file
-for i in range(len(list_ds_diff)):
-    ds_diff = list_ds_diff[i].chunk({'lon': -1, 'lat': -1})
-    ks_stats = list_ks_stats[i].chunk({'lon': -1, 'lat': -1})
-    suffix_file = f"_{varname}_{str_event}_{int(qtl_LE*100)}pct_diff{ds_diff.attrs['epoch2']}_{ds_diff.attrs['epoch1']}_CRCM5_{no_membs}membs.nc"
-
-    # Save the difference dataset
-    diff_file = f"{output_dir}analogues-{var_analogues}_difference{suffix_file}"
-    if not os.path.exists(diff_file):
-        ds_diff.to_netcdf(diff_file)
-        print(f"Saved difference dataset to {diff_file}")
-    # Save the KS statistics dataset
-    stat_file = f"{output_dir}analogues-{var_analogues}_KS-statistics{suffix_file}"
-    if not os.path.exists(stat_file):
-        ks_stats.to_netcdf(stat_file)
-        print(f"Saved KS statistics dataset to {stat_file}")
-del list_ds_diff
-del list_ks_stats
-
-# Save absolute value by epoch to NetCDF files
-for i, year_range in enumerate(list_year_ranges):
-    pr_epoch = list_ds_pr[i].chunk({'lon': -1, 'lat': -1})
-    pr_map = pr_epoch.mean(dim=('member','analogue'))
+    # Save epoch mean to NetCDF file
+    pr_epoch = ds_pr_analogues.mean(dim=('member','analogue'))
     suffix_file = f"{varname}_{str_event}_{int(qtl_LE*100)}pct_{year_range[0]}-{year_range[1]}_CRCM5_{no_membs}membs.nc"
+    epoch_file = f"{output_dir}analogues-{var_analogues}_{suffix_file}"
+    if os.path.exists(epoch_file):
+        print(f"Epoch file already exists: {epoch_file}")
+    else:   
+        pr_epoch.to_netcdf(epoch_file)
+        print(f"Saved mean of epoch {i}")
 
-    # Compute mean precipitation in mask
-    if event_origin == 'ERA5':
-        mask = xr.open_dataset(f'./analogue_data/event_data/{varname}-mask_{str_event}_CERRA.nc')
-    elif event_origin == 'CRCM5-LE':
-        mask = xr.open_dataset(f'./analogue_data/BAM_data/{varname}-mask_BAM-{var_analogues}_{str_event}_OND_2004-2023_CRCM5-LE_49membs.nc')
-    pr_masked = pr_epoch.where(mask['pr_mask']==1)  # Apply mask to the precipitation data
-    # weights = cos(lat)
-    weights = np.cos(np.deg2rad(pr_epoch['lat']))
-    weights = weights.broadcast_like(pr_epoch)   # expand to lat/lon grid
-    # now do a weighted mean over the region
-    pr_regional_mean = pr_masked.weighted(weights).mean(dim=("lat","lon")).chunk({'analogue': -1, 'member': -1}).squeeze()
 
-    # Save the absolute value dataset
-    pr_file = f"{output_dir}analogues-{var_analogues}_{suffix_file}"
-    if not os.path.exists(pr_file):
-        pr_map.to_netcdf(pr_file)
-        print(f"Saved anomaly dataset to {pr_file}")
-    # Save the absolute value dataset with regional mean
-    pr_regional_file = f"{output_dir}analogues-{var_analogues}_mask-mean-{suffix_file}"
-    if not os.path.exists(pr_regional_file):
-        pr_regional_mean.to_netcdf(pr_regional_file)
-        print(f"Saved regional mean dataset to {pr_regional_file}")
+# # --- Kolmogorov-Smirnov test for significance ---
+# 
+# # Perform the Kolmogorov-Smirnov test for each pair of epochs
+# for i, (epoch1, epoch2) in enumerate(diff_indices):
+#     print(f"Computing KS test for epoch {epoch1} vs epoch {epoch2}")
+#     # Get the datasets for the two epochs
+#     ds_epoch1 = list_ds_pr[epoch1].isel(member=slice(0, no_membs))
+#     ds_epoch2 = list_ds_pr[epoch2].isel(member=slice(0, no_membs))
+#     
+#     ds1_flat = ds_epoch1.stack(analogue_all=('member', 'analogue')).chunk({'analogue_all': -1})
+#     ds2_flat = ds_epoch2.stack(analogue_all=('member', 'analogue')).chunk({'analogue_all': -1})
+#     
+#     # Perform the Kolmogorov-Smirnov test for each grid point
+#     ks_statistics = xr.apply_ufunc(
+#         fanPM.ks_stat_and_pval,
+#         ds1_flat,
+#         ds2_flat,
+#         input_core_dims=[['analogue_all'], ['analogue_all']],
+#         output_core_dims=[['output']],
+#         output_sizes={"output": 2},
+#         vectorize=True,
+#         dask='parallelized',
+#         output_dtypes=[float],
+#     )
+#     ks_statistics = ks_statistics.assign_coords(output=["diff_statistic", "pvalue"])
+# 
+#     # Compute epoch differences
+#     ds_diff = ds_epoch2.mean(dim=('member', 'analogue')) - ds_epoch1.mean(dim=('member', 'analogue'))
+#     ds_diff.attrs['epoch1'] = f"{list_year_ranges[epoch1][0]}-{list_year_ranges[epoch1][1]}"
+#     ds_diff.attrs['epoch2'] = f"{list_year_ranges[epoch2][0]}-{list_year_ranges[epoch2][1]}"
+# 
+#     # Save the difference dataset and KS statistics to NetCDF files
+#     suffix_file = f"_{varname}_{str_event}_{int(qtl_LE*100)}pct_diff{ds_diff.attrs['epoch2']}_{ds_diff.attrs['epoch1']}_CRCM5_{no_membs}membs.nc"
+#     diff_file = f"{output_dir}analogues-{var_analogues}_difference{suffix_file}"
+#     ks_file = f"{output_dir}analogues-{var_analogues}_KS-statistics{suffix_file}"
+#     if os.path.exists(diff_file):
+#         print(f"Difference file already exists: {diff_file}")
+#     else:
+#         ds_diff.chunk({'lat': 100, 'lon': 100}).to_netcdf(f"{output_dir}analogues-{var_analogues}_difference{suffix_file}")
+#         print(f"Saved difference for epoch {epoch1} vs {epoch2}")
+#     if os.path.exists(ks_file):
+#         print(f"KS statistics file already exists: {ks_file}")
+#     else:
+#         ks_statistics.chunk({'lat': 100, 'lon': 100}).to_netcdf(f"{output_dir}analogues-{var_analogues}_KS-statistics{suffix_file}")
+#         print(f"Saved KS statistics for epoch {epoch1} vs {epoch2}")
+# 
+# 
