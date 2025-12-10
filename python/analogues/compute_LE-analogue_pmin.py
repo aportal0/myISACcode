@@ -53,7 +53,7 @@ if not os.path.exists(output_pslmin_dir):
 lselect = 'alertregions'  # 'Italy' or 'wide-region' or 'alert-regions'
 no_node = 3
 no_event = 3
-event_origin = 'ERA5'  # 'ERA5' or 'CRCM5-LE'
+event_origin = 'CRCM5-LE'  # 'ERA5' or 'CRCM5-LE'
 if event_origin == 'ERA5':
     str_event = f'node{no_node}-extreme{no_event}-{lselect}'  # 'Italy' or 'wide-region' or 'alert-regions'
 elif event_origin == 'CRCM5-LE':

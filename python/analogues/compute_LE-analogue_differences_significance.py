@@ -45,8 +45,8 @@ output_dir = './analogue_data/analogue_differences/'  # Directory to save the ou
 # --- Event and LE analogue definition ---
 # Event
 lselect = 'alertregions'  # 'Italy' or 'wide-region' or 'alert-regions'
-no_node = 5
-no_event = 4
+no_node = 3
+no_event = 3
 event_origin = 'CRCM5-LE'  # 'ERA5' or 'CRCM5-LE'
 if event_origin == 'ERA5':
     str_event = f'node{no_node}-extreme{no_event}-{lselect}'  # 'Italy' or 'wide-region' or 'alert-regions'
@@ -56,7 +56,7 @@ elif event_origin == 'CRCM5-LE':
 box_event = fanPM.box_event_PrMax_alertregions(no_node,no_event)
 
 # Variable
-varname = 'psl' # Variable to compute the difference between analogues, e.g. 'zg' for geopotential height
+varname = 'tas' # Variable to compute the difference between analogues, e.g. 'zg' for geopotential height
 var_analogues = 'psl'  # Variable used to find the analogues, e.g. 'psl' for sea level pressure
 if varname=='psl':
     var_factor = 0.01  # Factor to convert the variable to the correct units (e.g., psl from Pa to hPa)
@@ -67,7 +67,7 @@ else:
 qtl_LE = 0.99
 
 # Number of ensemble members
-no_membs = 1
+no_membs = 49
 
 # Epochs
 list_year_ranges = [[1955, 1974], [2004, 2023], [2080, 2099]] # past [1955-1974], present [2004-2023], near-future [2030-2049], far future [2080-2099]

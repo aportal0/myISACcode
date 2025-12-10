@@ -54,8 +54,8 @@ if not os.path.exists(output_mask_dir):
 # --- Event and LE analogue definition ---
 # Event
 lselect = 'alertregions'  # 'Italy' or 'wide-region' or 'alert-regions'
-no_node = 6
-no_event = 19
+no_node = 3
+no_event = 3
 
 event_origin = 'CRCM5-LE'  # 'ERA5' or 'CRCM5-LE'
 if event_origin == 'ERA5':
@@ -202,50 +202,49 @@ for i, year_range in enumerate(list_year_ranges):
         print(f"Saved mean of epoch {i}")
 
 
-# # --- Kolmogorov-Smirnov test for significance ---
-# 
-# # Perform the Kolmogorov-Smirnov test for each pair of epochs
-# for i, (epoch1, epoch2) in enumerate(diff_indices):
-#     print(f"Computing KS test for epoch {epoch1} vs epoch {epoch2}")
-#     # Get the datasets for the two epochs
-#     ds_epoch1 = list_ds_pr[epoch1].isel(member=slice(0, no_membs))
-#     ds_epoch2 = list_ds_pr[epoch2].isel(member=slice(0, no_membs))
-#     
-#     ds1_flat = ds_epoch1.stack(analogue_all=('member', 'analogue')).chunk({'analogue_all': -1})
-#     ds2_flat = ds_epoch2.stack(analogue_all=('member', 'analogue')).chunk({'analogue_all': -1})
-#     
-#     # Perform the Kolmogorov-Smirnov test for each grid point
-#     ks_statistics = xr.apply_ufunc(
-#         fanPM.ks_stat_and_pval,
-#         ds1_flat,
-#         ds2_flat,
-#         input_core_dims=[['analogue_all'], ['analogue_all']],
-#         output_core_dims=[['output']],
-#         output_sizes={"output": 2},
-#         vectorize=True,
-#         dask='parallelized',
-#         output_dtypes=[float],
-#     )
-#     ks_statistics = ks_statistics.assign_coords(output=["diff_statistic", "pvalue"])
-# 
-#     # Compute epoch differences
-#     ds_diff = ds_epoch2.mean(dim=('member', 'analogue')) - ds_epoch1.mean(dim=('member', 'analogue'))
-#     ds_diff.attrs['epoch1'] = f"{list_year_ranges[epoch1][0]}-{list_year_ranges[epoch1][1]}"
-#     ds_diff.attrs['epoch2'] = f"{list_year_ranges[epoch2][0]}-{list_year_ranges[epoch2][1]}"
-# 
-#     # Save the difference dataset and KS statistics to NetCDF files
-#     suffix_file = f"_{varname}_{str_event}_{int(qtl_LE*100)}pct_diff{ds_diff.attrs['epoch2']}_{ds_diff.attrs['epoch1']}_CRCM5_{no_membs}membs.nc"
-#     diff_file = f"{output_dir}analogues-{var_analogues}_difference{suffix_file}"
-#     ks_file = f"{output_dir}analogues-{var_analogues}_KS-statistics{suffix_file}"
-#     if os.path.exists(diff_file):
-#         print(f"Difference file already exists: {diff_file}")
-#     else:
-#         ds_diff.chunk({'lat': 100, 'lon': 100}).to_netcdf(f"{output_dir}analogues-{var_analogues}_difference{suffix_file}")
-#         print(f"Saved difference for epoch {epoch1} vs {epoch2}")
-#     if os.path.exists(ks_file):
-#         print(f"KS statistics file already exists: {ks_file}")
-#     else:
-#         ks_statistics.chunk({'lat': 100, 'lon': 100}).to_netcdf(f"{output_dir}analogues-{var_analogues}_KS-statistics{suffix_file}")
-#         print(f"Saved KS statistics for epoch {epoch1} vs {epoch2}")
-# 
-# 
+# --- Kolmogorov-Smirnov test for significance ---
+
+# Perform the Kolmogorov-Smirnov test for each pair of epochs
+for i, (epoch1, epoch2) in enumerate(diff_indices):
+    print(f"Computing KS test for epoch {epoch1} vs epoch {epoch2}")
+    # Get the datasets for the two epochs
+    ds_epoch1 = list_ds_pr[epoch1].isel(member=slice(0, no_membs))
+    ds_epoch2 = list_ds_pr[epoch2].isel(member=slice(0, no_membs))
+    
+    ds1_flat = ds_epoch1.stack(analogue_all=('member', 'analogue')).chunk({'analogue_all': -1})
+    ds2_flat = ds_epoch2.stack(analogue_all=('member', 'analogue')).chunk({'analogue_all': -1})
+    
+    # Perform the Kolmogorov-Smirnov test for each grid point
+    ks_statistics = xr.apply_ufunc(
+        fanPM.ks_stat_and_pval,
+        ds1_flat,
+        ds2_flat,
+        input_core_dims=[['analogue_all'], ['analogue_all']],
+        output_core_dims=[['output']],
+        output_sizes={"output": 2},
+        vectorize=True,
+        dask='parallelized',
+        output_dtypes=[float],
+    )
+    ks_statistics = ks_statistics.assign_coords(output=["diff_statistic", "pvalue"])
+
+    # Compute epoch differences
+    ds_diff = ds_epoch2.mean(dim=('member', 'analogue')) - ds_epoch1.mean(dim=('member', 'analogue'))
+    ds_diff.attrs['epoch1'] = f"{list_year_ranges[epoch1][0]}-{list_year_ranges[epoch1][1]}"
+    ds_diff.attrs['epoch2'] = f"{list_year_ranges[epoch2][0]}-{list_year_ranges[epoch2][1]}"
+
+    # Save the difference dataset and KS statistics to NetCDF files
+    suffix_file = f"_{varname}_{str_event}_{int(qtl_LE*100)}pct_diff{ds_diff.attrs['epoch2']}_{ds_diff.attrs['epoch1']}_CRCM5_{no_membs}membs.nc"
+    diff_file = f"{output_dir}analogues-{var_analogues}_difference{suffix_file}"
+    ks_file = f"{output_dir}analogues-{var_analogues}_KS-statistics{suffix_file}"
+    if os.path.exists(diff_file):
+        print(f"Difference file already exists: {diff_file}")
+    else:
+        ds_diff.chunk({'lat': 100, 'lon': 100}).to_netcdf(f"{output_dir}analogues-{var_analogues}_difference{suffix_file}")
+        print(f"Saved difference for epoch {epoch1} vs {epoch2}")
+    if os.path.exists(ks_file):
+        print(f"KS statistics file already exists: {ks_file}")
+    else:
+        ks_statistics.chunk({'lat': 100, 'lon': 100}).to_netcdf(f"{output_dir}analogues-{var_analogues}_KS-statistics{suffix_file}")
+        print(f"Saved KS statistics for epoch {epoch1} vs {epoch2}")
+
