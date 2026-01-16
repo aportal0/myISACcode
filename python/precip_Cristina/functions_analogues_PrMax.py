@@ -35,11 +35,42 @@ def load_ERA5_data(varname, freq, timestep, lonlat_bounds, l_anom, data_dir):
     # Load data
     # select variable and timestep
     if varname == 'z500':
-        datasets = [xr.open_dataset(file)['z'].sel(time=timestep, plev=50000) / 9.81 for file in files]
+        datasets = [xr.open_dataset(file)['z'].sel(time=timestep, plev=50000) * (1/9.81) for file in files]
         str_lon, str_lat = ('lon', 'lat')
     elif varname == 'mslp':
         datasets = [xr.open_dataset(file)['msl'].sel(time=timestep) * 0.01 for file in files]
         str_lon, str_lat = ('longitude', 'latitude')
+    # concatenate datasets along "time"
+    data = xr.concat(datasets, dim="time").squeeze()
+    # Define and select lon lat masks
+    lon_mask, lat_mask = lonlat_mask(data[str_lon].values, data[str_lat].values, lonlat_bounds)
+    mask = lat_mask[:, np.newaxis] & lon_mask
+    data = data.where(mask, np.nan).dropna(dim=str_lat, how="all").dropna(dim=str_lon, how="all")
+    return data
+
+
+def load_ERA5_data_regridded_to_CRCM5(varname, freq, timestep, lonlat_bounds, l_anom, l_detrend, data_dir):
+    """Loads ERA5 data for a given variable, timestep and in lonlat_bounds.
+    Timestep can be a single datetime object or a list of datetime objects."""
+    # Time variables
+    years_data = np.unique(timestep.strftime("%Y"))
+    if freq == 'daily':
+        timestep = (timestep.normalize() + pd.Timedelta(hours=9)).isoformat()
+    # Possible varnames: 'mslp', 'z500'
+    file_suffix = 'regridded-to-CRCM5.nc'
+    if l_anom:
+        if l_detrend:
+            file_suffix = 'anom_detrended_'+file_suffix
+        else:   
+            file_suffix = 'anom_'+file_suffix
+    files = [os.path.join(data_dir, f'ERA5_{varname}_NH_{freq}_{year}_{file_suffix}') for year in years_data]
+    # Load data
+    # select variable and timestep
+    if varname == 'z500':
+        datasets = [xr.open_dataset(file)['z'].sel(time=timestep, plev=50000) / 9.81 for file in files]
+    elif varname == 'mslp':
+        datasets = [xr.open_dataset(file)['msl'].sel(time=timestep) * 0.01 for file in files]
+    str_lon, str_lat = ('lon', 'lat')
     # concatenate datasets along "time"
     data = xr.concat(datasets, dim="time").squeeze()
     # Define and select lon lat masks
@@ -72,6 +103,30 @@ def load_ERA5_clim(varname, doy, lonlat_bounds, l_smoothing, data_dir):
     mask = lat_mask[:, np.newaxis] & lon_mask
     data = data.where(mask, np.nan).dropna(dim=str_lat, how="all").dropna(dim=str_lon, how="all")
     return data
+
+
+def load_ERA5_clim_regridded_to_CRCM5(varname, doy, lonlat_bounds, l_smoothing, data_dir):
+    """Loads ERA5 climatology 1985-2019 for a given variable and day-of-year (doy) in lonlat_bounds.
+    l_smoothing = True for 31-day smoothing time window."""
+    # Possible varnames: 'msl', 'z500'
+    suffix_file = 'regridded-to-CRCM5.nc'
+    if l_smoothing:
+        file = os.path.join(data_dir, f'ERA5_{varname}_NH_daily_clim_2004-2023_sm31d_{suffix_file}')
+    else:
+        file = os.path.join(data_dir, f'ERA5_{varname}_NH_daily_clim_2004-2023_{suffix_file}')
+    # Load data
+    # select variable and timestepg
+    if varname == 'z500':
+        data = xr.open_dataset(file)['z'].sel(dayofyear=doy, plev=50000) / 9.81
+    elif varname == 'mslp':
+        data = xr.open_dataset(file)['msl'].sel(dayofyear=doy) * 0.01
+    str_lon, str_lat = ('lon', 'lat')
+    # Define and select lon lat masks
+    lon_mask, lat_mask = lonlat_mask(data[str_lon].values, data[str_lat].values, lonlat_bounds)
+    mask = lat_mask[:, np.newaxis] & lon_mask
+    data = data.where(mask, np.nan).dropna(dim=str_lat, how="all").dropna(dim=str_lon, how="all")
+    return data
+
 
 def load_CERRA_italy_data(varname, timestep, lonlat_bounds):
     """Loads CERRA data for a given variable, timestep and in lonlat_bounds.
@@ -536,6 +591,16 @@ def get_best_model_analogue_info(no_node, no_event, var_analogues):
                                   'precip_in_BAM_20mm_mask': [np.nan, np.nan, 49.72846, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan]
                                   }
             index_best_analogue = 2 # position of the best analogue in the list
+    elif no_node==3 and no_event==3:
+        if var_analogues == 'psl':
+            dict_best_analogue = {'member': ['kbw', 'kbi', 'kcw', 'kcs', 'kcw', 'kbx', 'kbi', 'kcd', 'kch', 'kbs'],
+                                  'distance': [37.11769, 37.529537, 38.53214, 41.776447, 42.616486, 42.89663, 43.3819, 43.86435, 44.195995, 45.161556],
+                                  'date': ['2011-12-05', '2022-11-10', '2004-10-22', '2018-12-09', '2017-11-30', '2019-11-05', '2005-10-11', '2007-11-14', '2014-12-14', '2013-10-30'],
+                                  'pos_analogue': [0,0,0,0,1,0,1,0,0,0],
+                                  'precip_in_event_20mm_mask': [14.117014545342823, 10.293372644096056, 11.153618198151577, 21.389362494108532, 14.82052801928495, 12.192786837734442, 35.42101060969652, 19.36316663475516, 17.899557375613114, 12.634340109374007],
+                                  'precip_in_BAM_20mm_mask': [np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, 46.46725, np.nan, np.nan, np.nan]
+                                  }
+            index_best_analogue = 6 # position of the best analogue in the list
 
     return dict_best_analogue, index_best_analogue
 
@@ -672,7 +737,7 @@ def plot_anom_event(ax, varname, lon, lat, anom_event, clim, title, levels=None)
 
     # Set variable-specific intervals
     if varname == "z500":
-        cbar_int = 50
+        cbar_int = 20
         levels_clim = np.arange(5000, 6000, 25)
         cbar_label = "$\\Delta$Z500 (m)"
         cmap_anom = 'RdBu_r'

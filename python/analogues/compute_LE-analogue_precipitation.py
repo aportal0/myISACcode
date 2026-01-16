@@ -42,6 +42,7 @@ CERRA_dir = '/media/alice/Crucial X9/portal/data_CNR/CERRA-Land/'
 ERA5_dir = '/media/alice/Crucial X9/portal/data_CNR/ERA5/'
 CRCM5_dir = '/media/alice/Crucial X9/portal/data_CNR/CRCM5-LE/'
 fig_dir = '/home/alice/Desktop/CNR/ENCIRCLE/materiale_alice/figures/analogues/'
+analogue_dir = './analogue_data/analogue_times_distances/'
 output_dir = './analogue_data/analogue_differences/'  # Directory to save the output files
 output_mask_dir = './analogue_data/pr_in_mask/'  # Directory to save the regional mean files
 
@@ -54,8 +55,8 @@ if not os.path.exists(output_mask_dir):
 # --- Event and LE analogue definition ---
 # Event
 lselect = 'alertregions'  # 'Italy' or 'wide-region' or 'alert-regions'
-no_node = 3
-no_event = 3
+no_node = 1
+no_event = 1
 
 event_origin = 'CRCM5-LE'  # 'ERA5' or 'CRCM5-LE'
 if event_origin == 'ERA5':
@@ -68,13 +69,14 @@ box_event = fanPM.box_event_PrMax_alertregions(no_node,no_event)
 
 # Variable
 varname = 'pr' # Variable to compute the difference between analogues, e.g. 'zg' for geopotential height
-var_analogues = 'psl'  # Variable used to find the analogues, e.g. 'psl' for sea level pressure
+var_analogues = 'psl-std'  # Variable used to find the analogues, e.g. 'psl' for sea level pressure
+var_BAM = 'psl'
 
 # Quantile and analogue spacing
 qtl_LE = 0.99
 
 # Number of ensemble members
-no_membs = 49
+no_membs = 1
 
 # Epochs
 list_year_ranges = [[1955, 1974], [2004, 2023], [2080, 2099]] # past [1955-1974], present [2004-2023], near-future [2030-2049], far future [2080-2099]
@@ -95,7 +97,7 @@ for i, year_range in enumerate(list_year_ranges):
     epoch_data = {}
     for memb in list_membs:
         # Construct the file path
-        file_path = f'./analogue_data/times_distances_analogues-{var_analogues}_{str_event}_{int(qtl_LE*100)}pct_{year_range[0]}-{year_range[1]}_CRCM5-LE_memb-{memb}.npz'
+        file_path = f'{analogue_dir}times_distances_analogues-{var_analogues}_{str_event}_{int(qtl_LE*100)}pct_{year_range[0]}-{year_range[1]}_CRCM5-LE_memb-{memb}.npz'
         # Load the data from the npz file
         if not os.path.exists(file_path):
             print(f"File not found: {file_path}")
@@ -167,7 +169,7 @@ for i, year_range in enumerate(list_year_ranges):
             if event_origin == 'ERA5':
                 pr_mask = xr.open_dataset(f'./analogue_data/event_data/{varname}-mask_{str_event}_CERRA.nc')
             elif event_origin == 'CRCM5-LE':
-                pattern = f'./analogue_data/BAM_data/{varname}-mask_BAM-{var_analogues}_{str_event}_*_2004-2023_CRCM5-LE_49membs.nc'
+                pattern = f'./analogue_data/BAM_data/{varname}-mask_BAM-{var_BAM}_{str_event}_*_2004-2023_CRCM5-LE_49membs.nc'
                 mask_files = glob.glob(pattern)
                 pr_mask = xr.open_dataset(mask_files[0])  # Assuming there's only one matching file   
             # weights = cos(lat)

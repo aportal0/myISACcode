@@ -39,14 +39,15 @@ CERRA_dir = '/media/alice/Crucial X9/portal/data_CNR/CERRA-Land/'
 ERA5_dir = '/media/alice/Crucial X9/portal/data_CNR/ERA5/'
 CRCM5_dir = '/media/alice/Crucial X9/portal/data_CNR/CRCM5-LE/'
 fig_dir = '/home/alice/Desktop/CNR/ENCIRCLE/materiale_alice/figures/analogues/'
+analogue_dir = './analogue_data/analogue_times_distances/'
 output_dir = './analogue_data/analogue_differences/'  # Directory to save the output files
 
 
 # --- Event and LE analogue definition ---
 # Event
 lselect = 'alertregions'  # 'Italy' or 'wide-region' or 'alert-regions'
-no_node = 3
-no_event = 3
+no_node = 6
+no_event = 19
 event_origin = 'CRCM5-LE'  # 'ERA5' or 'CRCM5-LE'
 if event_origin == 'ERA5':
     str_event = f'node{no_node}-extreme{no_event}-{lselect}'  # 'Italy' or 'wide-region' or 'alert-regions'
@@ -56,8 +57,8 @@ elif event_origin == 'CRCM5-LE':
 box_event = fanPM.box_event_PrMax_alertregions(no_node,no_event)
 
 # Variable
-varname = 'tas' # Variable to compute the difference between analogues, e.g. 'zg' for geopotential height
-var_analogues = 'psl'  # Variable used to find the analogues, e.g. 'psl' for sea level pressure
+varname = 'psl' # Variable to compute the difference between analogues, e.g. 'zg' for geopotential height
+var_analogues = 'psl-zg500-std'  # Variable used to find the analogues, e.g. 'psl' for sea level pressure
 if varname=='psl':
     var_factor = 0.01  # Factor to convert the variable to the correct units (e.g., psl from Pa to hPa)
 else:
@@ -88,7 +89,7 @@ for i, year_range in enumerate(list_year_ranges):
     epoch_data = {}
     for memb in list_membs:
         # Construct the file path
-        file_path = f'./analogue_data/times_distances_analogues-{var_analogues}_{str_event}_{int(qtl_LE*100)}pct_{year_range[0]}-{year_range[1]}_CRCM5-LE_memb-{memb}.npz'
+        file_path = f'{analogue_dir}times_distances_analogues-{var_analogues}_{str_event}_{int(qtl_LE*100)}pct_{year_range[0]}-{year_range[1]}_CRCM5-LE_memb-{memb}.npz'
         # Load the data from the npz file
         if not os.path.exists(file_path):
             print(f"File not found: {file_path}")
