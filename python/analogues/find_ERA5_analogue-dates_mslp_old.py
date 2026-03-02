@@ -32,7 +32,7 @@ import functions_analogues_LUCAFAMOSS as fan
 CERRA_dir = "/media/alice/Crucial X9/portal/data_CNR/CERRA/"
 ERA5_dir = "/media/alice/Crucial X9/portal/data_CNR/ERA5/"
 CRCM5_dir = "/media/alice/Crucial X9/portal/data_CNR/CRCM5-LE/"
-analogue_dir = "/home/alice/Desktop/work/git/myISACcode/python/analogues/analogue_data/"
+analogue_dir = "/home/alice/Desktop/work/git/myISACcode/python/analogues/analogue_data/analogue_times_distances_old/"
 
 
 # --- Parameters LE analogue search ---
@@ -53,8 +53,8 @@ years_sel = np.arange(year_range[0], year_range[1]+1)
 
 # Event
 lselect = 'alertregions'  # 'Italy' or 'wide-region' or 'alert-regions'
-no_node = 3
-no_event = 3
+no_node = 5
+no_event = 23
 str_event = f'node{no_node}-extreme{no_event}-{lselect}'
 # Upload ERA5 info
 df_events = pd.read_excel(CERRA_dir+'events_cum_on_above99_alertregions_CERRA.xlsx', sheet_name=no_node-1)

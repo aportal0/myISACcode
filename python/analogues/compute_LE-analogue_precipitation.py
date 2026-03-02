@@ -55,8 +55,8 @@ if not os.path.exists(output_mask_dir):
 # --- Event and LE analogue definition ---
 # Event
 lselect = 'alertregions'  # 'Italy' or 'wide-region' or 'alert-regions'
-no_node = 1
-no_event = 1
+no_node = 5
+no_event = 23
 
 event_origin = 'CRCM5-LE'  # 'ERA5' or 'CRCM5-LE'
 if event_origin == 'ERA5':
@@ -69,14 +69,22 @@ box_event = fanPM.box_event_PrMax_alertregions(no_node,no_event)
 
 # Variable
 varname = 'pr' # Variable to compute the difference between analogues, e.g. 'zg' for geopotential height
-var_analogues = 'psl-std'  # Variable used to find the analogues, e.g. 'psl' for sea level pressure
+var_analogues = 'psl-zg500-std'  # Variable used to find the analogues, e.g. 'psl' for sea level pressure
 var_BAM = 'psl'
 
 # Quantile and analogue spacing
-qtl_LE = 0.99
+qtl_search = 0.99
+
+# Number of analogues per member (out of 18 ~ 99th pct) and corresponding qtl
+no_analogues_LE = 2
+qtl_LE = 0.999
+if qtl_LE*100 % 1 == 0:
+    qtl_LE_str = f"{int(qtl_LE*100)}pct"
+else:
+    qtl_LE_str = f"{qtl_LE*100:.1f}pct"
 
 # Number of ensemble members
-no_membs = 1
+no_membs = 49
 
 # Epochs
 list_year_ranges = [[1955, 1974], [2004, 2023], [2080, 2099]] # past [1955-1974], present [2004-2023], near-future [2030-2049], far future [2080-2099]
@@ -97,18 +105,17 @@ for i, year_range in enumerate(list_year_ranges):
     epoch_data = {}
     for memb in list_membs:
         # Construct the file path
-        file_path = f'{analogue_dir}times_distances_analogues-{var_analogues}_{str_event}_{int(qtl_LE*100)}pct_{year_range[0]}-{year_range[1]}_CRCM5-LE_memb-{memb}.npz'
+        file_path = f'{analogue_dir}times_distances_analogues-{var_analogues}_{str_event}_{int(qtl_search*100)}pct_{year_range[0]}-{year_range[1]}_CRCM5-LE_memb-{memb}.npz'
         # Load the data from the npz file
         if not os.path.exists(file_path):
             print(f"File not found: {file_path}")
             continue
         # Load the data
         data = np.load(file_path, allow_pickle=True)
-        times = data['times']
-        distances = data['distances']
+        times = data['times'][:no_analogues_LE]
+        distances = data['distances'][:no_analogues_LE]
         epoch_data[memb] = {'times': times, 'distances': distances}
     ensemble_data.append(epoch_data)
-no_analogues_LE = len(ensemble_data[0][list_membs[0]]['times'])  # Number of analogues per member
 # # Print the ensemble data for first epoch
 # print(f"Ensemble data for epoch {list_year_ranges[0]}: {ensemble_data[0]}")
 
@@ -159,8 +166,9 @@ for i, year_range in enumerate(list_year_ranges):
                 dims=["lat", "lon"],
                 coords={"lat": pr_memb.lat.values, "lon": pr_memb.lon.values},
             )
+        pr_memb.head()
         pr_memb = pr_memb.where(mask_xr, drop=True).chunk({'analogue': -1, 'member': 1, 'lat': -1, 'lon': -1})
-        
+
         # Append to list
         pr_analogues.append(pr_memb)
 
@@ -179,7 +187,7 @@ for i, year_range in enumerate(list_year_ranges):
         # now do a weighted mean over the region
         pr_memb_regional_mean = pr_masked.weighted(weights).mean(dim=("lat","lon")).squeeze()
         # Save regional mean to NetCDF file
-        suffix_file = f"{varname}_{str_event}_{int(qtl_LE*100)}pct_{year_range[0]}-{year_range[1]}_CRCM5_{memb}.nc"
+        suffix_file = f"{varname}_{str_event}_{qtl_LE_str}_{year_range[0]}-{year_range[1]}_CRCM5_{memb}.nc"
         pr_regional_file = f"{output_mask_dir}analogues-{var_analogues}_mask-mean-{suffix_file}"
         if os.path.exists(pr_regional_file):
             print(f"Regional mean of epoch {i} already exists: {pr_regional_file}")
@@ -195,7 +203,7 @@ for i, year_range in enumerate(list_year_ranges):
 
     # Save epoch mean to NetCDF file
     pr_epoch = ds_pr_analogues.mean(dim=('member','analogue'))
-    suffix_file = f"{varname}_{str_event}_{int(qtl_LE*100)}pct_{year_range[0]}-{year_range[1]}_CRCM5_{no_membs}membs.nc"
+    suffix_file = f"{varname}_{str_event}_{qtl_LE_str}_{year_range[0]}-{year_range[1]}_CRCM5_{no_membs}membs.nc"
     epoch_file = f"{output_dir}analogues-{var_analogues}_{suffix_file}"
     if os.path.exists(epoch_file):
         print(f"Epoch file already exists: {epoch_file}")
@@ -236,7 +244,7 @@ for i, (epoch1, epoch2) in enumerate(diff_indices):
     ds_diff.attrs['epoch2'] = f"{list_year_ranges[epoch2][0]}-{list_year_ranges[epoch2][1]}"
 
     # Save the difference dataset and KS statistics to NetCDF files
-    suffix_file = f"_{varname}_{str_event}_{int(qtl_LE*100)}pct_diff{ds_diff.attrs['epoch2']}_{ds_diff.attrs['epoch1']}_CRCM5_{no_membs}membs.nc"
+    suffix_file = f"_{varname}_{str_event}_{qtl_LE_str}_diff{ds_diff.attrs['epoch2']}_{ds_diff.attrs['epoch1']}_CRCM5_{no_membs}membs.nc"
     diff_file = f"{output_dir}analogues-{var_analogues}_difference{suffix_file}"
     ks_file = f"{output_dir}analogues-{var_analogues}_KS-statistics{suffix_file}"
     if os.path.exists(diff_file):

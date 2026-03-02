@@ -38,9 +38,9 @@ analogue_dir = "/home/alice/Desktop/work/git/myISACcode/python/analogues/analogu
 # --- Parameters LE analogue search ---
 
 # Variable
-var_analogues = ['mslp'] # ['mslp','z500']
-var_names = ['msl'] # ['msl','z']
-var_factors = [0.01]  # [0.01, 1/9.81] to convert from Pa to hPa and from geopot to geopot height
+var_analogues = ['mslp', 'z500'] # ['mslp','z500']
+var_names = ['msl', 'z'] # ['msl','z']
+var_factors = [0.01, 1/9.81]  # [0.01, 1/9.81] to convert from Pa to hPa and from geopot to geopot height
 str_vars = '-'.join(var_analogues)+'-std'
 
 # Quantile and analogue spacing
@@ -57,7 +57,7 @@ years_sel = np.arange(year_range[0], year_range[1]+1)
 # Event
 lselect = 'alertregions'  # 'Italy' or 'wide-region' or 'alert-regions'
 no_node = 5
-no_event = 4
+no_event = 23
 str_event = f'node{no_node}-extreme{no_event}-{lselect}'
 # Upload ERA5 info
 df_events = pd.read_excel(CERRA_dir+'events_cum_on_above99_alertregions_CERRA.xlsx', sheet_name=no_node-1)

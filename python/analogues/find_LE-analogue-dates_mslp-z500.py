@@ -38,10 +38,10 @@ analogue_dir = "/home/alice/Desktop/work/git/myISACcode/python/analogues/analogu
 # --- Parameters LE analogue search ---
 
 # Variable
-var_analogues = ['psl', 'zg'] # ['psl','zg']
-var_analogues_str = ['psl', 'zg500'] # ['psl','zg500']
-var_analogues_ERA5 = ['mslp', 'z500'] # ['mslp','z500']
-var_factor = [0.01, 1/9.81] # [0.01, 1/9.81]  # to convert from Pa to hPa and from geopot to geopot height
+var_analogues = ['psl'] # ['psl','zg']
+var_analogues_str = ['psl'] # ['psl','zg500']
+var_analogues_ERA5 = ['mslp'] # ['mslp','z500']
+var_factor = [0.01] # [0.01, 1/9.81]  # to convert from Pa to hPa and from geopot to geopot height
 str_vars = '-'.join(var_analogues_str)+'-std'
 
 # Quantile and analogue spacing
@@ -174,7 +174,7 @@ for year_range, years_sel in zip(list_year_range, list_years_sel):
             dims=["lat", "lon"],
             coords={"lat": anom_tmp_memb.lat.values, "lon": anom_tmp_memb.lon.values},
         )
-        anom_sel = anom_tmp_memb.where(mask_xr, drop=True)
+        anom_sel = anom_tmp_memb.where(mask_xr).dropna(dim="lat", how="all").dropna(dim="lon", how="all")
 
         # Standardise event and selected data
         stdev = anom_sel.std(dim='time')

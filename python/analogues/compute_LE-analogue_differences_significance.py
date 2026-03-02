@@ -57,7 +57,7 @@ elif event_origin == 'CRCM5-LE':
 box_event = fanPM.box_event_PrMax_alertregions(no_node,no_event)
 
 # Variable
-varname = 'psl' # Variable to compute the difference between analogues, e.g. 'zg' for geopotential height
+varname = 'zg' # Variable to compute the difference between analogues, e.g. 'zg' for geopotential height
 var_analogues = 'psl-zg500-std'  # Variable used to find the analogues, e.g. 'psl' for sea level pressure
 if varname=='psl':
     var_factor = 0.01  # Factor to convert the variable to the correct units (e.g., psl from Pa to hPa)
@@ -65,7 +65,15 @@ else:
     var_factor = 1
 
 # Quantile and analogue spacing
-qtl_LE = 0.99
+qtl_search = 0.99
+
+# Number of analogues per member (out of 18 ~ 99th pct) and corresponding qtl
+no_analogues_LE = 2
+qtl_LE = 0.999 # 0.99 for 18 analogues, 0.999 for 2 analogues
+if qtl_LE*100 % 1 == 0:
+    qtl_LE_str = f"{int(qtl_LE*100)}pct"
+else:
+    qtl_LE_str = f"{qtl_LE*100:.1f}pct"
 
 # Number of ensemble members
 no_membs = 49
@@ -89,20 +97,17 @@ for i, year_range in enumerate(list_year_ranges):
     epoch_data = {}
     for memb in list_membs:
         # Construct the file path
-        file_path = f'{analogue_dir}times_distances_analogues-{var_analogues}_{str_event}_{int(qtl_LE*100)}pct_{year_range[0]}-{year_range[1]}_CRCM5-LE_memb-{memb}.npz'
+        file_path = f'{analogue_dir}times_distances_analogues-{var_analogues}_{str_event}_{int(qtl_search*100)}pct_{year_range[0]}-{year_range[1]}_CRCM5-LE_memb-{memb}.npz'
         # Load the data from the npz file
         if not os.path.exists(file_path):
             print(f"File not found: {file_path}")
             continue
         # Load the data
         data = np.load(file_path, allow_pickle=True)
-        times = data['times']
-        distances = data['distances']
+        times = data['times'][:no_analogues_LE]
+        distances = data['distances'][:no_analogues_LE]
         epoch_data[memb] = {'times': times, 'distances': distances}
     ensemble_data.append(epoch_data)
-no_analogues_LE = len(ensemble_data[0][list_membs[0]]['times'])  # Number of analogues per member
-# # Print the ensemble data for first epoch
-# print(f"Ensemble data for epoch {list_year_ranges[0]}: {ensemble_data[0]}")
 
 
 # --- Load LE analogue data for all epochs ---
@@ -216,7 +221,7 @@ if not os.path.exists(output_dir):
 for i in range(len(list_ds_diff)):
     ds_diff = list_ds_diff[i]
     ks_stats = list_ks_stats[i]
-    suffix_file = f"_{varname}_{str_event}_{int(qtl_LE*100)}pct_diff{ds_diff.attrs['epoch2']}_{ds_diff.attrs['epoch1']}_CRCM5_{no_membs}membs.nc"
+    suffix_file = f"_{varname}_{str_event}_{qtl_LE_str}_diff{ds_diff.attrs['epoch2']}_{ds_diff.attrs['epoch1']}_CRCM5_{no_membs}membs.nc"
 
     # Save the difference dataset
     diff_file = f"{output_dir}analogues-{var_analogues}_difference{suffix_file}"
@@ -234,8 +239,7 @@ for i, year_range in enumerate(list_year_ranges):
     anom_epoch = list_ds_anom[i].mean(dim=('member','analogue'))
     clim_epoch = list_ds_clim[i].mean(dim=('member','analogue'))
     # Define the suffix for the file names based on the event origin
-    suffix_file = f"_{varname}_{str_event}_{int(qtl_LE*100)}pct_{year_range[0]}-{year_range[1]}_CRCM5_{no_membs}membs.nc"
-    
+    suffix_file = f"_{varname}_{str_event}_{qtl_LE_str}_{year_range[0]}-{year_range[1]}_CRCM5_{no_membs}membs.nc"
     anom_file = f"{output_dir}analogues-{var_analogues}_anomaly{suffix_file}"
     clim_file = f"{output_dir}analogues-{var_analogues}_climatology{suffix_file}"
     
