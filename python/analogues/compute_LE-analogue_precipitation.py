@@ -116,9 +116,6 @@ for i, year_range in enumerate(list_year_ranges):
         distances = data['distances'][:no_analogues_LE]
         epoch_data[memb] = {'times': times, 'distances': distances}
     ensemble_data.append(epoch_data)
-# # Print the ensemble data for first epoch
-# print(f"Ensemble data for epoch {list_year_ranges[0]}: {ensemble_data[0]}")
-
 
 # --- Load LE analogue data for all epochs and save mean per epoch ---
 # Anomalies and climatology
@@ -172,30 +169,6 @@ for i, year_range in enumerate(list_year_ranges):
         # Append to list
         pr_analogues.append(pr_memb)
 
-        # Compute and save regional mean precipitation in mask
-        if mask_pr is None:
-            if event_origin == 'ERA5':
-                pr_mask = xr.open_dataset(f'./analogue_data/event_data/{varname}-mask_{str_event}_CERRA.nc')
-            elif event_origin == 'CRCM5-LE':
-                pattern = f'./analogue_data/BAM_data/{varname}-mask_BAM-{var_BAM}_{str_event}_*_2004-2023_CRCM5-LE_49membs.nc'
-                mask_files = glob.glob(pattern)
-                pr_mask = xr.open_dataset(mask_files[0])  # Assuming there's only one matching file   
-            # weights = cos(lat)
-            weights = np.cos(np.deg2rad(pr_mask['lat']))
-            weights = weights.broadcast_like(pr_mask)   # expand to lat/lon grid
-        pr_masked = pr_memb.where(pr_mask['pr_mask']==1)  # Apply mask to the precipitation data
-        # now do a weighted mean over the region
-        pr_memb_regional_mean = pr_masked.weighted(weights).mean(dim=("lat","lon")).squeeze()
-        # Save regional mean to NetCDF file
-        suffix_file = f"{varname}_{str_event}_{qtl_LE_str}_{year_range[0]}-{year_range[1]}_CRCM5_{memb}.nc"
-        pr_regional_file = f"{output_mask_dir}analogues-{var_analogues}_mask-mean-{suffix_file}"
-        if os.path.exists(pr_regional_file):
-            print(f"Regional mean of epoch {i} already exists: {pr_regional_file}")
-        else:
-            pr_memb_regional_mean[varname].to_netcdf(pr_regional_file)
-            print(f"Saved regional mean of epoch {i}, member {memb}")
-
-    
     # Concatenate the datasets for the current epoch
     ds_pr_analogues = xr.concat(pr_analogues, dim='member')[varname].chunk({'analogue': -1, 'member': -1, 'lat': 5, 'lon': 5})
     # Save in list by epoch
