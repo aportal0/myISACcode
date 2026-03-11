@@ -417,6 +417,8 @@ def create_member_file_dict(paths_files, list_membs):
             if memb in path:
                 memb_files[memb].append(path)
                 break  # Assuming one member per file path
+    for memb in list_membs:
+        memb_files[memb] = list(set(memb_files[memb]))  # Remove duplicates
     # return with keys in alphabetical order
     return {m: memb_files[m] for m in sorted(list_membs)}
 
@@ -500,7 +502,7 @@ def concat_members_noleap(list_ds, varname):
     return result
 
 
-## Function to create lon-lat mask (event-wise) and land mask
+## Function to create lon-lat mask (event-wise), land mask and town mask
 
 def box_event_PrMax_alertregions(no_node, no_event):
     """
@@ -514,6 +516,8 @@ def box_event_PrMax_alertregions(no_node, no_event):
     elif no_node == 6 and no_event == 19:
         box_event = [2, 20, 33, 48]
     elif no_node == 5 and no_event == 4:
+        box_event = [5, 22, 32, 46]
+    elif no_node == 5 and no_event == 23:
         box_event = [5, 22, 32, 46]
     elif no_node == 3 and no_event == 3:
         box_event = [0, 15, 35, 48]
@@ -546,6 +550,47 @@ def create_land_mask(lons, lats):
             land_mask[i, j] = land_geom.contains(point)
     
     return xr.DataArray(land_mask, coords=[('lat', lats), ('lon', lons)])
+
+
+def create_town_mask(lons, lats, no_node, no_event):
+    """Create list of town names, coordinates and masks per event."""
+    # Define lon/lat grid
+    lon2d, lat2d = np.meshgrid(lons, lats)
+    
+    # Define town coordinates
+    if no_node == 1 and no_event == 1:
+        town_names = ['Pordenone', "Trieste"]
+        town_coords = [(45.961, 12.647), (45.652, 13.742)]
+    elif no_node == 6 and no_event == 19:
+        town_names = ['Rimini', 'Bologna']
+        town_coords = [(44.054, 12.533), (44.499, 11.249)]
+    elif no_node == 3 and no_event == 3:
+        town_names = ['Imperia', 'Genova']
+        town_coords = [(43.814, 7.682), (44.447, 8.808)]
+    elif no_node == 5 and no_event == 4:
+        town_names = ['Pesaro', 'Napoli']
+        town_coords = [(43.900, 12.874), (40.854, 14.164)]
+    elif no_node == 5 and no_event == 23:
+        town_names = ['Cesena', 'Reggio Emilia']
+        town_coords = [(44.149,12.180), (44.702, 10.597)]
+
+    # Create town masks
+    list_town_masks = []
+    list_town_masks_expanded = []
+    for town in town_coords:
+        # Compute distance from each grid point to the town position
+        dist = (lon2d - town[1])**2 + (lat2d - town[0])**2
+        # index of nearest grid-point
+        iy, ix = np.unravel_index(np.argmin(dist), dist.shape)
+        # Town mask
+        town_mask = np.zeros_like(lon2d, dtype=bool)
+        town_mask[iy, ix] = True
+        town_mask_expanded = np.zeros_like(town_mask, dtype=bool)
+        town_mask_expanded[iy-3:iy+4, ix-3:ix+4] = True
+        list_town_masks.append(xr.DataArray(town_mask, coords=[('lat', lats), ('lon', lons)]))  
+        list_town_masks_expanded.append(xr.DataArray(town_mask_expanded, coords=[('lat', lats), ('lon', lons)]))
+        
+    return town_names, town_coords, list_town_masks, list_town_masks_expanded
 
 
 ## Function to retrieve best model analogue info 
@@ -588,9 +633,9 @@ def get_best_model_analogue_info(no_node, no_event, var_analogues):
                                   'date': ['2008-11-22', '2013-11-26', '2012-10-04', '2011-10-05', '2015-10-10', '2008-11-10', '2012-10-24', '2019-10-03', '2011-11-19', '2011-11-03'],
                                   'pos_analogue': [0,0,0,0,0,0,1,0,0,0],
                                   'precip_in_event_20mm_mask': [9.506987013363918, 14.38818342368258, 12.507403527125229, 9.8596171106184, 14.301817643134282, 25.655008881393297, 9.8596171106184, 18.03797232639275, 18.79172844588444, 8.792758162971216],
-                                  'precip_in_BAM_20mm_mask': [np.nan, np.nan, 49.72846, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan]
+                                  'precip_in_BAM_20mm_mask': [np.nan, np.nan, 49.72846, np.nan, np.nan, np.nan, 34.21716, 40.91511, np.nan, np.nan]
                                   }
-            index_best_analogue = 2 # position of the best analogue in the list
+            index_best_analogue = 7 # position of the best analogue in the list
     elif no_node==3 and no_event==3:
         if var_analogues == 'psl':
             dict_best_analogue = {'member': ['kbw', 'kbi', 'kcw', 'kcs', 'kcw', 'kbx', 'kbi', 'kcd', 'kch', 'kbs'],
@@ -601,6 +646,16 @@ def get_best_model_analogue_info(no_node, no_event, var_analogues):
                                   'precip_in_BAM_20mm_mask': [np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, 46.46725, np.nan, np.nan, np.nan]
                                   }
             index_best_analogue = 6 # position of the best analogue in the list
+    elif no_node==5 and no_event==23:
+        if var_analogues == 'psl':
+            dict_best_analogue = {'member': ['kbt', 'kcp', 'kbx', 'kcs', 'kbm', 'kbt', 'kba', 'kci', 'kbk', 'kbv'], 
+                                  'distance': [34.589355, 39.32714, 39.473938, 39.58077, 39.851536, 45.433235, 45.83791, 46.726833, 46.77762, 46.880985], 
+                                  'date': ['2013-05-24', '2013-04-06', '2022-05-17', '2016-06-11', '2022-04-19', '2014-04-12', '2013-05-30', '2015-06-11', '2012-06-05', '2006-04-05'],
+                                  'pos_analogue': [0,0,0,0,0,1,0,0,0,0],
+                                  'precip_in_event_20mm_mask': [18.3920089830068, 15.98013887280032, 16.213089428457167, 0.6763804958057321, 16.996085570995213, 19.982470100330787, 11.33878350575191, 5.419847213948162, 0.2996978761785993, 5.4153964358633475],
+                                  'precip_in_BAM_20mm_mask': [np.nan, np.nan, np.nan, np.nan, np.nan, 37.25436 , np.nan, np.nan, np.nan, np.nan]
+                                  }
+            index_best_analogue = 5 # position of the best analogue in the list
 
     return dict_best_analogue, index_best_analogue
 
