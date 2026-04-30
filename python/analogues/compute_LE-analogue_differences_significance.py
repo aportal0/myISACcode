@@ -63,13 +63,18 @@ if varname=='psl':
     var_factor = 0.01  # Factor to convert the variable to the correct units (e.g., psl from Pa to hPa)
 else:
     var_factor = 1
+diff_type = 'anom'  # 'full' or 'anom'
 
-# Quantile and analogue spacing
+# Statistical testing
+stat_test = 'tW'  # 'KS' for Kolmogorov-Smirnov test, tW for Welch's t-test, AD for Anderson-Darling test, CvM for Cramér-von Mises test
+stat, stat_func = fanPM.get_stat_test(stat_test)
+
+# Quantile choice
 qtl_search = 0.99
 
 # Number of analogues per member (out of 18 ~ 99th pct) and corresponding qtl
-no_analogues_LE = 2
-qtl_LE = 0.999 # 0.99 for 18 analogues, 0.999 for 2 analogues
+no_analogues_LE = 18
+qtl_LE = 0.99 # 0.99 for 18 analogues, 0.999 for 2 analogues
 if qtl_LE*100 % 1 == 0:
     qtl_LE_str = f"{int(qtl_LE*100)}pct"
 else:
@@ -162,28 +167,28 @@ for i, year_range in enumerate(list_year_ranges):
     # Save in list by epoch
     list_ds_anom.append(ds_anom_analogues)
     list_ds_clim.append(ds_clim_analogues)
-        
-# # Print dataset for the first epoch
-# print(f"Anomaly dataset for epoch {list_year_ranges[0]}: {list_ds_anom[0]}")
-# print(f"Climatology dataset for epoch {list_year_ranges[0]}: {list_ds_clim[0]}")
 
 
-# --- Kolmogorov-Smirnov test for significance ---
+# --- Statistical testing ---
 
-# Perform the Kolmogorov-Smirnov test for each pair of epochs
-list_ks_stats = []  # Initialize an empty list to store the KS statistics
+# Perform the statistical test for each pair of epochs
+list_stats = []  # Initialize an empty list to store the KS statistics
 for i, (epoch1, epoch2) in enumerate(diff_indices):
-    print(f"Computing KS test for epoch {epoch1} vs epoch {epoch2}")
+    print(f"Computing {stat_test} test for epoch {epoch1} vs epoch {epoch2}")
     members = np.arange(0, no_membs)  # Select all members for the KS test
     # Get the datasets for the two epochs
-    ds_epoch1 = (list_ds_clim[epoch1] + list_ds_anom[epoch1]).isel(member=members)
-    ds_epoch2 = (list_ds_clim[epoch2] + list_ds_anom[epoch2]).isel(member=members)
+    if diff_type == 'full':
+        ds_epoch1 = (list_ds_clim[epoch1] + list_ds_anom[epoch1]).isel(member=members)
+        ds_epoch2 = (list_ds_clim[epoch2] + list_ds_anom[epoch2]).isel(member=members)
+    elif diff_type == 'anom':
+        ds_epoch1 = list_ds_anom[epoch1].isel(member=members)
+        ds_epoch2 = list_ds_anom[epoch2].isel(member=members)
     ds1_flat = ds_epoch1.stack(analogue_all=('member', 'analogue')).chunk({'analogue_all': -1})
     ds2_flat = ds_epoch2.stack(analogue_all=('member', 'analogue')).chunk({'analogue_all': -1})
 
-    # Perform the Kolmogorov-Smirnov test for each grid point
-    ks_statistics = xr.apply_ufunc(
-        fanPM.ks_stat_and_pval,
+    # Perform the statistical test for each grid point
+    statistics = xr.apply_ufunc(
+        stat_func,
         ds1_flat,
         ds2_flat,
         input_core_dims=[['analogue_all'], ['analogue_all']],
@@ -193,9 +198,9 @@ for i, (epoch1, epoch2) in enumerate(diff_indices):
         dask='parallelized',
         output_dtypes=[float],
     )
-    ks_statistics = ks_statistics.assign_coords(output=["diff_statistic", "pvalue"])
     # Add the dataset to the lists
-    list_ks_stats.append(ks_statistics)
+    statistics = statistics.assign_coords(output=[stat, "pvalue"])
+    list_stats.append(statistics)
 
 
 # --- Compute LE analogue differences ---
@@ -203,9 +208,14 @@ for i, (epoch1, epoch2) in enumerate(diff_indices):
 list_ds_diff = []  # Initialize an empty list to store the differences
 for i, (epoch1, epoch2) in enumerate(diff_indices):
     # Compute the difference between the two epochs
-    ds_epoch1_mean = (list_ds_clim[epoch1] + list_ds_anom[epoch1]).mean(dim=('member','analogue'))
-    ds_epoch2_mean = (list_ds_clim[epoch2] + list_ds_anom[epoch2]).mean(dim=('member','analogue'))
+    if diff_type == 'full':
+        ds_epoch1_mean = (list_ds_clim[epoch1] + list_ds_anom[epoch1]).mean(dim=('member','analogue'))
+        ds_epoch2_mean = (list_ds_clim[epoch2] + list_ds_anom[epoch2]).mean(dim=('member','analogue'))
+    elif diff_type == 'anom':
+        ds_epoch1_mean = list_ds_anom[epoch1].mean(dim=('member','analogue'))
+        ds_epoch2_mean = list_ds_anom[epoch2].mean(dim=('member','analogue'))
     ds_diff = ds_epoch2_mean - ds_epoch1_mean
+
     # Add epoch information to the dataset
     ds_diff.attrs['epoch1'] = f"{list_year_ranges[epoch1][0]}-{list_year_ranges[epoch1][1]}"
     ds_diff.attrs['epoch2'] = f"{list_year_ranges[epoch2][0]}-{list_year_ranges[epoch2][1]}"
@@ -220,19 +230,25 @@ if not os.path.exists(output_dir):
 # Save each difference and KS-stat dataset to a NetCDF file
 for i in range(len(list_ds_diff)):
     ds_diff = list_ds_diff[i]
-    ks_stats = list_ks_stats[i]
+    ks_stats = list_stats[i]
     suffix_file = f"_{varname}_{str_event}_{qtl_LE_str}_diff{ds_diff.attrs['epoch2']}_{ds_diff.attrs['epoch1']}_CRCM5_{no_membs}membs.nc"
 
     # Save the difference dataset
-    diff_file = f"{output_dir}analogues-{var_analogues}_difference{suffix_file}"
+    if diff_type=='full':
+        diff_file = f"{output_dir}analogues-{var_analogues}_difference{suffix_file}"
+    elif diff_type=='anom':
+        diff_file = f"{output_dir}analogues-{var_analogues}_difference-anom{suffix_file}"
     if not os.path.exists(diff_file):
         ds_diff.to_netcdf(diff_file)
         print(f"Saved difference dataset to {diff_file}")
     # Save the KS statistics dataset
-    stat_file = f"{output_dir}analogues-{var_analogues}_KS-statistics{suffix_file}"
+    if diff_type=='full':
+        stat_file = f"{output_dir}analogues-{var_analogues}_{stat_test}-statistics{suffix_file}"
+    elif diff_type=='anom':
+        stat_file = f"{output_dir}analogues-{var_analogues}_{stat_test}-statistics-anom{suffix_file}"
     if not os.path.exists(stat_file):
         ks_stats.to_netcdf(stat_file)
-        print(f"Saved KS statistics dataset to {stat_file}")
+        print(f"Saved {stat_test} statistics dataset to {stat_file}")
 
 # Save anomaly and climatology by epoch to NetCDF files
 for i, year_range in enumerate(list_year_ranges):

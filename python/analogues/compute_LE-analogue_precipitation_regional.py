@@ -55,8 +55,8 @@ if not os.path.exists(output_mask_dir):
 # --- Event and LE analogue definition ---
 # Event
 lselect = 'alertregions'  # 'Italy' or 'wide-region' or 'alert-regions'
-no_node = 6
-no_event = 19
+no_node = 3
+no_event = 8
 
 event_origin = 'CRCM5-LE'  # 'ERA5' or 'CRCM5-LE'
 if event_origin == 'ERA5':

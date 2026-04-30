@@ -55,8 +55,8 @@ list_years_sel = [np.arange(year_range[0], year_range[1]+1) for year_range in li
 
 # Event
 lselect = 'alertregions'  # 'Italy' or 'wide-region' or 'alert-regions'
-no_node = 5
-no_event = 23
+no_node = 3
+no_event = 8
 event_origin = 'ERA5'  # 'ERA5' or 'CRCM5-LE'
 if event_origin == 'ERA5':
     str_event = f'node{no_node}-extreme{no_event}-{lselect}'

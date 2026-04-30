@@ -38,10 +38,10 @@ analogue_dir = "/home/alice/Desktop/work/git/myISACcode/python/analogues/analogu
 # --- Parameters LE analogue search ---
 
 # Variable
-var_analogues = ['psl'] # ['psl','zg']
-var_analogues_str = ['psl'] # ['psl','zg500']
-var_analogues_ERA5 = ['mslp'] # ['mslp','z500']
-var_factor = [0.01] # [0.01, 1/9.81]  # to convert from Pa to hPa and from geopot to geopot height
+var_analogues = ['psl', 'zg'] # ['psl','zg']
+var_analogues_str = ['psl', 'zg500'] # ['psl','zg500']
+var_analogues_ERA5 = ['mslp', 'z500'] # ['mslp','z500']
+var_factor = [0.01, 1/9.81] # [0.01, 1/9.81]  # to convert from Pa to hPa and from geopot to geopot height
 str_vars = '-'.join(var_analogues_str)+'-std'
 
 # Quantile and analogue spacing
@@ -59,8 +59,8 @@ list_years_sel = [np.arange(year_range[0], year_range[1]+1) for year_range in li
 
 # Event
 lselect = 'alertregions'  # 'Italy' or 'wide-region' or 'alert-regions'
-no_node = 5
-no_event = 4
+no_node = 3
+no_event = 8
 event_origin = 'CRCM5-LE'  # 'ERA5' or 'CRCM5-LE'
 if event_origin == 'ERA5':
     str_event = f'node{no_node}-extreme{no_event}-{lselect}'

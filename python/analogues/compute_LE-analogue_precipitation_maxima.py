@@ -52,8 +52,8 @@ if not os.path.exists(output_dir):
 # --- Event and LE analogue definition ---
 # Event
 lselect = 'alertregions'  # 'Italy' or 'wide-region' or 'alert-regions'
-no_node = 5
-no_event = 4
+no_node = 6
+no_event = 19
 
 event_origin = 'CRCM5-LE'  # 'ERA5' or 'CRCM5-LE'
 if event_origin == 'ERA5':
@@ -66,10 +66,14 @@ box_event = fanPM.box_event_PrMax_alertregions(no_node,no_event)
 
 # Variable
 varname = 'pr' # Variable to compute the difference between analogues, e.g. 'zg' for geopotential height
-var_analogues = 'psl-std'  # Variable used to find the analogues, e.g. 'psl' for sea level pressure
+var_analogues = 'psl-zg500-std'  # Variable used to find the analogues, e.g. 'psl' for sea level pressure
 var_BAM = 'psl'
 
-# Quantile and analogue spacing
+# Statistical testing
+stat_test = 'tW'  # 'KS' for Kolmogorov-Smirnov test, tW for Welch's t-test, AD for Anderson-Darling test, CvM for Cramér-von Mises test
+stat, stat_func = fanPM.get_stat_test(stat_test)
+
+# Quantile
 qtl_LE = 0.99
 
 # Number of ensemble members
@@ -177,18 +181,18 @@ for i, year_range in enumerate(list_year_ranges):
         print(f"Saved mean of epoch {i}")
 
 
-# --- Kolmogorov-Smirnov test for significance ---
+# --- Significance testing ---
 
-# Perform the Kolmogorov-Smirnov test for each pair of epochs
+# Perform the significance test for each pair of epochs
 for i, (epoch1, epoch2) in enumerate(diff_indices):
-    print(f"Computing KS test for epoch {epoch1} vs epoch {epoch2}")
+    print(f"Computing {stat_test} test for epoch {epoch1} vs epoch {epoch2}")
     # Get the datasets for the two epochs
     ds_epoch1 = list_ds_max[epoch1].isel(member=slice(0, no_membs))
     ds_epoch2 = list_ds_max[epoch2].isel(member=slice(0, no_membs))
     
-    # Perform the Kolmogorov-Smirnov test for each grid point
-    ks_statistics = xr.apply_ufunc(
-        fanPM.ks_stat_and_pval,
+    # Perform the significance test for each grid point
+    statistics = xr.apply_ufunc(
+        stat_func,
         ds_epoch1,
         ds_epoch2,
         input_core_dims=[['member'], ['member']],
@@ -198,7 +202,7 @@ for i, (epoch1, epoch2) in enumerate(diff_indices):
         dask='parallelized',
         output_dtypes=[float],
     )
-    ks_statistics = ks_statistics.assign_coords(output=["diff_statistic", "pvalue"])
+    statistics = statistics.assign_coords(output=[stat, "pvalue"])
 
     # Compute epoch differences
     ds_diff = ds_epoch2.mean(dim=('member')) - ds_epoch1.mean(dim=('member'))
@@ -208,15 +212,15 @@ for i, (epoch1, epoch2) in enumerate(diff_indices):
     # Save the difference dataset and KS statistics to NetCDF files
     suffix_file = f"_ensmean-{varname}max_{str_event}_{int(qtl_LE*100)}pct_diff{ds_diff.attrs['epoch2']}_{ds_diff.attrs['epoch1']}_CRCM5_{no_membs}membs.nc"
     diff_file = f"{output_dir}analogues-{var_analogues}_difference{suffix_file}"
-    ks_file = f"{output_dir}analogues-{var_analogues}_KS-statistics{suffix_file}"
+    stat_file = f"{output_dir}analogues-{var_analogues}_{stat_test}-statistics{suffix_file}"
     if os.path.exists(diff_file):
         print(f"Difference file already exists: {diff_file}")
     else:
         ds_diff.chunk({'lat': -1, 'lon': -1}).to_netcdf(diff_file)
         print(f"Saved difference for epoch {epoch1} vs {epoch2}")
-    if os.path.exists(ks_file):
-        print(f"KS statistics file already exists: {ks_file}")
+    if os.path.exists(stat_file):
+        print(f"{stat_test} statistics file already exists: {stat_file}")
     else:
-        ks_statistics.chunk({'lat': -1, 'lon': -1}).to_netcdf(ks_file)
-        print(f"Saved KS statistics for epoch {epoch1} vs {epoch2}")
+        statistics.chunk({'lat': -1, 'lon': -1}).to_netcdf(stat_file)
+        print(f"Saved {stat_test} statistics for epoch {epoch1} vs {epoch2}")
 

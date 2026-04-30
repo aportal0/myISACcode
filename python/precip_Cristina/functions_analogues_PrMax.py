@@ -7,7 +7,9 @@ import cartopy.crs as ccrs
 from cartopy.util import add_cyclic_point
 import cartopy.feature as cfeature
 from scipy.stats import ks_2samp
+from scipy import stats
 import matplotlib.colors as mcolors
+from matplotlib.colors import LinearSegmentedColormap
 import time
 from collections import defaultdict
 import xesmf as xe
@@ -521,6 +523,8 @@ def box_event_PrMax_alertregions(no_node, no_event):
         box_event = [5, 22, 32, 46]
     elif no_node == 3 and no_event == 3:
         box_event = [0, 15, 35, 48]
+    elif no_node == 3 and no_event == 8:
+        box_event = [0, 15, 35, 48]
     return box_event
 
 
@@ -562,17 +566,20 @@ def create_town_mask(lons, lats, no_node, no_event):
         town_names = ['Pordenone', "Trieste"]
         town_coords = [(45.961, 12.647), (45.652, 13.742)]
     elif no_node == 6 and no_event == 19:
-        town_names = ['Rimini', 'Bologna']
-        town_coords = [(44.054, 12.533), (44.499, 11.249)]
+        town_names = ['Bologna', "Reggio Calabria"]
+        town_coords = [(44.499, 11.249), (38.098,15.516)]
     elif no_node == 3 and no_event == 3:
         town_names = ['Imperia', 'Genova']
         town_coords = [(43.814, 7.682), (44.447, 8.808)]
     elif no_node == 5 and no_event == 4:
-        town_names = ['Pesaro', 'Napoli']
-        town_coords = [(43.900, 12.874), (40.854, 14.164)]
+        town_names = ['Bologna', 'Napoli']
+        town_coords = [(44.499, 11.249), (40.854, 14.164)]
     elif no_node == 5 and no_event == 23:
-        town_names = ['Cesena', 'Reggio Emilia']
-        town_coords = [(44.149,12.180), (44.702, 10.597)]
+        town_names = ['Bologna', 'Reggio Emilia']
+        town_coords = [(44.499, 11.249), (44.702, 10.597)]
+    elif no_node == 3 and no_event == 8:
+        town_names = ['Imperia', 'Genova']
+        town_coords = [(43.814, 7.682), (44.447, 8.808)]
 
     # Create town masks
     list_town_masks = []
@@ -594,6 +601,7 @@ def create_town_mask(lons, lats, no_node, no_event):
 
 
 ## Function to retrieve best model analogue info 
+
 def get_best_model_analogue_info(no_node, no_event, var_analogues):
     """
     Returns the best model analogue info for a given selecion of node and event.
@@ -613,7 +621,8 @@ def get_best_model_analogue_info(no_node, no_event, var_analogues):
                                   'date': ['2019-11-25', '2012-11-14', '2006-11-11', '2015-11-07', '2007-10-20', '2015-10-15', '2012-11-19', '2018-11-21', '2022-11-27', '2017-11-12'],
                                   'pos_analogue': [0,0,0,0,0,0,1,0,0,0],
                                   'precip_in_event_20mm_mask': [26.14330323002103, 16.61483674959191, 15.7213547579038, 24.014450585251367, 17.59608333027811, 18.827661680311774, 19.34756427657392, 19.27157132291034, 18.282617358719772, 14.64679098802519],
-                                  'precip_in_BAM_20mm_mask': [46.86927, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan]
+                                  'precip_in_BAM_20mm_mask': [46.86927, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan],
+                                  'precip_in_town_7x7_land_mask': [(43.9324, 46.1831), np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan] # Pordenone, Trieste
                                   }
             index_best_analogue = 0  # position of the best analogue in the list
     elif no_node==6 and no_event==19:
@@ -623,7 +632,8 @@ def get_best_model_analogue_info(no_node, no_event, var_analogues):
                                   'date': ['2006-11-24', '2012-09-26', '2021-11-22', '2014-10-26', '2015-10-28', '2019-11-09', '2005-10-31', '2007-11-11', '2016-10-07', '2017-09-24'],
                                   'pos_analogue': [0,0,0,0,0,0,0,0,0,0],
                                   'precip_in_event_20mm_mask': [8.139047731305991, 28.80761104401095, 14.659330174746403, 11.755178774309568, 26.559614073205566, 9.573844608292344, 7.516039454810047, 15.264119801933147, 19.5942187300353, 18.960937767569543],
-                                  'precip_in_BAM_20mm_mask': [np.nan, 44.14423, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan]
+                                  'precip_in_BAM_20mm_mask': [np.nan, 44.14423, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan],
+                                  'precip_in_town_7x7_land_mask': [np.nan, (20.2073, 63.0739), np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan] # Bologna, Reggio Calabria
                                   }
             index_best_analogue = 1 # position of the best analogue in the list
     elif no_node==5 and no_event==4:
@@ -633,7 +643,8 @@ def get_best_model_analogue_info(no_node, no_event, var_analogues):
                                   'date': ['2008-11-22', '2013-11-26', '2012-10-04', '2011-10-05', '2015-10-10', '2008-11-10', '2012-10-24', '2019-10-03', '2011-11-19', '2011-11-03'],
                                   'pos_analogue': [0,0,0,0,0,0,1,0,0,0],
                                   'precip_in_event_20mm_mask': [9.506987013363918, 14.38818342368258, 12.507403527125229, 9.8596171106184, 14.301817643134282, 25.655008881393297, 9.8596171106184, 18.03797232639275, 18.79172844588444, 8.792758162971216],
-                                  'precip_in_BAM_20mm_mask': [np.nan, np.nan, 49.72846, np.nan, np.nan, np.nan, 34.21716, 40.91511, np.nan, np.nan]
+                                  'precip_in_BAM_20mm_mask': [np.nan, np.nan, 49.72846, np.nan, np.nan, np.nan, 34.21716, 40.91511, np.nan, np.nan],
+                                  'precip_in_town_7x7_land_mask': [np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, (11.1086, 20.2505), np.nan, np.nan] # Bologna, Napoli
                                   }
             index_best_analogue = 7 # position of the best analogue in the list
     elif no_node==3 and no_event==3:
@@ -643,7 +654,8 @@ def get_best_model_analogue_info(no_node, no_event, var_analogues):
                                   'date': ['2011-12-05', '2022-11-10', '2004-10-22', '2018-12-09', '2017-11-30', '2019-11-05', '2005-10-11', '2007-11-14', '2014-12-14', '2013-10-30'],
                                   'pos_analogue': [0,0,0,0,1,0,1,0,0,0],
                                   'precip_in_event_20mm_mask': [14.117014545342823, 10.293372644096056, 11.153618198151577, 21.389362494108532, 14.82052801928495, 12.192786837734442, 35.42101060969652, 19.36316663475516, 17.899557375613114, 12.634340109374007],
-                                  'precip_in_BAM_20mm_mask': [np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, 46.46725, np.nan, np.nan, np.nan]
+                                  'precip_in_BAM_20mm_mask': [np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, 46.46725, np.nan, np.nan, np.nan],
+                                  'precip_in_town_7x7_land_mask': [np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, (32.3967, 34.1238), np.nan, np.nan, np.nan] # Imperia, Genova
                                   }
             index_best_analogue = 6 # position of the best analogue in the list
     elif no_node==5 and no_event==23:
@@ -653,11 +665,51 @@ def get_best_model_analogue_info(no_node, no_event, var_analogues):
                                   'date': ['2013-05-24', '2013-04-06', '2022-05-17', '2016-06-11', '2022-04-19', '2014-04-12', '2013-05-30', '2015-06-11', '2012-06-05', '2006-04-05'],
                                   'pos_analogue': [0,0,0,0,0,1,0,0,0,0],
                                   'precip_in_event_20mm_mask': [18.3920089830068, 15.98013887280032, 16.213089428457167, 0.6763804958057321, 16.996085570995213, 19.982470100330787, 11.33878350575191, 5.419847213948162, 0.2996978761785993, 5.4153964358633475],
-                                  'precip_in_BAM_20mm_mask': [np.nan, np.nan, np.nan, np.nan, np.nan, 37.25436 , np.nan, np.nan, np.nan, np.nan]
+                                  'precip_in_BAM_20mm_mask': [np.nan, np.nan, np.nan, np.nan, np.nan, 37.25436 , np.nan, np.nan, np.nan, np.nan],
+                                  'precip_in_town_7x7_land_mask': [np.nan, np.nan, np.nan, np.nan, np.nan, (20.536, 19.2749), np.nan, np.nan, np.nan, np.nan] # Bologna, Reggio Emilia
                                   }
             index_best_analogue = 5 # position of the best analogue in the list
+    elif no_node==3 and no_event==8:
+        if var_analogues == 'psl':
+            dict_best_analogue = {'member': ['kbc', 'kci', 'kcw', 'kcf', 'kcr', 'kbg', 'kcw', 'kby', 'kbr', 'kbv'],
+                                  'distance': [37.479706, 41.56751, 43.021893, 44.701614, 47.41097, 48.2437, 48.97007, 49.030273, 49.059402, 49.328114],
+                                  'date': ['2021-10-19', '2021-10-12', '2005-10-30', '2011-10-21', '2016-11-13', '2019-11-17', '2017-11-14', '2011-11-08', '2010-09-23', '2011-11-18'],
+                                  'pos_analogue': [0,0,0,0,0,0,1,0,0,0],
+                                  'precip_in_event_20mm_mask': [1.716228207109163, 32.321636037817655, 7.13940075228749, 18.20934728386682, 32.49452344515138, 23.47316368149188, 25.654840540728777, 19.505893347537995, 16.45050530281973, 18.56736014236455],
+                                  'precip_in_BAM_20mm_mask': [np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, 45.87541, np.nan, np.nan, np.nan],
+                                  'precip_in_town_7x7_land_mask': [np.nan, np.nan, np.nan, np.nan, np.nan, np.nan, (46.2516, 46.2394), np.nan, np.nan, np.nan] # Imperia, Genova
+                                  }
+            index_best_analogue = 6 # position of the best analogue in the list
 
     return dict_best_analogue, index_best_analogue
+
+
+## Function to retrieve storm name
+
+def get_storm_name(no_node, no_event):
+    """
+    Returns the name of the storm, identified by node and event.
+    
+    Parameters:
+        no_node (int): Node number.
+        no_event (int): Event number.
+    
+    Returns:
+        String of event name.
+    """
+    if no_node==1 and no_event==1:
+        name_storm = "Storm Vaia"
+    elif no_node==6 and no_event==19:
+        name_storm = "Storm ER 1996"
+    elif no_node==5 and no_event==4:
+        name_storm = "Storm ER 2024"
+    elif no_node==3 and no_event==3:
+        name_storm = "Storm Liguria 2016"
+    elif no_node==5 and no_event==23:
+        name_storm = "Storm ER 2023"
+    elif no_node==3 and no_event==8:
+        name_storm = "Storm Liguria 2010"
+    return name_storm
 
 
 ## Function to regrid data using xESMF
@@ -686,20 +738,69 @@ def regrid_with_xesmf(field_event, box_event, resolution=0.5):
     return regridded
 
 
-## Function for Kolmogorov-Smirnov test
+## Function for significance testing
 
 def ks_stat_and_pval(x, y):
     """Perform the Kolmogorov-Smirnov test and return the statistic and p-value."""
     # Remove NaNs from both arrays
     x_clean = x[~np.isnan(x)]
     y_clean = y[~np.isnan(y)]
-    
     # Edge case: if either array is empty after removing NaNs
     if len(x_clean) == 0 or len(y_clean) == 0:
         return np.array([np.nan, np.nan])
-    
     result = ks_2samp(x_clean, y_clean)
     return np.array([result.statistic, result.pvalue])
+
+
+def welch_ttest(x, y):
+    """Perform Welch's t-test and return the t-statistic and p-value."""
+    # Remove NaNs from both arrays
+    x_clean = x[~np.isnan(x)]
+    y_clean = y[~np.isnan(y)]
+    # Edge case: if either array is empty after removing NaNs
+    if len(x_clean) == 0 or len(y_clean) == 0:
+        return np.array([np.nan, np.nan])
+    t_stat, p_val = stats.ttest_ind(x_clean, y_clean, equal_var=False)
+    return np.array([t_stat, p_val])
+
+
+def ad_test(x, y):
+    """Perform Anderson-Darling test and return the statistic and significance level."""
+    # Remove NaNs from both arrays
+    x_clean = x[~np.isnan(x)]
+    y_clean = y[~np.isnan(y)]
+    # Edge case: if either array is empty after removing NaNs
+    if len(x_clean) == 0 or len(y_clean) == 0:
+        return np.array([np.nan, np.nan])
+    res = stats.anderson_ksamp([x_clean, y_clean])
+    return np.array([res.statistic, res.pvalue])
+
+
+def cvm_test(x, y):
+    """Perform Cramér-von Mises test and return the statistic and p-value."""
+    # Remove NaNs from both arrays
+    x_clean = x[~np.isnan(x)]
+    y_clean = y[~np.isnan(y)]
+    # Edge case: if either array is empty after removing NaNs
+    if len(x_clean) == 0 or len(y_clean) == 0:
+        return np.array([np.nan, np.nan])
+    res = stats.cramervonmises_2samp(x_clean, y_clean)
+    return np.array([res.statistic, res.pvalue])
+
+
+def get_stat_test(name_test):
+    """Return the appropriate test statistics and function based on the test name."""
+    if name_test == 'KS':
+        return 'diff_statistic', ks_stat_and_pval
+    elif name_test == 'tW':
+        return 't_statistic', welch_ttest
+    elif name_test == 'AD':
+        return 'ad_statistic', ad_test
+    elif name_test == 'CvM':
+        return 'cvm_statistic', cvm_test
+    else:
+        raise ValueError(f"Unknown test name: {name_test}")
+
 
 ## Functions to plot data
 
@@ -731,7 +832,7 @@ def plot_geopotential_and_mslp(ax, timestep, lonlat_bounds, z500, msl):
     ax.set_ylabel('Latitude')
 
 
-def _apply_common_map_style(ax, lonlat_bounds=None, title=None):
+def _apply_common_map_style(ax, lonlat_bounds=None, title=None, gl_lab_left=None):
     """Applies consistent coastlines, borders, gridlines, extent, and title."""
     ax.coastlines(linewidth=1.2)
     # ax.add_feature(cfeature.BORDERS, linewidth=0.8)
@@ -743,14 +844,16 @@ def _apply_common_map_style(ax, lonlat_bounds=None, title=None):
     )
     gl.top_labels = False
     gl.right_labels = False
+    if gl_lab_left is not None:
+        gl.left_labels = gl_lab_left
 
     if title:
-        ax.set_title(title, fontsize=12, weight="bold")
+        ax.set_title(title, fontsize=12)
 
     return ax
 
 
-def plot_precipitation(ax, lonlat_bounds, precip, precip_levels, title):
+def plot_precipitation(ax, lonlat_bounds, precip, precip_levels, title, grid_lab_left=None):
     """Plots the precipitation data for a given timestep."""
 
     lon = precip.lon.values
@@ -758,14 +861,16 @@ def plot_precipitation(ax, lonlat_bounds, precip, precip_levels, title):
     precip, lon1 = add_cyclic_point(precip, coord=lon)
 
     # Apply uniform style
-    _apply_common_map_style(ax, lonlat_bounds, title)
+    _apply_common_map_style(ax, title=title, gl_lab_left=grid_lab_left)
 
     # Colormap settings
     if np.any(precip_levels<0):
-        cmap = plt.get_cmap("Spectral")  
+        cmap = plt.get_cmap("BrBG")  
         cbar_ext = 'both'
     else:
-        cmap = plt.get_cmap("YlGnBu")
+        cmap = plt.get_cmap("BrBG")
+        bg_colors = cmap(np.linspace(0.5, 1, 256))
+        cmap = LinearSegmentedColormap.from_list("BrBG_BG", bg_colors)
         cbar_ext = "max"
     norm = mcolors.BoundaryNorm(boundaries=precip_levels, ncolors=cmap.N, extend=cbar_ext)
 
@@ -787,7 +892,7 @@ def plot_precipitation(ax, lonlat_bounds, precip, precip_levels, title):
     cbar.set_label("24h precipitation [mm]", fontsize=10)
 
 
-def plot_anom_event(ax, varname, lon, lat, anom_event, clim, title, levels=None):
+def plot_anom_event(ax, varname, lon, lat, anom_event, clim, title, levels=None, grid_lab_left=None):
     """Plots the anomaly and DOY climatology for a given event (mslp or z500)."""
 
     # Set variable-specific intervals
@@ -816,7 +921,7 @@ def plot_anom_event(ax, varname, lon, lat, anom_event, clim, title, levels=None)
         cbar_levels = np.arange(-cbar_center, cbar_center + cbar_int, cbar_int)
         
     # Apply uniform style
-    _apply_common_map_style(ax, title=title)
+    _apply_common_map_style(ax, title=title, gl_lab_left=grid_lab_left)
 
     # Filled anomalies
     cf = ax.contourf(
@@ -838,7 +943,7 @@ def plot_anom_event(ax, varname, lon, lat, anom_event, clim, title, levels=None)
         colors="black",
         linewidths=0.8,
     )
-    ax.clabel(contours, inline=True, fontsize=8, fmt="%.0f")
+    plt.clabel(contours, contours.levels[::2], inline=True, fontsize=8, fmt="%.0f")
 
     # Colorbar
     plt.colorbar(cf, ax=ax, shrink=0.8, label=cbar_label)
