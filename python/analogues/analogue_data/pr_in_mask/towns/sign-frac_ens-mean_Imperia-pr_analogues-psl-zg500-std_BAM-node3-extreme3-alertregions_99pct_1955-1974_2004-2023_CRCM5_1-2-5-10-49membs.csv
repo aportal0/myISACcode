@@ -1,0 +1,5 @@
+Ensemble Size,Town grid-point,Town 7x7 Box,Town 7x7 Land Box
+1,"(np.float64(0.446), np.float64(0.554))","(np.float64(0.63), np.float64(0.37))","(np.float64(0.498), np.float64(0.502))"
+2,"(np.float64(0.387), np.float64(0.613))","(np.float64(0.66), np.float64(0.34))","(np.float64(0.478), np.float64(0.522))"
+5,"(np.float64(0.341), np.float64(0.659))","(np.float64(0.796), np.float64(0.204))","(np.float64(0.547), np.float64(0.453))"
+10,"(np.float64(0.269), np.float64(0.731))","(np.float64(0.9), np.float64(0.1))","(np.float64(0.551), np.float64(0.449))"

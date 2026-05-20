@@ -55,8 +55,8 @@ if not os.path.exists(output_mask_dir):
 # --- Event and LE analogue definition ---
 # Event
 lselect = 'alertregions'  # 'Italy' or 'wide-region' or 'alert-regions'
-no_node = 6
-no_event = 19
+no_node = 1
+no_event = 1
 event_origin = 'CRCM5-LE'  # 'ERA5' or 'CRCM5-LE'
 if event_origin == 'ERA5':
     str_event = f'node{no_node}-extreme{no_event}-{lselect}'  # 'Italy' or 'wide-region' or 'alert-regions'
@@ -99,6 +99,7 @@ diff_indices = [[0,1],[0,2],[1,2]]  # Define the indices of epochs to compare
 # List of members
 list_membs = [name for name in os.listdir(CRCM5_dir + 'psl') if os.path.isdir(os.path.join(CRCM5_dir + 'psl', name))]
 list_membs = sorted(list_membs)[:no_membs]  # Select the first 'no_membs' members
+
 
 
 # --- Upload analogue dates and distances for each year range---
