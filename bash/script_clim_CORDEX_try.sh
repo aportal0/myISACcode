@@ -1,11 +1,11 @@
 #!/bin/bash
 
-varname=$1
-gcm_name=$2
-regm_name=$3
-memb_name=$4
-year_start=$5
-year_end=$6
+varname="psl"
+gcm_name="MPI-M-MPI-ESM-LR"
+regm_name="COSMO-crCLIM-v1-1" 
+memb_name="r1i1p1"
+year_start=1950
+year_end=1979
 
 #SBATCH -J remap_CORDEX
 #SBATCH --time=12:00:00
@@ -56,7 +56,7 @@ cdo -O ydaymean $file_tmp $file_clim
 cdo -O cat -selmon,12 "$file_clim" "$file_clim" -selmon,1 "$file_clim" "${file_clim}_ext"
 cdo -O runmean,${window_rmean} "${file_clim}_ext" "${file_clim}_ext_sm"
 cdo -O seltimestep,17/381 "${file_clim}_ext_sm" $file_clim_sm
-rm ${wdir_clim}*_ext* ${file_merge}
+rm ${wdir_clim}*_ext*
 
 # Compute anomaly
 for (( year=$year_start; year<=$year_end; year++ )); do

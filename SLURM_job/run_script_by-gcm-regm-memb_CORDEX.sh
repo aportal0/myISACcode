@@ -1,10 +1,13 @@
 #!/bin/bash
 
 # Parameters for job
-field="tas"
+field="psl"
 list_gcmod=("MPI-M-MPI-ESM-LR" "ICHEC-EC-EARTH")
 list_regmod=("COSMO-crCLIM-v1-1" "RCA4")
 list_memb=("r1i1p1" "r2i1p1" "r3i1p1")  
+# Year range for clim
+year0=1950
+yearN=1979
 
 # Parameter and function for limiting # running jobs
 MAX_RUNNING_JOBS=3
@@ -30,7 +33,7 @@ for gcmod in ${list_gcmod[@]} ; do
 				if (( n_jobs < MAX_RUNNING_JOBS )); then
 					echo "Submitting job"
 					echo "gcm:$gcmod, regm:$regmod, memb:$memb running jobs $n_jobs MAX_jobs $MAX_RUNNING_JOBS"
-					sbatch /home/portal/work/myISACcode/bash/script_remap_CORDEX.sh $field $gcmod $regmod $memb &
+					sbatch /home/portal/work/myISACcode/bash/script_clim_CORDEX.sh $field $gcmod $regmod $memb $year0 $yearN &
 					sleep 5
 					break
 				fi

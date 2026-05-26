@@ -1,0 +1,434 @@
+cdo(1) selyear (Warning): Year 1950 not found!
+cdo(1) selyear (Warning): Year 1951 not found!
+cdo(1) selyear (Warning): Year 1952 not found!
+cdo(1) selyear (Warning): Year 1953 not found!
+cdo(1) selyear (Warning): Year 1954 not found!
+cdo(1) selyear (Warning): Year 1955 not found!
+cdo(1) selyear (Warning): Year 1956 not found!
+cdo(1) selyear (Warning): Year 1957 not found!
+cdo(1) selyear (Warning): Year 1958 not found!
+cdo(1) selyear (Warning): Year 1959 not found!
+cdo(1) selyear (Warning): Year 1960 not found!
+cdo(1) selyear (Warning): Year 1961 not found!
+cdo(1) selyear (Warning): Year 1962 not found!
+cdo(1) selyear (Warning): Year 1963 not found!
+cdo(1) selyear (Warning): Year 1964 not found!
+cdo(1) selyear (Warning): Year 1965 not found!
+cdo(1) selyear (Warning): Year 1966 not found!
+cdo(1) selyear (Warning): Year 1967 not found!
+cdo(1) selyear (Warning): Year 1968 not found!
+cdo(1) selyear (Warning): Year 1969 not found!
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 1:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 1:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 1:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 1:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 1:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 1:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 1:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 1:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 1:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 1:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 497 in H5O__attr_open_by_name(): can't locate attribute: '_QuantizeBitGroomNumberOfSignificantDigits'
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 1:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 497 in H5O__attr_open_by_name(): can't locate attribute: '_QuantizeGranularBitRoundNumberOfSignificantDigits'
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 1:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 497 in H5O__attr_open_by_name(): can't locate attribute: '_QuantizeBitRoundNumberOfSignificantBits'
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 2:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 2:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 2:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 2:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 2:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 2:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 2:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 2:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 2:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 479 in H5O__attr_open_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #003: ../../../src/H5Adense.c line 397 in H5A__dense_open(): can't locate attribute in name index
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 2:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 497 in H5O__attr_open_by_name(): can't locate attribute: '_QuantizeBitGroomNumberOfSignificantDigits'
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 2:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 497 in H5O__attr_open_by_name(): can't locate attribute: '_QuantizeGranularBitRoundNumberOfSignificantDigits'
+    major: Attribute
+    minor: Object not found
+HDF5-DIAG: Error detected in HDF5 (1.10.8) thread 2:
+  #000: ../../../src/H5A.c line 485 in H5Aopen_by_name(): can't open attribute
+    major: Attribute
+    minor: Can't open object
+  #001: ../../../src/H5Aint.c line 543 in H5A__open_by_name(): unable to load attribute info from object header
+    major: Attribute
+    minor: Unable to initialize object
+  #002: ../../../src/H5Oattribute.c line 497 in H5O__attr_open_by_name(): can't locate attribute: '_QuantizeBitRoundNumberOfSignificantBits'
+    major: Attribute
+    minor: Object not found
+cdo    selyear (Warning): Year 1950 not found!
+
+cdo    selyear (Abort): No timesteps selected!
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1950.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1950.nc': No such file or directory
+cdo    selyear (Warning): Year 1951 not found!
+
+cdo    selyear (Abort): No timesteps selected!
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1951.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1951.nc': No such file or directory
+cdo    selyear (Warning): Year 1952 not found!
+
+cdo    selyear (Abort): No timesteps selected!
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1952.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1952.nc': No such file or directory
+cdo    selyear (Warning): Year 1953 not found!
+
+cdo    selyear (Abort): No timesteps selected!
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1953.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1953.nc': No such file or directory
+cdo    selyear (Warning): Year 1954 not found!
+
+cdo    selyear (Abort): No timesteps selected!
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1954.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1954.nc': No such file or directory
+cdo    selyear (Warning): Year 1955 not found!
+
+cdo    selyear (Abort): No timesteps selected!
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1955.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1955.nc': No such file or directory
+cdo    selyear (Warning): Year 1956 not found!
+
+cdo    selyear (Abort): No timesteps selected!
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1956.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1956.nc': No such file or directory
+cdo    selyear (Warning): Year 1957 not found!
+
+cdo    selyear (Abort): No timesteps selected!
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1957.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1957.nc': No such file or directory
+cdo    selyear (Warning): Year 1958 not found!
+
+cdo    selyear (Abort): No timesteps selected!
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1958.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1958.nc': No such file or directory
+cdo    selyear (Warning): Year 1959 not found!
+
+cdo    selyear (Abort): No timesteps selected!
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1959.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1959.nc': No such file or directory
+cdo    selyear (Warning): Year 1960 not found!
+
+cdo    selyear (Abort): No timesteps selected!
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1960.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1960.nc': No such file or directory
+cdo    selyear (Warning): Year 1961 not found!
+
+cdo    selyear (Abort): No timesteps selected!
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1961.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1961.nc': No such file or directory
+cdo    selyear (Warning): Year 1962 not found!
+
+cdo    selyear (Abort): No timesteps selected!
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1962.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1962.nc': No such file or directory
+cdo    selyear (Warning): Year 1963 not found!
+
+cdo    selyear (Abort): No timesteps selected!
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1963.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1963.nc': No such file or directory
+cdo    selyear (Warning): Year 1964 not found!
+
+cdo    selyear (Abort): No timesteps selected!
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1964.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1964.nc': No such file or directory
+cdo    selyear (Warning): Year 1965 not found!
+
+cdo    selyear (Abort): No timesteps selected!
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1965.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1965.nc': No such file or directory
+cdo    selyear (Warning): Year 1966 not found!
+
+cdo    selyear (Abort): No timesteps selected!
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1966.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1966.nc': No such file or directory
+cdo    selyear (Warning): Year 1967 not found!
+
+cdo    selyear (Abort): No timesteps selected!
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1967.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1967.nc': No such file or directory
+cdo    selyear (Warning): Year 1968 not found!
+
+cdo    selyear (Abort): No timesteps selected!
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1968.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1968.nc': No such file or directory
+cdo    selyear (Warning): Year 1969 not found!
+
+cdo    selyear (Abort): No timesteps selected!
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1969.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r3i1p1/psl/anom/tmp_anom1969.nc': No such file or directory

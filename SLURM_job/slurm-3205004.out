@@ -1,0 +1,165 @@
+
+cdo (Abort): [4mmergetime[0m /home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_allfiles.nc  
+                 ^ Missing Inputs
+cdo(1) selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_allfiles.nc<
+                No such file or directory
+cdo    ydaymean: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_clim1950-1979.nc<
+                 No such file or directory
+cdo(1) selmonth: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/psl_EUR-11_MPI-M-MPI-ESM-LR_r1i1p1_RCA4_v1_day_clim1950-1979_remapbil-to-05res.nc<
+                 No such file or directory
+cdo    runmean: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/psl_EUR-11_MPI-M-MPI-ESM-LR_r1i1p1_RCA4_v1_day_clim1950-1979_remapbil-to-05res.nc_ext<
+                No such file or directory
+cdo    seltimestep: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/psl_EUR-11_MPI-M-MPI-ESM-LR_r1i1p1_RCA4_v1_day_clim1950-1979_remapbil-to-05res.nc_ext_sm<
+                    No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/*_ext*': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_clim1950-1979.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1950.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1950.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_clim1950-1979.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1951.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1951.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_clim1950-1979.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1952.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1952.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_clim1950-1979.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1953.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1953.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_clim1950-1979.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1954.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1954.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_clim1950-1979.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1955.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1955.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_clim1950-1979.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1956.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1956.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_clim1950-1979.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1957.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1957.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_clim1950-1979.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1958.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1958.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_clim1950-1979.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1959.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1959.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_clim1950-1979.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1960.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1960.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_clim1950-1979.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1961.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1961.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_clim1950-1979.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1962.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1962.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_clim1950-1979.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1963.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1963.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_clim1950-1979.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1964.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1964.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_clim1950-1979.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1965.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1965.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_clim1950-1979.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1966.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1966.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_clim1950-1979.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1967.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1967.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_clim1950-1979.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1968.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1968.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_clim1950-1979.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1969.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1969.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_clim1950-1979.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1970.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1970.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_clim1950-1979.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1971.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1971.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_clim1950-1979.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1972.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1972.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_clim1950-1979.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1973.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1973.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_clim1950-1979.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1974.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1974.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_clim1950-1979.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1975.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1975.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_clim1950-1979.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1976.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1976.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_clim1950-1979.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1977.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1977.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_clim1950-1979.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1978.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1978.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_clim1950-1979.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1979.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/anom/tmp_anom1979.nc': No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/psl/tmp_clim1950-1979.nc': No such file or directory
