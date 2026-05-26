@@ -1,49 +1,46 @@
 #!/bin/bash
 
-varname="pr"
-ensname=$1
+varname=$1
+gcm_name=$2
+regm_name=$3
+memb_name=$4
 
-#SBATCH -J ${ensname}_clim
+#SBATCH -J remap_CORDEX
 #SBATCH --time=12:00:00
 #SBATCH --ntasks=1
-#SBATCH --output=${ensname}.out
-#SBATCH --error=${ensname}.out
+#SBATCH --output=${gcm_name}_${regm_name}_${memb_name}.out
+#SBATCH --error=${gcm_name}_${regm_name}_${memb_name}.err
 #SBATCH --partition=batch
 
 # Parameters
-no_years=$(( ${year_end} - ${year_start} + 1 )) 
-wdir="/home/portal/work_big/CRCM5-LE/${varname}/"
-scriptdir="/home/portal/script/bash/"
-datadir="/work_big/users/met-ctm/fmarra/daily/"
-
-# Code ensemble
-tmp_file=`ls /home/portal/work_big/CRCM5-LE/psl/${ensname}/1955/psl*195501.nc`
-enscode=`echo $tmp_file | rev | cut -d _ -f 5 | rev`
-echo "$enscode"
-
+scriptdir="/home/portal/work/myISACcode/bash/"
 
 #-----------------
 
 # Remap to 0.5 degree resolution
 
-#name_run=('historical' 'rcp85')
-#range_years=('195501-200512' '200601-209812')
-name_run=('rcp85')
-range_years=('200601-209812')
+name_run=('historical' 'rcp85')
 
 for i in "${!name_run[@]}"; do
-  run="${name_run[$i]}"
-  years="${range_years[$i]}"
-  
-  # Define names of input and output 
-  in_f="${datadir}${varname}_daysum_${run}_${years}_${ensname}.nc"
-  tmp_f="${wdir}${varname}_daysum_${run}_${years}_${ensname}.nc"
-  out_f="${wdir}${varname}_daysum_${run}_${years}_${ensname}_remapbil-to-05res.nc"
-  
-  # Regrid input file
-  cp $in_f $tmp_f
-  ncks -A ${scriptdir}rotated_pole.nc ${tmp_f}
-  cdo remapbil,${scriptdir}grid_05res.txt ${tmp_f} ${out_f}
-  rm $tmp_f ${wdir}*tmp
+	# Name run
+  	run="${name_run[$i]}"
+	# Define directories
+	wdir="/home/portal/work_big/CORDEX/${run}/${gcm_name}/${regm_name}/day/${memb_name}/${varname}/"
+	datadir="/mnt/naszappa/CORDEX/output/CORDEX/${run}/${gcm_name}/${regm_name}/day/${memb_name}/${varname}/"
+	mkdir -p $wdir
+	# Loop over files in datadir
+	for f_in in "${datadir}"*.nc; do
+		tmp=${f_in##*/}
+		tmp=${tmp%.nc}
+		year_range=${tmp##*_}
+		# Define name of output file
+		f_out="${wdir}${tmp}_remapbil-to-05res.nc"
+		f_tmp="${wdir}${tmp}.nc_tmp"
+ 
+		# Regrid
+		cp $f_in $f_tmp
+		ncks -A ${scriptdir}rotated_pole_CORDEX.nc ${f_tmp}
+                cdo remapbil,${scriptdir}grid_05res_CORDEX.txt ${f_tmp} ${f_out}
+  		rm $f_tmp
+	done
 done
-

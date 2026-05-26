@@ -1,0 +1,49 @@
+nohup: ignoring input
+Submitting job
+gcm:MPI-M-MPI-ESM-LR, regm:COSMO-crCLIM-v1-1, memb:r1i1p1 running jobs 0 MAX_jobs 3
+Submitted batch job 3203081
+Waiting until running jobs (0) less than MAX_jobs (3)
+Submitting job
+gcm:MPI-M-MPI-ESM-LR, regm:COSMO-crCLIM-v1-1, memb:r2i1p1 running jobs 1 MAX_jobs 3
+Submitted batch job 3203082
+Waiting until running jobs (1) less than MAX_jobs (3)
+Submitting job
+gcm:MPI-M-MPI-ESM-LR, regm:COSMO-crCLIM-v1-1, memb:r3i1p1 running jobs 2 MAX_jobs 3
+Submitted batch job 3203083
+Waiting until running jobs (2) less than MAX_jobs (3)
+Submitting job
+gcm:MPI-M-MPI-ESM-LR, regm:RCA4, memb:r1i1p1 running jobs 2 MAX_jobs 3
+Submitted batch job 3203097
+Waiting until running jobs (2) less than MAX_jobs (3)
+Submitting job
+gcm:MPI-M-MPI-ESM-LR, regm:RCA4, memb:r2i1p1 running jobs 2 MAX_jobs 3
+Submitted batch job 3203099
+Waiting until running jobs (2) less than MAX_jobs (3)
+Submitting job
+gcm:MPI-M-MPI-ESM-LR, regm:RCA4, memb:r3i1p1 running jobs 2 MAX_jobs 3
+Submitted batch job 3203100
+Waiting until running jobs (2) less than MAX_jobs (3)
+Submitting job
+gcm:ICHEC-EC-EARTH, regm:COSMO-crCLIM-v1-1, memb:r1i1p1 running jobs 2 MAX_jobs 3
+Submitted batch job 3203101
+Waiting until running jobs (2) less than MAX_jobs (3)
+Submitting job
+gcm:ICHEC-EC-EARTH, regm:COSMO-crCLIM-v1-1, memb:r12i1p1 running jobs 2 MAX_jobs 3
+Submitted batch job 3203102
+Waiting until running jobs (2) less than MAX_jobs (3)
+Submitting job
+gcm:ICHEC-EC-EARTH, regm:COSMO-crCLIM-v1-1, memb:r3i1p1 running jobs 2 MAX_jobs 3
+Submitted batch job 3203103
+Waiting until running jobs (2) less than MAX_jobs (3)
+Submitting job
+gcm:ICHEC-EC-EARTH, regm:RCA4, memb:r1i1p1 running jobs 2 MAX_jobs 3
+Submitted batch job 3203105
+Waiting until running jobs (2) less than MAX_jobs (3)
+Submitting job
+gcm:ICHEC-EC-EARTH, regm:RCA4, memb:r12i1p1 running jobs 2 MAX_jobs 3
+Submitted batch job 3203106
+Waiting until running jobs (2) less than MAX_jobs (3)
+Submitting job
+gcm:ICHEC-EC-EARTH, regm:RCA4, memb:r3i1p1 running jobs 2 MAX_jobs 3
+Submitted batch job 3203107
+Waiting until running jobs (2) less than MAX_jobs (3)

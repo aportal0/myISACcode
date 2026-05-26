@@ -22,13 +22,13 @@ for ensm in ${ensm_list[@]:1} ; do
 		echo "member $ensm running jobs $n_jobs MAX_jobs $MAX_RUNNING_JOBS"
 		if (( n_jobs < MAX_RUNNING_JOBS )); then
 			echo "Submitting job $ensm"
-			sbatch /home/portal/work/myISACcode/bash/script_monthly-mean-of-box-mean.sh $field $ensm $start_y $end_y &
+			sbatch /home/portal/work/myISACcode/bash/script_monthly-mean.sh $field $ensm $start_y $end_y &
 			sleep 5
 			break
 		fi   
 
 		echo "Waiting until running jobs less than MAX_jobs (5)"
-		sleep 100
+		sleep 40
 	done
 done
 

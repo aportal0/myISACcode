@@ -33,7 +33,7 @@ for (( y=${year_start}; y<=${year_end}; y++ )); do
 	# Compute monthly mean of box average 
     	for mon in {01..12}; do
         	in_f="${wdir}$y/res05/${varname}_EUR-11_CCCma-CanESM2_${name_run}_${enscode}_OURANOS-CRCM5_${ensname}_daily_${y}${mon}_remapbil-to-05res.nc"
-		tmp_f=${wdir}$y/$y${mon}_tmp.nc
+		tmp_f="${wdir}$y/res05/$y${mon}_tmp.nc"
                 
 		# Regrid mon,year file
 		if [ ! -e "$in_f" ]; then
@@ -43,19 +43,19 @@ for (( y=${year_start}; y<=${year_end}; y++ )); do
         		cdo remapbil,${scriptdir}grid_05res.txt ${in_f0} ${in_f}
 		fi
 		# Compute mean
-    		cdo monmean -fldmean -sellonlatbox,-10,40,30,45 ${in_f} ${wdir}$y/res05/$y${mon}_tmp.nc
+    		cdo monmean ${in_f} ${tmp_f}
 	done
 	
 	# Merge monthly files
-	out_f="${wdir}$y/res05/${varname}_mean-Medregion_${ensname}_monthly_${y}.nc"
+	out_f="${wdir}$y/res05/${varname}_${ensname}_monthly_${y}.nc"
 	cdo mergetime ${wdir}$y/res05/*tmp.nc ${out_f}
 	rm ${wdir}$y/res05/*tmp* ${wdir}$y/*tmp* 
 done
 
-list_out=(${wdir}*/res05/*mean-Medregion*)
-monthly_allyears="${wdir}${varname}_mean-Medregion_${ensname}_monthly_${year_start}-${year_end}.nc"
-yearly_allyears="${wdir}${varname}_mean-Medregion_${ensname}_yearly_${year_start}-${year_end}.nc"
-seasonally_allyears="${wdir}${varname}_mean-Medregion_${ensname}_seasonally_${year_start}-${year_end}.nc"  
+list_out=(${wdir}*/res05/${varname}_???_monthly_????.nc)
+monthly_allyears="${wdir}${varname}_${ensname}_monthly_${year_start}-${year_end}.nc"
+yearly_allyears="${wdir}${varname}_${ensname}_yearly_${year_start}-${year_end}.nc"
+seasonally_allyears="${wdir}${varname}_${ensname}_seasonally_${year_start}-${year_end}.nc"  
  
 if [ "${#list_out[@]}" -eq 145 ]; then
     cdo mergetime "${list_out[@]}" $monthly_allyears
