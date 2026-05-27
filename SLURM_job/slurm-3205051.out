@@ -1,0 +1,166 @@
+
+cdo (Abort): [4mmergetime[0m /home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_allfiles.nc  
+                 ^ Missing Inputs
+cdo(1) selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_allfiles.nc<
+                No such file or directory
+cdo    ydaymean: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_clim2000-2029.nc<
+                 No such file or directory
+cdo(1) selmonth: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tas_EUR-11_MPI-M-MPI-ESM-LR_r1i1p1_RCA4_v1_day_clim2000-2029_remapbil-to-05res.nc<
+                 No such file or directory
+cdo    runmean: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tas_EUR-11_MPI-M-MPI-ESM-LR_r1i1p1_RCA4_v1_day_clim2000-2029_remapbil-to-05res.nc_ext<
+                No such file or directory
+cdo    seltimestep: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tas_EUR-11_MPI-M-MPI-ESM-LR_r1i1p1_RCA4_v1_day_clim2000-2029_remapbil-to-05res.nc_ext_sm<
+                    No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/*_ext*': No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_allfiles.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_clim2000-2029.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2000.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2000.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_clim2000-2029.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2001.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2001.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_clim2000-2029.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2002.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2002.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_clim2000-2029.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2003.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2003.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_clim2000-2029.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2004.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2004.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_clim2000-2029.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2005.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/historical/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2005.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_clim2000-2029.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2006.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2006.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_clim2000-2029.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2007.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2007.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_clim2000-2029.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2008.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2008.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_clim2000-2029.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2009.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2009.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_clim2000-2029.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2010.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2010.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_clim2000-2029.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2011.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2011.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_clim2000-2029.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2012.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2012.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_clim2000-2029.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2013.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2013.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_clim2000-2029.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2014.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2014.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_clim2000-2029.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2015.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2015.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_clim2000-2029.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2016.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2016.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_clim2000-2029.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2017.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2017.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_clim2000-2029.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2018.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2018.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_clim2000-2029.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2019.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2019.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_clim2000-2029.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2020.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2020.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_clim2000-2029.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2021.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2021.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_clim2000-2029.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2022.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2022.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_clim2000-2029.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2023.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2023.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_clim2000-2029.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2024.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2024.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_clim2000-2029.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2025.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2025.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_clim2000-2029.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2026.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2026.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_clim2000-2029.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2027.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2027.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_clim2000-2029.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2028.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2028.nc': No such file or directory
+cdo    selyear: Open failed on >/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_clim2000-2029.nc<
+                No such file or directory
+cdo    sub: Open failed on >/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2029.nc<
+            No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/rcp85/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/anom/tmp_anom2029.nc': No such file or directory
+rm: cannot remove '/home/portal/work_big/CORDEX/clim/MPI-M-MPI-ESM-LR/RCA4/day/r1i1p1/tas/tmp_clim2000-2029.nc': No such file or directory

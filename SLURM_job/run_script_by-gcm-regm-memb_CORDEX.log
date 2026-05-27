@@ -1,49 +1,49 @@
 nohup: ignoring input
 Submitting job
-gcm:MPI-M-MPI-ESM-LR, regm:COSMO-crCLIM-v1-1, memb:r1i1p1 running jobs 0 MAX_jobs 3
-Submitted batch job 3205000
-Waiting until running jobs (0) less than MAX_jobs (3)
+gcm:MPI-M-MPI-ESM-LR, regm:COSMO-crCLIM-v1-1, memb:r1i1p1 running jobs 2 MAX_jobs 3
+Submitted batch job 3205087
+Waiting until running jobs (2) less than MAX_jobs (3)
 Submitting job
-gcm:MPI-M-MPI-ESM-LR, regm:COSMO-crCLIM-v1-1, memb:r2i1p1 running jobs 0 MAX_jobs 3
-Submitted batch job 3205001
-Waiting until running jobs (0) less than MAX_jobs (3)
+gcm:MPI-M-MPI-ESM-LR, regm:COSMO-crCLIM-v1-1, memb:r2i1p1 running jobs 2 MAX_jobs 3
+Submitted batch job 3205094
+Waiting until running jobs (2) less than MAX_jobs (3)
 Submitting job
-gcm:MPI-M-MPI-ESM-LR, regm:COSMO-crCLIM-v1-1, memb:r3i1p1 running jobs 0 MAX_jobs 3
-Submitted batch job 3205002
-Waiting until running jobs (0) less than MAX_jobs (3)
+gcm:MPI-M-MPI-ESM-LR, regm:COSMO-crCLIM-v1-1, memb:r3i1p1 running jobs 2 MAX_jobs 3
+Submitted batch job 3205097
+Waiting until running jobs (2) less than MAX_jobs (3)
 Submitting job
-gcm:MPI-M-MPI-ESM-LR, regm:RCA4, memb:r1i1p1 running jobs 0 MAX_jobs 3
-Submitted batch job 3205004
-Waiting until running jobs (0) less than MAX_jobs (3)
+gcm:MPI-M-MPI-ESM-LR, regm:RCA4, memb:r1i1p1 running jobs 2 MAX_jobs 3
+Submitted batch job 3205101
+Waiting until running jobs (2) less than MAX_jobs (3)
 Submitting job
-gcm:MPI-M-MPI-ESM-LR, regm:RCA4, memb:r2i1p1 running jobs 0 MAX_jobs 3
-Submitted batch job 3205005
-Waiting until running jobs (0) less than MAX_jobs (3)
+gcm:MPI-M-MPI-ESM-LR, regm:RCA4, memb:r2i1p1 running jobs 2 MAX_jobs 3
+Submitted batch job 3205104
+Waiting until running jobs (2) less than MAX_jobs (3)
 Submitting job
-gcm:MPI-M-MPI-ESM-LR, regm:RCA4, memb:r3i1p1 running jobs 0 MAX_jobs 3
-Submitted batch job 3205006
-Waiting until running jobs (0) less than MAX_jobs (3)
+gcm:MPI-M-MPI-ESM-LR, regm:RCA4, memb:r3i1p1 running jobs 2 MAX_jobs 3
+Submitted batch job 3205107
+Waiting until running jobs (2) less than MAX_jobs (3)
 Submitting job
-gcm:ICHEC-EC-EARTH, regm:COSMO-crCLIM-v1-1, memb:r1i1p1 running jobs 0 MAX_jobs 3
-Submitted batch job 3205007
-Waiting until running jobs (0) less than MAX_jobs (3)
+gcm:ICHEC-EC-EARTH, regm:COSMO-crCLIM-v1-1, memb:r1i1p1 running jobs 2 MAX_jobs 3
+Submitted batch job 3205110
+Waiting until running jobs (2) less than MAX_jobs (3)
 Submitting job
-gcm:ICHEC-EC-EARTH, regm:COSMO-crCLIM-v1-1, memb:r12i1p1 running jobs 0 MAX_jobs 3
-Submitted batch job 3205008
-Waiting until running jobs (0) less than MAX_jobs (3)
+gcm:ICHEC-EC-EARTH, regm:COSMO-crCLIM-v1-1, memb:r12i1p1 running jobs 2 MAX_jobs 3
+Submitted batch job 3205113
+Waiting until running jobs (2) less than MAX_jobs (3)
 Submitting job
-gcm:ICHEC-EC-EARTH, regm:COSMO-crCLIM-v1-1, memb:r3i1p1 running jobs 0 MAX_jobs 3
-Submitted batch job 3205009
-Waiting until running jobs (0) less than MAX_jobs (3)
+gcm:ICHEC-EC-EARTH, regm:COSMO-crCLIM-v1-1, memb:r3i1p1 running jobs 2 MAX_jobs 3
+Submitted batch job 3205117
+Waiting until running jobs (2) less than MAX_jobs (3)
 Submitting job
-gcm:ICHEC-EC-EARTH, regm:RCA4, memb:r1i1p1 running jobs 0 MAX_jobs 3
-Submitted batch job 3205010
-Waiting until running jobs (0) less than MAX_jobs (3)
+gcm:ICHEC-EC-EARTH, regm:RCA4, memb:r1i1p1 running jobs 2 MAX_jobs 3
+Submitted batch job 3205120
+Waiting until running jobs (2) less than MAX_jobs (3)
 Submitting job
-gcm:ICHEC-EC-EARTH, regm:RCA4, memb:r12i1p1 running jobs 0 MAX_jobs 3
-Submitted batch job 3205012
-Waiting until running jobs (0) less than MAX_jobs (3)
+gcm:ICHEC-EC-EARTH, regm:RCA4, memb:r12i1p1 running jobs 2 MAX_jobs 3
+Submitted batch job 3205123
+Waiting until running jobs (2) less than MAX_jobs (3)
 Submitting job
-gcm:ICHEC-EC-EARTH, regm:RCA4, memb:r3i1p1 running jobs 0 MAX_jobs 3
-Submitted batch job 3205014
-Waiting until running jobs (0) less than MAX_jobs (3)
+gcm:ICHEC-EC-EARTH, regm:RCA4, memb:r3i1p1 running jobs 2 MAX_jobs 3
+Submitted batch job 3205125
+Waiting until running jobs (2) less than MAX_jobs (3)

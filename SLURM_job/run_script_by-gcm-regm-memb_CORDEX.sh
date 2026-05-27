@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Parameters for job
-field="psl"
+field="zg500"
 list_gcmod=("MPI-M-MPI-ESM-LR" "ICHEC-EC-EARTH")
 list_regmod=("COSMO-crCLIM-v1-1" "RCA4")
 list_memb=("r1i1p1" "r2i1p1" "r3i1p1")  
 # Year range for clim
-year0=1950
-yearN=1979
+year0=2070
+yearN=2099
 
 # Parameter and function for limiting # running jobs
 MAX_RUNNING_JOBS=3
@@ -39,7 +39,7 @@ for gcmod in ${list_gcmod[@]} ; do
 				fi
 			done	
 			echo "Waiting until running jobs ($n_jobs) less than MAX_jobs ($MAX_RUNNING_JOBS)"
-			sleep 40
+			sleep 20
 		done
 	done
 done
